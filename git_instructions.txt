@@ -1,0 +1,10 @@
+# Start of work session
+git pull
+
+# After making changes
+git add .
+git commit -m "Descriptive message"
+git push
+
+# Check status frequently
+git status

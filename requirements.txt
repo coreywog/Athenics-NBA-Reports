@@ -1,0 +1,34 @@
+# API & Web
+requests>=2.31.0
+aiohttp>=3.9.0
+backoff>=2.2.1
+
+# Data Processing
+pandas>=2.1.0
+numpy>=1.24.0
+pydantic>=2.5.0
+
+# Caching
+diskcache>=5.6.0
+
+# Configuration
+python-dotenv>=1.0.0
+pyyaml>=6.0.1
+
+# Reporting
+jinja2>=3.1.2
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.18.0
+
+# Utilities
+loguru>=0.7.2
+rich>=13.7.0
+click>=8.1.0
+
+# Development
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+ipython>=8.12.0
+jupyter>=1.0.0
+black>=23.0.0

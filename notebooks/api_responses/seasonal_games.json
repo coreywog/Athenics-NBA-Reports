@@ -1,0 +1,824 @@
+{
+  "lastUpdatedOn": "2025-08-14T20:20:26.253Z",
+  "games": [
+    {
+      "schedule": {
+        "id": 137621,
+        "startTime": "2024-10-23T23:30:00.000Z",
+        "endedTime": "2024-10-24T01:57:00.000Z",
+        "awayTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "homeTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "venue": {
+          "id": 29,
+          "name": "Wells Fargo Center"
+        },
+        "venueAllegiance": "HOME",
+        "scheduleStatus": "NORMAL",
+        "originalStartTime": null,
+        "delayedOrPostponedReason": null,
+        "playedStatus": "COMPLETED",
+        "attendance": 19754,
+        "officials": [
+          {
+            "id": 20850,
+            "title": "Umpire",
+            "firstName": "Marat",
+            "lastName": "Kogut"
+          },
+          {
+            "id": 20240,
+            "title": "Referee",
+            "firstName": "Brian",
+            "lastName": "Forte"
+          },
+          {
+            "id": 20576,
+            "title": "Lead Referee",
+            "firstName": "Scott",
+            "lastName": "Foster"
+          }
+        ],
+        "broadcasters": [
+          "TSN",
+          "ESPN"
+        ],
+        "weather": {
+          "type": "CLOUDY",
+          "description": "scattered clouds",
+          "wind": {
+            "speed": {
+              "milesPerHour": 10,
+              "kilometersPerHour": 16
+            },
+            "direction": {
+              "degrees": 229,
+              "label": "WSW"
+            }
+          },
+          "temperature": {
+            "fahrenheit": 73,
+            "celsius": 23
+          },
+          "precipitation": {
+            "type": null,
+            "percent": null,
+            "amount": {
+              "millimeters": null,
+              "centimeters": null,
+              "inches": null,
+              "feet": null
+            }
+          },
+          "humidityPercent": 64
+        }
+      },
+      "score": {
+        "currentQuarter": null,
+        "currentQuarterSecondsRemaining": null,
+        "currentIntermission": null,
+        "awayScoreTotal": 124,
+        "homeScoreTotal": 109,
+        "quarters": [
+          {
+            "quarterNumber": 1,
+            "awayScore": 22,
+            "homeScore": 23
+          },
+          {
+            "quarterNumber": 2,
+            "awayScore": 36,
+            "homeScore": 24
+          },
+          {
+            "quarterNumber": 3,
+            "awayScore": 42,
+            "homeScore": 34
+          },
+          {
+            "quarterNumber": 4,
+            "awayScore": 24,
+            "homeScore": 28
+          }
+        ]
+      }
+    },
+    {
+      "schedule": {
+        "id": 137637,
+        "startTime": "2024-10-26T00:00:00.000Z",
+        "endedTime": "2024-10-26T02:13:00.000Z",
+        "awayTeam": {
+          "id": 89,
+          "abbreviation": "CHI"
+        },
+        "homeTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "venue": {
+          "id": 152,
+          "name": "Fiserv Forum"
+        },
+        "venueAllegiance": "HOME",
+        "scheduleStatus": "NORMAL",
+        "originalStartTime": null,
+        "delayedOrPostponedReason": null,
+        "playedStatus": "COMPLETED",
+        "attendance": 17790,
+        "officials": [
+          {
+            "id": 20256,
+            "title": "Referee",
+            "firstName": "Tre",
+            "lastName": "Maddox"
+          },
+          {
+            "id": 20245,
+            "title": "Lead Referee",
+            "firstName": "Marc",
+            "lastName": "Davis"
+          },
+          {
+            "id": 36254,
+            "title": "Umpire",
+            "firstName": "J.D.",
+            "lastName": "Ralls"
+          }
+        ],
+        "broadcasters": [],
+        "weather": {
+          "type": "RAIN",
+          "description": "moderate rain",
+          "wind": {
+            "speed": {
+              "milesPerHour": 14,
+              "kilometersPerHour": 23
+            },
+            "direction": {
+              "degrees": 323,
+              "label": "NNW"
+            }
+          },
+          "temperature": {
+            "fahrenheit": 58,
+            "celsius": 14
+          },
+          "precipitation": {
+            "type": "RAIN",
+            "percent": null,
+            "amount": {
+              "millimeters": 7,
+              "centimeters": null,
+              "inches": null,
+              "feet": null
+            }
+          },
+          "humidityPercent": 64
+        }
+      },
+      "score": {
+        "currentQuarter": null,
+        "currentQuarterSecondsRemaining": null,
+        "currentIntermission": null,
+        "awayScoreTotal": 133,
+        "homeScoreTotal": 122,
+        "quarters": [
+          {
+            "quarterNumber": 1,
+            "awayScore": 30,
+            "homeScore": 32
+          },
+          {
+            "quarterNumber": 2,
+            "awayScore": 33,
+            "homeScore": 32
+          },
+          {
+            "quarterNumber": 3,
+            "awayScore": 39,
+            "homeScore": 31
+          },
+          {
+            "quarterNumber": 4,
+            "awayScore": 31,
+            "homeScore": 27
+          }
+        ]
+      }
+    },
+    {
+      "schedule": {
+        "id": 137654,
+        "startTime": "2024-10-27T22:00:00.000Z",
+        "endedTime": "2024-10-28T00:19:00.000Z",
+        "awayTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "homeTeam": {
+          "id": 84,
+          "abbreviation": "BRO"
+        },
+        "venue": {
+          "id": 78,
+          "name": "Barclays Center"
+        },
+        "venueAllegiance": "HOME",
+        "scheduleStatus": "NORMAL",
+        "originalStartTime": null,
+        "delayedOrPostponedReason": null,
+        "playedStatus": "COMPLETED",
+        "attendance": 17926,
+        "officials": [
+          {
+            "id": 28857,
+            "title": "Umpire",
+            "firstName": "Mousa",
+            "lastName": "Dagher"
+          },
+          {
+            "id": 20525,
+            "title": "Lead Referee",
+            "firstName": "Zach",
+            "lastName": "Zarba"
+          },
+          {
+            "id": 20242,
+            "title": "Referee",
+            "firstName": "Jason",
+            "lastName": "Goldenberg"
+          }
+        ],
+        "broadcasters": [
+          "SN"
+        ],
+        "weather": {
+          "type": "SUNNY",
+          "description": "sky is clear",
+          "wind": {
+            "speed": {
+              "milesPerHour": 7,
+              "kilometersPerHour": 11
+            },
+            "direction": {
+              "degrees": 146,
+              "label": "ESE"
+            }
+          },
+          "temperature": {
+            "fahrenheit": 51,
+            "celsius": 11
+          },
+          "precipitation": {
+            "type": null,
+            "percent": null,
+            "amount": {
+              "millimeters": null,
+              "centimeters": null,
+              "inches": null,
+              "feet": null
+            }
+          },
+          "humidityPercent": 53
+        }
+      },
+      "score": {
+        "currentQuarter": null,
+        "currentQuarterSecondsRemaining": null,
+        "currentIntermission": null,
+        "awayScoreTotal": 102,
+        "homeScoreTotal": 115,
+        "quarters": [
+          {
+            "quarterNumber": 1,
+            "awayScore": 25,
+            "homeScore": 27
+          },
+          {
+            "quarterNumber": 2,
+            "awayScore": 20,
+            "homeScore": 21
+          },
+          {
+            "quarterNumber": 3,
+            "awayScore": 33,
+            "homeScore": 35
+          },
+          {
+            "quarterNumber": 4,
+            "awayScore": 24,
+            "homeScore": 32
+          }
+        ]
+      }
+    },
+    {
+      "schedule": {
+        "id": 137661,
+        "startTime": "2024-10-28T23:30:00.000Z",
+        "endedTime": "2024-10-29T01:48:00.000Z",
+        "awayTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "homeTeam": {
+          "id": 82,
+          "abbreviation": "BOS"
+        },
+        "venue": {
+          "id": 27,
+          "name": "TD Garden"
+        },
+        "venueAllegiance": "HOME",
+        "scheduleStatus": "NORMAL",
+        "originalStartTime": null,
+        "delayedOrPostponedReason": null,
+        "playedStatus": "COMPLETED",
+        "attendance": 19156,
+        "officials": [
+          {
+            "id": 20250,
+            "title": "Umpire",
+            "firstName": "Tom",
+            "lastName": "Washington"
+          },
+          {
+            "id": 20604,
+            "title": "Lead Referee",
+            "firstName": "Tony",
+            "lastName": "Brothers"
+          },
+          {
+            "id": 20605,
+            "title": "Referee",
+            "firstName": "JB",
+            "lastName": "DeRosa"
+          }
+        ],
+        "broadcasters": [
+          "NBA TV"
+        ],
+        "weather": {
+          "type": "CLOUDY",
+          "description": "scattered clouds",
+          "wind": {
+            "speed": {
+              "milesPerHour": 8,
+              "kilometersPerHour": 13
+            },
+            "direction": {
+              "degrees": 1,
+              "label": "NNE"
+            }
+          },
+          "temperature": {
+            "fahrenheit": 46,
+            "celsius": 8
+          },
+          "precipitation": {
+            "type": null,
+            "percent": null,
+            "amount": {
+              "millimeters": null,
+              "centimeters": null,
+              "inches": null,
+              "feet": null
+            }
+          },
+          "humidityPercent": 41
+        }
+      },
+      "score": {
+        "currentQuarter": null,
+        "currentQuarterSecondsRemaining": null,
+        "currentIntermission": null,
+        "awayScoreTotal": 108,
+        "homeScoreTotal": 119,
+        "quarters": [
+          {
+            "quarterNumber": 1,
+            "awayScore": 29,
+            "homeScore": 28
+          },
+          {
+            "quarterNumber": 2,
+            "awayScore": 27,
+            "homeScore": 25
+          },
+          {
+            "quarterNumber": 3,
+            "awayScore": 26,
+            "homeScore": 37
+          },
+          {
+            "quarterNumber": 4,
+            "awayScore": 26,
+            "homeScore": 29
+          }
+        ]
+      }
+    },
+    {
+      "schedule": {
+        "id": 137684,
+        "startTime": "2024-11-01T00:00:00.000Z",
+        "endedTime": "2024-11-01T02:13:00.000Z",
+        "awayTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "homeTeam": {
+          "id": 107,
+          "abbreviation": "MEM"
+        },
+        "venue": {
+          "id": 100,
+          "name": "FedEx Forum"
+        },
+        "venueAllegiance": "HOME",
+        "scheduleStatus": "NORMAL",
+        "originalStartTime": null,
+        "delayedOrPostponedReason": null,
+        "playedStatus": "COMPLETED",
+        "attendance": 15377,
+        "officials": [
+          {
+            "id": 20257,
+            "title": "Referee",
+            "firstName": "John",
+            "lastName": "Goble"
+          },
+          {
+            "id": 20584,
+            "title": "Lead Referee",
+            "firstName": "Sean",
+            "lastName": "Corbin"
+          },
+          {
+            "id": 20603,
+            "title": "Umpire",
+            "firstName": "Kevin",
+            "lastName": "Scott"
+          }
+        ],
+        "broadcasters": [
+          "TSN",
+          "NBA TV"
+        ],
+        "weather": {
+          "type": "RAIN",
+          "description": "moderate rain",
+          "wind": {
+            "speed": {
+              "milesPerHour": 17,
+              "kilometersPerHour": 27
+            },
+            "direction": {
+              "degrees": 172,
+              "label": "S"
+            }
+          },
+          "temperature": {
+            "fahrenheit": 70,
+            "celsius": 21
+          },
+          "precipitation": {
+            "type": "RAIN",
+            "percent": null,
+            "amount": {
+              "millimeters": 10,
+              "centimeters": null,
+              "inches": null,
+              "feet": null
+            }
+          },
+          "humidityPercent": 82
+        }
+      },
+      "score": {
+        "currentQuarter": null,
+        "currentQuarterSecondsRemaining": null,
+        "currentIntermission": null,
+        "awayScoreTotal": 99,
+        "homeScoreTotal": 122,
+        "quarters": [
+          {
+            "quarterNumber": 1,
+            "awayScore": 24,
+            "homeScore": 40
+          },
+          {
+            "quarterNumber": 2,
+            "awayScore": 24,
+            "homeScore": 30
+          },
+          {
+            "quarterNumber": 3,
+            "awayScore": 22,
+            "homeScore": 29
+          },
+          {
+            "quarterNumber": 4,
+            "awayScore": 29,
+            "homeScore": 23
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "teamReferences": [
+      {
+        "id": 82,
+        "city": "Boston",
+        "name": "Celtics",
+        "abbreviation": "BOS",
+        "homeVenue": {
+          "id": 27,
+          "name": "TD Garden"
+        },
+        "teamColoursHex": [
+          "#007a33",
+          "#ba9653",
+          "#963821",
+          "#e59e6d",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "celtics"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg"
+      },
+      {
+        "id": 84,
+        "city": "Brooklyn",
+        "name": "Nets",
+        "abbreviation": "BRO",
+        "homeVenue": {
+          "id": 78,
+          "name": "Barclays Center"
+        },
+        "teamColoursHex": [
+          "#000000",
+          "#ffffff"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "BrooklynNets"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612751/primary/L/logo.svg"
+      },
+      {
+        "id": 85,
+        "city": "Philadelphia",
+        "name": "76ers",
+        "abbreviation": "PHI",
+        "homeVenue": {
+          "id": 29,
+          "name": "Wells Fargo Center"
+        },
+        "teamColoursHex": [
+          "#006bb6",
+          "#ed174c",
+          "#002b5c",
+          "#c4ced4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "sixers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg"
+      },
+      {
+        "id": 89,
+        "city": "Chicago",
+        "name": "Bulls",
+        "abbreviation": "CHI",
+        "homeVenue": {
+          "id": 28,
+          "name": "United Center"
+        },
+        "teamColoursHex": [
+          "#ce1141",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "chicagobulls"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg"
+      },
+      {
+        "id": 90,
+        "city": "Milwaukee",
+        "name": "Bucks",
+        "abbreviation": "MIL",
+        "homeVenue": {
+          "id": 152,
+          "name": "Fiserv Forum"
+        },
+        "teamColoursHex": [
+          "#00471b",
+          "#eee1c6",
+          "#0077c0",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Bucks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg"
+      },
+      {
+        "id": 107,
+        "city": "Memphis",
+        "name": "Grizzlies",
+        "abbreviation": "MEM",
+        "homeVenue": {
+          "id": 100,
+          "name": "FedEx Forum"
+        },
+        "teamColoursHex": [
+          "#5d76a9",
+          "#12173f",
+          "#f5b112",
+          "#707271"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "memgrizz"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612763/primary/L/logo.svg"
+      }
+    ],
+    "venueReferences": [
+      {
+        "id": 27,
+        "name": "TD Garden",
+        "city": "Boston, MA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 42.366303,
+          "longitude": -71.062228
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 17565
+          },
+          {
+            "eventType": "LACROSSE",
+            "capacity": 17565
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18624
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19580
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      {
+        "id": 29,
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia, PA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.901111,
+          "longitude": -75.171944
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 19306
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20478
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 17597
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      {
+        "id": 78,
+        "name": "Barclays Center",
+        "city": "Brooklyn, NY",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 40.682661,
+          "longitude": -73.975225
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 15795
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 17732
+          },
+          {
+            "eventType": "BOXING",
+            "capacity": 16000
+          },
+          {
+            "eventType": "MMA",
+            "capacity": 16000
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 17000
+          },
+          {
+            "eventType": "WRESTLING",
+            "capacity": 16000
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      {
+        "id": 100,
+        "name": "FedEx Forum",
+        "city": "Memphis, TN",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 35.138333,
+          "longitude": -90.050556
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 16411
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18119
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      {
+        "id": 152,
+        "name": "Fiserv Forum",
+        "city": "Milwaukee, WI",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 43.045028,
+          "longitude": -87.918167
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "GENERAL",
+            "capacity": 17341
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,1538 @@
+{
+  "lastUpdatedOn": "2025-04-15T20:44:40.443Z",
+  "game": {
+    "id": 137621,
+    "startTime": "2024-10-23T23:30:00.000Z",
+    "endedTime": "2024-10-24T01:57:00.000Z",
+    "awayTeam": {
+      "id": 90,
+      "abbreviation": "MIL"
+    },
+    "homeTeam": {
+      "id": 85,
+      "abbreviation": "PHI"
+    },
+    "venue": {
+      "id": 29,
+      "name": "Wells Fargo Center"
+    },
+    "venueAllegiance": "HOME",
+    "scheduleStatus": "NORMAL",
+    "originalStartTime": null,
+    "delayedOrPostponedReason": null,
+    "playedStatus": "COMPLETED",
+    "attendance": 19754,
+    "officials": [
+      {
+        "id": 20850,
+        "title": "Umpire",
+        "firstName": "Marat",
+        "lastName": "Kogut"
+      },
+      {
+        "id": 20240,
+        "title": "Referee",
+        "firstName": "Brian",
+        "lastName": "Forte"
+      },
+      {
+        "id": 20576,
+        "title": "Lead Referee",
+        "firstName": "Scott",
+        "lastName": "Foster"
+      }
+    ],
+    "broadcasters": [
+      "TSN",
+      "ESPN"
+    ],
+    "weather": {
+      "type": "CLOUDY",
+      "description": "scattered clouds",
+      "wind": {
+        "speed": {
+          "milesPerHour": 10,
+          "kilometersPerHour": 16
+        },
+        "direction": {
+          "degrees": 229,
+          "label": "WSW"
+        }
+      },
+      "temperature": {
+        "fahrenheit": 73,
+        "celsius": 23
+      },
+      "precipitation": {
+        "type": null,
+        "percent": null,
+        "amount": {
+          "millimeters": null,
+          "centimeters": null,
+          "inches": null,
+          "feet": null
+        }
+      },
+      "humidityPercent": 64
+    }
+  },
+  "teamLineups": [
+    {
+      "team": {
+        "id": 90,
+        "abbreviation": "MIL"
+      },
+      "expected": {
+        "lineupPositions": [
+          {
+            "position": "Bench8",
+            "player": {
+              "id": 134175,
+              "firstName": "Tyler",
+              "lastName": "Smith",
+              "position": "PF",
+              "jerseyNumber": 15
+            }
+          },
+          {
+            "position": "Starter1",
+            "player": {
+              "id": 9445,
+              "firstName": "Damian",
+              "lastName": "Lillard",
+              "position": "PG",
+              "jerseyNumber": 0
+            }
+          },
+          {
+            "position": "Starter2",
+            "player": {
+              "id": 15355,
+              "firstName": "Gary",
+              "lastName": "Trent Jr.",
+              "position": "SG",
+              "jerseyNumber": 33
+            }
+          },
+          {
+            "position": "Starter5",
+            "player": {
+              "id": 9118,
+              "firstName": "Brook",
+              "lastName": "Lopez",
+              "position": "C",
+              "jerseyNumber": 11
+            }
+          },
+          {
+            "position": "Starter3",
+            "player": {
+              "id": 10155,
+              "firstName": "Taurean",
+              "lastName": "Prince",
+              "position": "SF",
+              "jerseyNumber": 12
+            }
+          },
+          {
+            "position": "Starter4",
+            "player": {
+              "id": 9325,
+              "firstName": "Giannis",
+              "lastName": "Antetokounmpo",
+              "position": "SF",
+              "jerseyNumber": 34
+            }
+          },
+          {
+            "position": "Bench1",
+            "player": {
+              "id": 9151,
+              "firstName": "Bobby",
+              "lastName": "Portis",
+              "position": "PF",
+              "jerseyNumber": 9
+            }
+          },
+          {
+            "position": "Bench2",
+            "player": {
+              "id": 9495,
+              "firstName": "Delon",
+              "lastName": "Wright",
+              "position": "SG",
+              "jerseyNumber": 4
+            }
+          },
+          {
+            "position": "Bench3",
+            "player": {
+              "id": 9456,
+              "firstName": "Pat",
+              "lastName": "Connaughton",
+              "position": "SG",
+              "jerseyNumber": 24
+            }
+          },
+          {
+            "position": "Bench4",
+            "player": {
+              "id": 39849,
+              "firstName": "A.J.",
+              "lastName": "Green",
+              "position": "SG",
+              "jerseyNumber": 20
+            }
+          },
+          {
+            "position": "Bench5",
+            "player": {
+              "id": 111232,
+              "firstName": "Andre",
+              "lastName": "Jackson Jr.",
+              "position": "SG",
+              "jerseyNumber": 44
+            }
+          },
+          {
+            "position": "Bench6",
+            "player": {
+              "id": 39835,
+              "firstName": "MarJon",
+              "lastName": "Beauchamp",
+              "position": "SF",
+              "jerseyNumber": 3
+            }
+          },
+          {
+            "position": "Bench7",
+            "player": {
+              "id": 111254,
+              "firstName": "Chris",
+              "lastName": "Livingston",
+              "position": "SF",
+              "jerseyNumber": 7
+            }
+          }
+        ]
+      },
+      "actual": {
+        "lineupPositions": [
+          {
+            "position": "Bench8",
+            "player": {
+              "id": 134172,
+              "firstName": "AJ",
+              "lastName": "Johnson",
+              "position": "PG",
+              "jerseyNumber": 7
+            }
+          },
+          {
+            "position": "Starter1",
+            "player": {
+              "id": 10155,
+              "firstName": "Taurean",
+              "lastName": "Prince",
+              "position": "SF",
+              "jerseyNumber": 12
+            }
+          },
+          {
+            "position": "Starter2",
+            "player": {
+              "id": 9325,
+              "firstName": "Giannis",
+              "lastName": "Antetokounmpo",
+              "position": "SF",
+              "jerseyNumber": 34
+            }
+          },
+          {
+            "position": "Starter5",
+            "player": {
+              "id": 9445,
+              "firstName": "Damian",
+              "lastName": "Lillard",
+              "position": "PG",
+              "jerseyNumber": 0
+            }
+          },
+          {
+            "position": "Starter3",
+            "player": {
+              "id": 9118,
+              "firstName": "Brook",
+              "lastName": "Lopez",
+              "position": "C",
+              "jerseyNumber": 11
+            }
+          },
+          {
+            "position": "Starter4",
+            "player": {
+              "id": 15355,
+              "firstName": "Gary",
+              "lastName": "Trent Jr.",
+              "position": "SG",
+              "jerseyNumber": 33
+            }
+          },
+          {
+            "position": "Bench1",
+            "player": {
+              "id": 9151,
+              "firstName": "Bobby",
+              "lastName": "Portis",
+              "position": "PF",
+              "jerseyNumber": 9
+            }
+          },
+          {
+            "position": "Bench2",
+            "player": {
+              "id": 9456,
+              "firstName": "Pat",
+              "lastName": "Connaughton",
+              "position": "SG",
+              "jerseyNumber": 24
+            }
+          },
+          {
+            "position": "Bench3",
+            "player": {
+              "id": 9495,
+              "firstName": "Delon",
+              "lastName": "Wright",
+              "position": "SG",
+              "jerseyNumber": 4
+            }
+          },
+          {
+            "position": "Bench4",
+            "player": {
+              "id": 39849,
+              "firstName": "A.J.",
+              "lastName": "Green",
+              "position": "SG",
+              "jerseyNumber": 20
+            }
+          },
+          {
+            "position": "Bench5",
+            "player": {
+              "id": 134175,
+              "firstName": "Tyler",
+              "lastName": "Smith",
+              "position": "PF",
+              "jerseyNumber": 15
+            }
+          },
+          {
+            "position": "Bench6",
+            "player": {
+              "id": 111232,
+              "firstName": "Andre",
+              "lastName": "Jackson Jr.",
+              "position": "SG",
+              "jerseyNumber": 44
+            }
+          },
+          {
+            "position": "Bench7",
+            "player": {
+              "id": 38954,
+              "firstName": "Ryan",
+              "lastName": "Rollins",
+              "position": "SG",
+              "jerseyNumber": 55
+            }
+          }
+        ]
+      }
+    },
+    {
+      "team": {
+        "id": 85,
+        "abbreviation": "PHI"
+      },
+      "expected": {
+        "lineupPositions": [
+          {
+            "position": "Bench8",
+            "player": null
+          },
+          {
+            "position": "Starter1",
+            "player": {
+              "id": 27450,
+              "firstName": "Tyrese",
+              "lastName": "Maxey",
+              "position": "PG",
+              "jerseyNumber": 0
+            }
+          },
+          {
+            "position": "Starter2",
+            "player": {
+              "id": 9352,
+              "firstName": "Eric",
+              "lastName": "Gordon",
+              "position": "SG",
+              "jerseyNumber": 23
+            }
+          },
+          {
+            "position": "Starter5",
+            "player": {
+              "id": 9202,
+              "firstName": "Andre",
+              "lastName": "Drummond",
+              "position": "C",
+              "jerseyNumber": 5
+            }
+          },
+          {
+            "position": "Starter3",
+            "player": {
+              "id": 9526,
+              "firstName": "Kelly",
+              "lastName": "Oubre Jr.",
+              "position": "SF",
+              "jerseyNumber": 9
+            }
+          },
+          {
+            "position": "Starter4",
+            "player": {
+              "id": 27624,
+              "firstName": "Kenyon",
+              "lastName": "Martin Jr.",
+              "position": "SF",
+              "jerseyNumber": 1
+            }
+          },
+          {
+            "position": "Bench1",
+            "player": {
+              "id": 9490,
+              "firstName": "Kyle",
+              "lastName": "Lowry",
+              "position": "PG",
+              "jerseyNumber": 7
+            }
+          },
+          {
+            "position": "Bench2",
+            "player": {
+              "id": 17312,
+              "firstName": "Caleb",
+              "lastName": "Martin",
+              "position": "SF",
+              "jerseyNumber": 16
+            }
+          },
+          {
+            "position": "Bench3",
+            "player": {
+              "id": 13778,
+              "firstName": "Guerschon",
+              "lastName": "Yabusele",
+              "position": "PF",
+              "jerseyNumber": 28
+            }
+          },
+          {
+            "position": "Bench4",
+            "player": {
+              "id": 144620,
+              "firstName": "Jared",
+              "lastName": "McCain",
+              "position": "SG",
+              "jerseyNumber": 20
+            }
+          },
+          {
+            "position": "Bench5",
+            "player": {
+              "id": 9213,
+              "firstName": "Reggie",
+              "lastName": "Jackson",
+              "position": "PG",
+              "jerseyNumber": 7
+            }
+          },
+          {
+            "position": "Bench6",
+            "player": {
+              "id": 134193,
+              "firstName": "Adem",
+              "lastName": "Bona",
+              "position": "C",
+              "jerseyNumber": 30
+            }
+          },
+          {
+            "position": "Bench7",
+            "player": {
+              "id": 111265,
+              "firstName": "Ricky",
+              "lastName": "Council IV",
+              "position": "SG",
+              "jerseyNumber": 14
+            }
+          }
+        ]
+      },
+      "actual": {
+        "lineupPositions": [
+          {
+            "position": "Bench8",
+            "player": {
+              "id": 134193,
+              "firstName": "Adem",
+              "lastName": "Bona",
+              "position": "C",
+              "jerseyNumber": 30
+            }
+          },
+          {
+            "position": "Starter1",
+            "player": {
+              "id": 9526,
+              "firstName": "Kelly",
+              "lastName": "Oubre Jr.",
+              "position": "SF",
+              "jerseyNumber": 9
+            }
+          },
+          {
+            "position": "Starter2",
+            "player": {
+              "id": 27624,
+              "firstName": "Kenyon",
+              "lastName": "Martin Jr.",
+              "position": "SF",
+              "jerseyNumber": 1
+            }
+          },
+          {
+            "position": "Starter5",
+            "player": {
+              "id": 27450,
+              "firstName": "Tyrese",
+              "lastName": "Maxey",
+              "position": "PG",
+              "jerseyNumber": 0
+            }
+          },
+          {
+            "position": "Starter3",
+            "player": {
+              "id": 9202,
+              "firstName": "Andre",
+              "lastName": "Drummond",
+              "position": "C",
+              "jerseyNumber": 5
+            }
+          },
+          {
+            "position": "Starter4",
+            "player": {
+              "id": 9352,
+              "firstName": "Eric",
+              "lastName": "Gordon",
+              "position": "SG",
+              "jerseyNumber": 23
+            }
+          },
+          {
+            "position": "Bench1",
+            "player": {
+              "id": 17312,
+              "firstName": "Caleb",
+              "lastName": "Martin",
+              "position": "SF",
+              "jerseyNumber": 16
+            }
+          },
+          {
+            "position": "Bench2",
+            "player": {
+              "id": 13778,
+              "firstName": "Guerschon",
+              "lastName": "Yabusele",
+              "position": "PF",
+              "jerseyNumber": 28
+            }
+          },
+          {
+            "position": "Bench3",
+            "player": {
+              "id": 9490,
+              "firstName": "Kyle",
+              "lastName": "Lowry",
+              "position": "PG",
+              "jerseyNumber": 7
+            }
+          },
+          {
+            "position": "Bench4",
+            "player": {
+              "id": 111265,
+              "firstName": "Ricky",
+              "lastName": "Council IV",
+              "position": "SG",
+              "jerseyNumber": 14
+            }
+          },
+          {
+            "position": "Bench5",
+            "player": {
+              "id": 144620,
+              "firstName": "Jared",
+              "lastName": "McCain",
+              "position": "SG",
+              "jerseyNumber": 20
+            }
+          },
+          {
+            "position": "Bench6",
+            "player": {
+              "id": 28554,
+              "firstName": "Jeff",
+              "lastName": "Dowtin",
+              "position": "PG",
+              "jerseyNumber": 11
+            }
+          },
+          {
+            "position": "Bench7",
+            "player": {
+              "id": 40857,
+              "firstName": "Lester",
+              "lastName": "Quinones",
+              "position": "SG",
+              "jerseyNumber": 25
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "teamReferences": [
+      {
+        "id": 85,
+        "city": "Philadelphia",
+        "name": "76ers",
+        "abbreviation": "PHI",
+        "homeVenue": {
+          "id": 29,
+          "name": "Wells Fargo Center"
+        },
+        "teamColoursHex": [
+          "#006bb6",
+          "#ed174c",
+          "#002b5c",
+          "#c4ced4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "sixers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg"
+      },
+      {
+        "id": 90,
+        "city": "Milwaukee",
+        "name": "Bucks",
+        "abbreviation": "MIL",
+        "homeVenue": {
+          "id": 152,
+          "name": "Fiserv Forum"
+        },
+        "teamColoursHex": [
+          "#00471b",
+          "#eee1c6",
+          "#0077c0",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Bucks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg"
+      }
+    ],
+    "venueReferences": [
+      {
+        "id": 29,
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia, PA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.901111,
+          "longitude": -75.171944
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 19306
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20478
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 17597
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      }
+    ],
+    "playerReferences": [
+      {
+        "id": 9118,
+        "firstName": "Brook",
+        "lastName": "Lopez",
+        "primaryPosition": "C",
+        "jerseyNumber": 11,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "7'0\"",
+        "weight": 270,
+        "birthDate": "1988-04-01",
+        "age": 37,
+        "birthCity": "North Hollywood, CA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "San Joaquin Memorial",
+        "college": "Stanford",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/201572.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 9151,
+        "firstName": "Bobby",
+        "lastName": "Portis",
+        "primaryPosition": "PF",
+        "jerseyNumber": 9,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'10\"",
+        "weight": 250,
+        "birthDate": "1995-02-10",
+        "age": 30,
+        "birthCity": "Little Rock, AR",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Hall",
+        "college": "Arkansas",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626171.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "BPortistime"
+          }
+        ]
+      },
+      {
+        "id": 9202,
+        "firstName": "Andre",
+        "lastName": "Drummond",
+        "primaryPosition": "C",
+        "jerseyNumber": 5,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'10\"",
+        "weight": 279,
+        "birthDate": "1993-08-10",
+        "age": 32,
+        "birthCity": "Mount Vernon, NY",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "St. Thomas More School",
+        "college": "Connecticut",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203083.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "AndreDrummond"
+          }
+        ]
+      },
+      {
+        "id": 9213,
+        "firstName": "Reggie",
+        "lastName": "Jackson",
+        "primaryPosition": "PG",
+        "jerseyNumber": 7,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'2\"",
+        "weight": 208,
+        "birthDate": "1990-04-16",
+        "age": 35,
+        "birthCity": "Pordenone",
+        "birthCountry": "Italy",
+        "rookie": false,
+        "highSchool": "Palmer",
+        "college": "Boston College",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/202704.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Reggie_Jackson"
+          }
+        ]
+      },
+      {
+        "id": 9325,
+        "firstName": "Giannis",
+        "lastName": "Antetokounmpo",
+        "primaryPosition": "SF",
+        "jerseyNumber": 34,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'11\"",
+        "weight": 242,
+        "birthDate": "1994-12-06",
+        "age": 30,
+        "birthCity": "Athens",
+        "birthCountry": "Greece",
+        "rookie": false,
+        "highSchool": null,
+        "college": "Filathlitikos Div II Greece",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Giannis_An34"
+          }
+        ]
+      },
+      {
+        "id": 9352,
+        "firstName": "Eric",
+        "lastName": "Gordon",
+        "primaryPosition": "SG",
+        "jerseyNumber": 23,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'3\"",
+        "weight": 215,
+        "birthDate": "1988-12-25",
+        "age": 36,
+        "birthCity": "Indianapolis, IN",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "North Central",
+        "college": "Indiana",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/201569.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "TheofficialEG10"
+          }
+        ]
+      },
+      {
+        "id": 9445,
+        "firstName": "Damian",
+        "lastName": "Lillard",
+        "primaryPosition": "PG",
+        "jerseyNumber": 0,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'2\"",
+        "weight": 200,
+        "birthDate": "1990-07-15",
+        "age": 35,
+        "birthCity": "Oakland, CA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Oakland",
+        "college": "Weber State",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203081.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Dame_Lillard"
+          }
+        ]
+      },
+      {
+        "id": 9456,
+        "firstName": "Pat",
+        "lastName": "Connaughton",
+        "primaryPosition": "SG",
+        "jerseyNumber": 24,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'4\"",
+        "weight": 209,
+        "birthDate": "1993-01-06",
+        "age": 32,
+        "birthCity": "Arlington, MA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "St. John's Prep",
+        "college": "Notre Dame",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626192.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 9490,
+        "firstName": "Kyle",
+        "lastName": "Lowry",
+        "primaryPosition": "PG",
+        "jerseyNumber": 7,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'1\"",
+        "weight": 196,
+        "birthDate": "1986-03-25",
+        "age": 39,
+        "birthCity": "Philadelphia, PA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Cardinal Dougherty",
+        "college": "Villanova",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/200768.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Klow7"
+          }
+        ]
+      },
+      {
+        "id": 9495,
+        "firstName": "Delon",
+        "lastName": "Wright",
+        "primaryPosition": "SG",
+        "jerseyNumber": 4,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 185,
+        "birthDate": "1992-04-26",
+        "age": 33,
+        "birthCity": "Lawndale, CA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Leuzinger",
+        "college": "Utah",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626153.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "delonwright"
+          }
+        ]
+      },
+      {
+        "id": 9526,
+        "firstName": "Kelly",
+        "lastName": "Oubre Jr.",
+        "primaryPosition": "SF",
+        "jerseyNumber": 9,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 203,
+        "birthDate": "1995-12-09",
+        "age": 29,
+        "birthCity": "Fort Bend, TX",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Findlay Prep",
+        "college": "Kansas",
+        "handedness": {
+          "shoots": "L"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626162.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "KELLYOUBREJR"
+          }
+        ]
+      },
+      {
+        "id": 10155,
+        "firstName": "Taurean",
+        "lastName": "Prince",
+        "primaryPosition": "SF",
+        "jerseyNumber": 12,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 218,
+        "birthDate": "1994-03-22",
+        "age": 31,
+        "birthCity": "San Antonio, TX",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Earl Warren",
+        "college": "Baylor",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627752.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "taureanprince"
+          }
+        ]
+      },
+      {
+        "id": 13778,
+        "firstName": "Guerschon",
+        "lastName": "Yabusele",
+        "primaryPosition": "PF",
+        "jerseyNumber": 28,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'8\"",
+        "weight": 260,
+        "birthDate": "1995-12-17",
+        "age": 29,
+        "birthCity": "Dreux",
+        "birthCountry": "France",
+        "rookie": false,
+        "highSchool": null,
+        "college": null,
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627824.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 15355,
+        "firstName": "Gary",
+        "lastName": "Trent Jr.",
+        "primaryPosition": "SG",
+        "jerseyNumber": 33,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 205,
+        "birthDate": "1999-01-18",
+        "age": 26,
+        "birthCity": "Apple Valley, MN",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": null,
+        "college": "Duke",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629018.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 17312,
+        "firstName": "Caleb",
+        "lastName": "Martin",
+        "primaryPosition": "SF",
+        "jerseyNumber": 16,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 205,
+        "birthDate": "1995-09-28",
+        "age": 29,
+        "birthCity": "Mocksville, NC",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": "Oak Hill Academy",
+        "college": "Nevada",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628997.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 27450,
+        "firstName": "Tyrese",
+        "lastName": "Maxey",
+        "primaryPosition": "PG",
+        "jerseyNumber": 0,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'2\"",
+        "weight": 195,
+        "birthDate": "2000-11-04",
+        "age": 24,
+        "birthCity": "Garland, TX",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Kentucky",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 27624,
+        "firstName": "Kenyon",
+        "lastName": "Martin Jr.",
+        "primaryPosition": "SF",
+        "jerseyNumber": 1,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 215,
+        "birthDate": "2001-01-06",
+        "age": 24,
+        "birthCity": "West Hills, CA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "IMG Academy",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630231.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 28554,
+        "firstName": "Jeff",
+        "lastName": "Dowtin",
+        "primaryPosition": "PG",
+        "jerseyNumber": 11,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'3\"",
+        "weight": 185,
+        "birthDate": "1997-05-10",
+        "age": 28,
+        "birthCity": "Washington, DC",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": "St. John's College",
+        "college": "Rhode Island",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630288.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 38954,
+        "firstName": "Ryan",
+        "lastName": "Rollins",
+        "primaryPosition": "SG",
+        "jerseyNumber": 55,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'4\"",
+        "weight": 180,
+        "birthDate": "2002-07-03",
+        "age": 23,
+        "birthCity": "Macomb, MI",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Toledo",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631157.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 39835,
+        "firstName": "MarJon",
+        "lastName": "Beauchamp",
+        "primaryPosition": "SF",
+        "jerseyNumber": 3,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 197,
+        "birthDate": "2000-10-12",
+        "age": 24,
+        "birthCity": "Seattle, WA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Yakima Valley",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630699.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 39849,
+        "firstName": "A.J.",
+        "lastName": "Green",
+        "primaryPosition": "SG",
+        "jerseyNumber": 20,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'4\"",
+        "weight": 190,
+        "birthDate": "1999-09-27",
+        "age": 25,
+        "birthCity": "Cedar Falls, IA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Northern Iowa",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631260.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 40857,
+        "firstName": "Lester",
+        "lastName": "Quinones",
+        "primaryPosition": "SG",
+        "jerseyNumber": 25,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 208,
+        "birthDate": "2000-11-16",
+        "age": 24,
+        "birthCity": "Brentwood, NY",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Memphis",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631311.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 111232,
+        "firstName": "Andre",
+        "lastName": "Jackson Jr.",
+        "primaryPosition": "SG",
+        "jerseyNumber": 44,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 200,
+        "birthDate": "2001-11-13",
+        "age": 23,
+        "birthCity": "Amsterdam, NY",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "UConn",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641748.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 111254,
+        "firstName": "Chris",
+        "lastName": "Livingston",
+        "primaryPosition": "SF",
+        "jerseyNumber": 7,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 220,
+        "birthDate": "2003-10-15",
+        "age": 21,
+        "birthCity": "Akron, OH",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Kentucky",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641753.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 111265,
+        "firstName": "Ricky",
+        "lastName": "Council IV",
+        "primaryPosition": "SG",
+        "jerseyNumber": 14,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 205,
+        "birthDate": "2001-08-03",
+        "age": 24,
+        "birthCity": "Durham, NC",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Arkansas",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641741.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 134172,
+        "firstName": "AJ",
+        "lastName": "Johnson",
+        "primaryPosition": "PG",
+        "jerseyNumber": 7,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 165,
+        "birthDate": "2004-12-01",
+        "age": 20,
+        "birthCity": "Woodland Hills, CA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": null,
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1642358.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 134175,
+        "firstName": "Tyler",
+        "lastName": "Smith",
+        "primaryPosition": "PF",
+        "jerseyNumber": 15,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'9\"",
+        "weight": 224,
+        "birthDate": "2004-11-02",
+        "age": 20,
+        "birthCity": "New Orleans, LA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": null,
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641890.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 134193,
+        "firstName": "Adem",
+        "lastName": "Bona",
+        "primaryPosition": "C",
+        "jerseyNumber": 30,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'9\"",
+        "weight": 245,
+        "birthDate": "2003-03-28",
+        "age": 22,
+        "birthCity": "Ebonyi",
+        "birthCountry": "Nigeria",
+        "rookie": true,
+        "highSchool": null,
+        "college": "UCLA",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641737.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 144620,
+        "firstName": "Jared",
+        "lastName": "McCain",
+        "primaryPosition": "SG",
+        "jerseyNumber": 20,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'3\"",
+        "weight": 195,
+        "birthDate": "2004-02-20",
+        "age": 21,
+        "birthCity": "Sacramento, CA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Duke",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1642272.png",
+        "socialMediaAccounts": []
+      }
+    ]
+  }
+}

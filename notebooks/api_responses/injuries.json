@@ -1,0 +1,155 @@
+{
+  "lastUpdatedOn": "2025-08-27T18:00:08.710Z",
+  "players": [
+    {
+      "id": 134163,
+      "firstName": "Zach",
+      "lastName": "Edey",
+      "primaryPosition": "C",
+      "jerseyNumber": 14,
+      "currentTeam": {
+        "id": 107,
+        "abbreviation": "MEM"
+      },
+      "currentRosterStatus": "ROSTER",
+      "currentInjury": {
+        "description": "ankle",
+        "playingProbability": "OUT"
+      },
+      "height": "7'5\"",
+      "weight": 300,
+      "birthDate": "2002-03-14",
+      "age": 23,
+      "birthCity": "Toronto, ON",
+      "birthCountry": "Canada",
+      "rookie": true,
+      "highSchool": null,
+      "college": null,
+      "handedness": {
+        "shoots": null
+      },
+      "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641744.png",
+      "socialMediaAccounts": []
+    },
+    {
+      "id": 27619,
+      "firstName": "Tyrese",
+      "lastName": "Haliburton",
+      "primaryPosition": "PG",
+      "jerseyNumber": 0,
+      "currentTeam": {
+        "id": 87,
+        "abbreviation": "IND"
+      },
+      "currentRosterStatus": "ROSTER",
+      "currentInjury": {
+        "description": "calf",
+        "playingProbability": "QUESTIONABLE"
+      },
+      "height": "6'5\"",
+      "weight": 185,
+      "birthDate": "2000-02-29",
+      "age": 25,
+      "birthCity": "Oshkosh, WI",
+      "birthCountry": "USA",
+      "rookie": true,
+      "highSchool": null,
+      "college": "Iowa State",
+      "handedness": {
+        "shoots": null
+      },
+      "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630169.png",
+      "socialMediaAccounts": []
+    },
+    {
+      "id": 31051,
+      "firstName": "Isaiah",
+      "lastName": "Jackson",
+      "primaryPosition": "SF",
+      "jerseyNumber": 22,
+      "currentTeam": {
+        "id": 87,
+        "abbreviation": "IND"
+      },
+      "currentRosterStatus": "ROSTER",
+      "currentInjury": {
+        "description": "achilles",
+        "playingProbability": "OUT"
+      },
+      "height": "6'10\"",
+      "weight": 205,
+      "birthDate": "2002-01-10",
+      "age": 23,
+      "birthCity": "Detroit, MI",
+      "birthCountry": "USA",
+      "rookie": true,
+      "highSchool": null,
+      "college": "Kentucky",
+      "handedness": {
+        "shoots": null
+      },
+      "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630543.png",
+      "socialMediaAccounts": []
+    },
+    {
+      "id": 134161,
+      "firstName": "Nikola",
+      "lastName": "Topic",
+      "primaryPosition": "PG",
+      "jerseyNumber": 5,
+      "currentTeam": {
+        "id": 96,
+        "abbreviation": "OKL"
+      },
+      "currentRosterStatus": "ROSTER",
+      "currentInjury": {
+        "description": "knee",
+        "playingProbability": "OUT"
+      },
+      "height": "6'6\"",
+      "weight": 200,
+      "birthDate": "2005-08-10",
+      "age": 20,
+      "birthCity": "Novi Sad",
+      "birthCountry": "Serbia",
+      "rookie": true,
+      "highSchool": null,
+      "college": null,
+      "handedness": {
+        "shoots": null
+      },
+      "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1642260.png",
+      "socialMediaAccounts": []
+    },
+    {
+      "id": 109468,
+      "firstName": "Jarace",
+      "lastName": "Walker",
+      "primaryPosition": "PF",
+      "jerseyNumber": 5,
+      "currentTeam": {
+        "id": 87,
+        "abbreviation": "IND"
+      },
+      "currentRosterStatus": "ROSTER",
+      "currentInjury": {
+        "description": "ankle",
+        "playingProbability": "OUT"
+      },
+      "height": "6'8\"",
+      "weight": 235,
+      "birthDate": "2003-09-04",
+      "age": 21,
+      "birthCity": "Baltimore, MD",
+      "birthCountry": "USA",
+      "rookie": true,
+      "highSchool": null,
+      "college": "Houston",
+      "handedness": {
+        "shoots": null
+      },
+      "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641716.png",
+      "socialMediaAccounts": []
+    }
+  ]
+}

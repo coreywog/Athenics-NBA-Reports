@@ -1,0 +1,1228 @@
+{
+  "lastUpdatedOn": "2025-04-15T06:30:25.976Z",
+  "game": {
+    "id": 137621,
+    "startTime": "2024-10-23T23:30:00.000Z",
+    "endedTime": "2024-10-24T01:57:00.000Z",
+    "awayTeam": {
+      "id": 90,
+      "abbreviation": "MIL"
+    },
+    "homeTeam": {
+      "id": 85,
+      "abbreviation": "PHI"
+    },
+    "venue": {
+      "id": 29,
+      "name": "Wells Fargo Center"
+    },
+    "venueAllegiance": "HOME",
+    "scheduleStatus": "NORMAL",
+    "originalStartTime": null,
+    "delayedOrPostponedReason": null,
+    "playedStatus": "COMPLETED",
+    "attendance": 19754,
+    "officials": [
+      {
+        "id": 20850,
+        "title": "Umpire",
+        "firstName": "Marat",
+        "lastName": "Kogut"
+      },
+      {
+        "id": 20240,
+        "title": "Referee",
+        "firstName": "Brian",
+        "lastName": "Forte"
+      },
+      {
+        "id": 20576,
+        "title": "Lead Referee",
+        "firstName": "Scott",
+        "lastName": "Foster"
+      }
+    ],
+    "broadcasters": [
+      "TSN",
+      "ESPN"
+    ],
+    "weather": {
+      "type": "CLOUDY",
+      "description": "scattered clouds",
+      "wind": {
+        "speed": {
+          "milesPerHour": 10,
+          "kilometersPerHour": 16
+        },
+        "direction": {
+          "degrees": 229,
+          "label": "WSW"
+        }
+      },
+      "temperature": {
+        "fahrenheit": 73,
+        "celsius": 23
+      },
+      "precipitation": {
+        "type": null,
+        "percent": null,
+        "amount": {
+          "millimeters": null,
+          "centimeters": null,
+          "inches": null,
+          "feet": null
+        }
+      },
+      "humidityPercent": 64
+    }
+  },
+  "plays": [
+    {
+      "description": "Jump Ball Drummond vs. Lopez: Tip to Maxey",
+      "jumpBall": {
+        "awayPlayer": {
+          "id": 9118,
+          "firstName": "Brook",
+          "lastName": "Lopez",
+          "position": "C",
+          "jerseyNumber": 11
+        },
+        "homePlayer": {
+          "id": 9202,
+          "firstName": "Andre",
+          "lastName": "Drummond",
+          "position": "C",
+          "jerseyNumber": 5
+        },
+        "wonBy": "HOME",
+        "tippedToPlayer": {
+          "id": 27450,
+          "firstName": "Tyrese",
+          "lastName": "Maxey",
+          "position": "PG",
+          "jerseyNumber": 0
+        }
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 0,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 9118,
+              "firstName": "Brook",
+              "lastName": "Lopez",
+              "position": "C",
+              "jerseyNumber": 11
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 9202,
+              "firstName": "Andre",
+              "lastName": "Drummond",
+              "position": "C",
+              "jerseyNumber": 5
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "MISS Oubre Jr. 4' Driving Floating Jump Shot",
+      "fieldGoalAttempt": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "shootingPlayer": {
+          "id": 9526,
+          "firstName": "Kelly",
+          "lastName": "Oubre Jr.",
+          "position": "SF",
+          "jerseyNumber": 9
+        },
+        "assistingPlayer": null,
+        "blockingPlayer": null,
+        "shotType": "Driving Floating Jump Shot",
+        "distanceFeet": 0,
+        "points": 2,
+        "location": {
+          "x": 55,
+          "y": 290
+        },
+        "result": "MISSED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 27,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 9526,
+              "firstName": "Kelly",
+              "lastName": "Oubre Jr.",
+              "position": "SF",
+              "jerseyNumber": 9
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Lopez REBOUND (Off:0 Def:1)",
+      "rebound": {
+        "team": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "retrievingPlayer": {
+          "id": 9118,
+          "firstName": "Brook",
+          "lastName": "Lopez",
+          "position": "C",
+          "jerseyNumber": 11
+        },
+        "type": "DEFENSIVE"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 30,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 9118,
+              "firstName": "Brook",
+              "lastName": "Lopez",
+              "position": "C",
+              "jerseyNumber": 11
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": []
+      }
+    },
+    {
+      "description": "Oubre Jr. S.FOUL (P1.T1) (S.Foster)",
+      "foul": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "penalizedPlayer": {
+          "id": 9526,
+          "firstName": "Kelly",
+          "lastName": "Oubre Jr.",
+          "position": "SF",
+          "jerseyNumber": 9
+        },
+        "drawnByPlayer": null,
+        "type": "Shooting",
+        "isPersonal": true,
+        "isTechnical": false,
+        "isFlagrant1": false,
+        "isFlagrant2": false,
+        "location": {
+          "x": 51,
+          "y": 250
+        }
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 34,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 9526,
+              "firstName": "Kelly",
+              "lastName": "Oubre Jr.",
+              "position": "SF",
+              "jerseyNumber": 9
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Antetokounmpo Free Throw 1 of 2 (1 PTS)",
+      "freeThrowAttempt": {
+        "team": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "shootingPlayer": {
+          "id": 9325,
+          "firstName": "Giannis",
+          "lastName": "Antetokounmpo",
+          "position": "SF",
+          "jerseyNumber": 34
+        },
+        "attemptNum": 1,
+        "totalAttempts": 2,
+        "location": null,
+        "result": "SCORED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 34,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 9325,
+              "firstName": "Giannis",
+              "lastName": "Antetokounmpo",
+              "position": "SF",
+              "jerseyNumber": 34
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": []
+      }
+    },
+    {
+      "description": "Antetokounmpo Free Throw 2 of 2 (2 PTS)",
+      "freeThrowAttempt": {
+        "team": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "shootingPlayer": {
+          "id": 9325,
+          "firstName": "Giannis",
+          "lastName": "Antetokounmpo",
+          "position": "SF",
+          "jerseyNumber": 34
+        },
+        "attemptNum": 2,
+        "totalAttempts": 2,
+        "location": null,
+        "result": "SCORED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 34,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 9325,
+              "firstName": "Giannis",
+              "lastName": "Antetokounmpo",
+              "position": "SF",
+              "jerseyNumber": 34
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": []
+      }
+    },
+    {
+      "description": "Maxey 26' 3PT Step Back Jump Shot (3 PTS)",
+      "fieldGoalAttempt": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "shootingPlayer": {
+          "id": 27450,
+          "firstName": "Tyrese",
+          "lastName": "Maxey",
+          "position": "PG",
+          "jerseyNumber": 0
+        },
+        "assistingPlayer": null,
+        "blockingPlayer": null,
+        "shotType": "Step Back Jump shot",
+        "distanceFeet": 0,
+        "points": 3,
+        "location": {
+          "x": 307,
+          "y": 211
+        },
+        "result": "SCORED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 56,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 27450,
+              "firstName": "Tyrese",
+              "lastName": "Maxey",
+              "position": "PG",
+              "jerseyNumber": 0
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "MISS Lillard 27' 3PT Pullup Jump Shot",
+      "fieldGoalAttempt": {
+        "team": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "shootingPlayer": {
+          "id": 9445,
+          "firstName": "Damian",
+          "lastName": "Lillard",
+          "position": "PG",
+          "jerseyNumber": 0
+        },
+        "assistingPlayer": null,
+        "blockingPlayer": null,
+        "shotType": "Pullup Jump shot",
+        "distanceFeet": 0,
+        "points": 3,
+        "location": {
+          "x": 615,
+          "y": 249
+        },
+        "result": "MISSED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 74,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 9445,
+              "firstName": "Damian",
+              "lastName": "Lillard",
+              "position": "PG",
+              "jerseyNumber": 0
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": []
+      }
+    },
+    {
+      "description": "Drummond REBOUND (Off:0 Def:1)",
+      "rebound": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "retrievingPlayer": {
+          "id": 9202,
+          "firstName": "Andre",
+          "lastName": "Drummond",
+          "position": "C",
+          "jerseyNumber": 5
+        },
+        "type": "DEFENSIVE"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 76,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 9202,
+              "firstName": "Andre",
+              "lastName": "Drummond",
+              "position": "C",
+              "jerseyNumber": 5
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "MISS Maxey 26' 3PT Running Pull-Up Jump Shot",
+      "fieldGoalAttempt": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "shootingPlayer": {
+          "id": 27450,
+          "firstName": "Tyrese",
+          "lastName": "Maxey",
+          "position": "PG",
+          "jerseyNumber": 0
+        },
+        "assistingPlayer": null,
+        "blockingPlayer": null,
+        "shotType": "Running Pull-Up Jump Shot",
+        "distanceFeet": 0,
+        "points": 3,
+        "location": {
+          "x": 244,
+          "y": 81
+        },
+        "result": "MISSED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 81,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 27450,
+              "firstName": "Tyrese",
+              "lastName": "Maxey",
+              "position": "PG",
+              "jerseyNumber": 0
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Lillard REBOUND (Off:0 Def:1)",
+      "rebound": {
+        "team": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "retrievingPlayer": {
+          "id": 9445,
+          "firstName": "Damian",
+          "lastName": "Lillard",
+          "position": "PG",
+          "jerseyNumber": 0
+        },
+        "type": "DEFENSIVE"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 84,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 9445,
+              "firstName": "Damian",
+              "lastName": "Lillard",
+              "position": "PG",
+              "jerseyNumber": 0
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": []
+      }
+    },
+    {
+      "description": "K. Martin P.FOUL (P1.T2) (M.Kogut)",
+      "foul": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "penalizedPlayer": {
+          "id": 27624,
+          "firstName": "Kenyon",
+          "lastName": "Martin Jr.",
+          "position": "SF",
+          "jerseyNumber": 1
+        },
+        "drawnByPlayer": null,
+        "type": "Personal",
+        "isPersonal": true,
+        "isTechnical": false,
+        "isFlagrant1": false,
+        "isFlagrant2": false,
+        "location": {
+          "x": 51,
+          "y": 250
+        }
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 88,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 27624,
+              "firstName": "Kenyon",
+              "lastName": "Martin Jr.",
+              "position": "SF",
+              "jerseyNumber": 1
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "MISS Lopez 7' Turnaround Jump Shot",
+      "fieldGoalAttempt": {
+        "team": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "shootingPlayer": {
+          "id": 9118,
+          "firstName": "Brook",
+          "lastName": "Lopez",
+          "position": "C",
+          "jerseyNumber": 11
+        },
+        "assistingPlayer": null,
+        "blockingPlayer": null,
+        "shotType": "Turnaround Jump Shot",
+        "distanceFeet": 0,
+        "points": 2,
+        "location": {
+          "x": 818,
+          "y": 251
+        },
+        "result": "MISSED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 98,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 9118,
+              "firstName": "Brook",
+              "lastName": "Lopez",
+              "position": "C",
+              "jerseyNumber": 11
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": []
+      }
+    },
+    {
+      "description": "Maxey REBOUND (Off:0 Def:1)",
+      "rebound": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "retrievingPlayer": {
+          "id": 27450,
+          "firstName": "Tyrese",
+          "lastName": "Maxey",
+          "position": "PG",
+          "jerseyNumber": 0
+        },
+        "type": "DEFENSIVE"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 100,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 27450,
+              "firstName": "Tyrese",
+              "lastName": "Maxey",
+              "position": "PG",
+              "jerseyNumber": 0
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "MISS Maxey 4' Running Layup",
+      "fieldGoalAttempt": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "shootingPlayer": {
+          "id": 27450,
+          "firstName": "Tyrese",
+          "lastName": "Maxey",
+          "position": "PG",
+          "jerseyNumber": 0
+        },
+        "assistingPlayer": null,
+        "blockingPlayer": null,
+        "shotType": "Running Layup",
+        "distanceFeet": 0,
+        "points": 2,
+        "location": {
+          "x": 75,
+          "y": 278
+        },
+        "result": "MISSED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 106,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 27450,
+              "firstName": "Tyrese",
+              "lastName": "Maxey",
+              "position": "PG",
+              "jerseyNumber": 0
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Drummond REBOUND (Off:1 Def:1)",
+      "rebound": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "retrievingPlayer": {
+          "id": 9202,
+          "firstName": "Andre",
+          "lastName": "Drummond",
+          "position": "C",
+          "jerseyNumber": 5
+        },
+        "type": "OFFENSIVE"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 108,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 9202,
+              "firstName": "Andre",
+              "lastName": "Drummond",
+              "position": "C",
+              "jerseyNumber": 5
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "MISS Gordon 26' 3PT Jump Shot",
+      "fieldGoalAttempt": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "shootingPlayer": {
+          "id": 9352,
+          "firstName": "Eric",
+          "lastName": "Gordon",
+          "position": "SG",
+          "jerseyNumber": 23
+        },
+        "assistingPlayer": null,
+        "blockingPlayer": null,
+        "shotType": "Jump Shot",
+        "distanceFeet": 0,
+        "points": 3,
+        "location": {
+          "x": 302,
+          "y": 320
+        },
+        "result": "MISSED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 113,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 9352,
+              "firstName": "Eric",
+              "lastName": "Gordon",
+              "position": "SG",
+              "jerseyNumber": 23
+            },
+            "location": null
+          }
+        ]
+      }
+    },
+    {
+      "description": "Antetokounmpo REBOUND (Off:0 Def:1)",
+      "rebound": {
+        "team": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "retrievingPlayer": {
+          "id": 9325,
+          "firstName": "Giannis",
+          "lastName": "Antetokounmpo",
+          "position": "SF",
+          "jerseyNumber": 34
+        },
+        "type": "DEFENSIVE"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 116,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 9325,
+              "firstName": "Giannis",
+              "lastName": "Antetokounmpo",
+              "position": "SF",
+              "jerseyNumber": 34
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": []
+      }
+    },
+    {
+      "description": "MISS Trent Jr. 27' 3PT Jump Shot",
+      "fieldGoalAttempt": {
+        "team": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "shootingPlayer": {
+          "id": 15355,
+          "firstName": "Gary",
+          "lastName": "Trent Jr.",
+          "position": "SG",
+          "jerseyNumber": 33
+        },
+        "assistingPlayer": null,
+        "blockingPlayer": null,
+        "shotType": "Jump Shot",
+        "distanceFeet": 0,
+        "points": 3,
+        "location": {
+          "x": 620,
+          "y": 240
+        },
+        "result": "MISSED"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 132,
+        "awayPlayersOnCourt": [
+          {
+            "player": {
+              "id": 15355,
+              "firstName": "Gary",
+              "lastName": "Trent Jr.",
+              "position": "SG",
+              "jerseyNumber": 33
+            },
+            "location": null
+          }
+        ],
+        "homePlayersOnCourt": []
+      }
+    },
+    {
+      "description": "Drummond REBOUND (Off:1 Def:2)",
+      "rebound": {
+        "team": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "retrievingPlayer": {
+          "id": 9202,
+          "firstName": "Andre",
+          "lastName": "Drummond",
+          "position": "C",
+          "jerseyNumber": 5
+        },
+        "type": "DEFENSIVE"
+      },
+      "playStatus": {
+        "quarter": 1,
+        "secondsElapsed": 136,
+        "awayPlayersOnCourt": [],
+        "homePlayersOnCourt": [
+          {
+            "player": {
+              "id": 9202,
+              "firstName": "Andre",
+              "lastName": "Drummond",
+              "position": "C",
+              "jerseyNumber": 5
+            },
+            "location": null
+          }
+        ]
+      }
+    }
+  ],
+  "references": {
+    "teamReferences": [
+      {
+        "id": 85,
+        "city": "Philadelphia",
+        "name": "76ers",
+        "abbreviation": "PHI",
+        "homeVenue": {
+          "id": 29,
+          "name": "Wells Fargo Center"
+        },
+        "teamColoursHex": [
+          "#006bb6",
+          "#ed174c",
+          "#002b5c",
+          "#c4ced4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "sixers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg"
+      },
+      {
+        "id": 90,
+        "city": "Milwaukee",
+        "name": "Bucks",
+        "abbreviation": "MIL",
+        "homeVenue": {
+          "id": 152,
+          "name": "Fiserv Forum"
+        },
+        "teamColoursHex": [
+          "#00471b",
+          "#eee1c6",
+          "#0077c0",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Bucks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg"
+      }
+    ],
+    "venueReferences": [
+      {
+        "id": 29,
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia, PA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.901111,
+          "longitude": -75.171944
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 19306
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20478
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 17597
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      }
+    ],
+    "playerReferences": [
+      {
+        "id": 9118,
+        "firstName": "Brook",
+        "lastName": "Lopez",
+        "primaryPosition": "C",
+        "jerseyNumber": 11,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "7'0\"",
+        "weight": 270,
+        "birthDate": "1988-04-01",
+        "age": 37,
+        "birthCity": "North Hollywood, CA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "San Joaquin Memorial",
+        "college": "Stanford",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/201572.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 9202,
+        "firstName": "Andre",
+        "lastName": "Drummond",
+        "primaryPosition": "C",
+        "jerseyNumber": 5,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'10\"",
+        "weight": 279,
+        "birthDate": "1993-08-10",
+        "age": 32,
+        "birthCity": "Mount Vernon, NY",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "St. Thomas More School",
+        "college": "Connecticut",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203083.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "AndreDrummond"
+          }
+        ]
+      },
+      {
+        "id": 9325,
+        "firstName": "Giannis",
+        "lastName": "Antetokounmpo",
+        "primaryPosition": "SF",
+        "jerseyNumber": 34,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'11\"",
+        "weight": 242,
+        "birthDate": "1994-12-06",
+        "age": 30,
+        "birthCity": "Athens",
+        "birthCountry": "Greece",
+        "rookie": false,
+        "highSchool": null,
+        "college": "Filathlitikos Div II Greece",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Giannis_An34"
+          }
+        ]
+      },
+      {
+        "id": 9352,
+        "firstName": "Eric",
+        "lastName": "Gordon",
+        "primaryPosition": "SG",
+        "jerseyNumber": 23,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'3\"",
+        "weight": 215,
+        "birthDate": "1988-12-25",
+        "age": 36,
+        "birthCity": "Indianapolis, IN",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "North Central",
+        "college": "Indiana",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/201569.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "TheofficialEG10"
+          }
+        ]
+      },
+      {
+        "id": 9445,
+        "firstName": "Damian",
+        "lastName": "Lillard",
+        "primaryPosition": "PG",
+        "jerseyNumber": 0,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'2\"",
+        "weight": 200,
+        "birthDate": "1990-07-15",
+        "age": 35,
+        "birthCity": "Oakland, CA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Oakland",
+        "college": "Weber State",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203081.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Dame_Lillard"
+          }
+        ]
+      },
+      {
+        "id": 9526,
+        "firstName": "Kelly",
+        "lastName": "Oubre Jr.",
+        "primaryPosition": "SF",
+        "jerseyNumber": 9,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 203,
+        "birthDate": "1995-12-09",
+        "age": 29,
+        "birthCity": "Fort Bend, TX",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Findlay Prep",
+        "college": "Kansas",
+        "handedness": {
+          "shoots": "L"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626162.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "KELLYOUBREJR"
+          }
+        ]
+      },
+      {
+        "id": 15355,
+        "firstName": "Gary",
+        "lastName": "Trent Jr.",
+        "primaryPosition": "SG",
+        "jerseyNumber": 33,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 205,
+        "birthDate": "1999-01-18",
+        "age": 26,
+        "birthCity": "Apple Valley, MN",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": null,
+        "college": "Duke",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629018.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 27450,
+        "firstName": "Tyrese",
+        "lastName": "Maxey",
+        "primaryPosition": "PG",
+        "jerseyNumber": 0,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'2\"",
+        "weight": 195,
+        "birthDate": "2000-11-04",
+        "age": 24,
+        "birthCity": "Garland, TX",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Kentucky",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 27624,
+        "firstName": "Kenyon",
+        "lastName": "Martin Jr.",
+        "primaryPosition": "SF",
+        "jerseyNumber": 1,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 215,
+        "birthDate": "2001-01-06",
+        "age": 24,
+        "birthCity": "West Hills, CA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "IMG Academy",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630231.png",
+        "socialMediaAccounts": []
+      }
+    ]
+  }
+}

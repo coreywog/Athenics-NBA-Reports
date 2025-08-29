@@ -1,0 +1,5851 @@
+{
+  "lastUpdatedOn": "2025-04-15T06:30:15.680Z",
+  "game": {
+    "id": 137621,
+    "startTime": "2024-10-23T23:30:00.000Z",
+    "endedTime": "2024-10-24T01:57:00.000Z",
+    "awayTeam": {
+      "id": 90,
+      "abbreviation": "MIL"
+    },
+    "homeTeam": {
+      "id": 85,
+      "abbreviation": "PHI"
+    },
+    "venue": {
+      "id": 29,
+      "name": "Wells Fargo Center"
+    },
+    "venueAllegiance": "HOME",
+    "scheduleStatus": "NORMAL",
+    "originalStartTime": null,
+    "delayedOrPostponedReason": null,
+    "playedStatus": "COMPLETED",
+    "attendance": 19754,
+    "officials": [
+      {
+        "id": 20850,
+        "title": "Umpire",
+        "firstName": "Marat",
+        "lastName": "Kogut"
+      },
+      {
+        "id": 20240,
+        "title": "Referee",
+        "firstName": "Brian",
+        "lastName": "Forte"
+      },
+      {
+        "id": 20576,
+        "title": "Lead Referee",
+        "firstName": "Scott",
+        "lastName": "Foster"
+      }
+    ],
+    "broadcasters": [
+      "TSN",
+      "ESPN"
+    ],
+    "weather": {
+      "type": "CLOUDY",
+      "description": "scattered clouds",
+      "wind": {
+        "speed": {
+          "milesPerHour": 10,
+          "kilometersPerHour": 16
+        },
+        "direction": {
+          "degrees": 229,
+          "label": "WSW"
+        }
+      },
+      "temperature": {
+        "fahrenheit": 73,
+        "celsius": 23
+      },
+      "precipitation": {
+        "type": null,
+        "percent": null,
+        "amount": {
+          "millimeters": null,
+          "centimeters": null,
+          "inches": null,
+          "feet": null
+        }
+      },
+      "humidityPercent": 64
+    }
+  },
+  "scoring": {
+    "currentQuarter": null,
+    "currentQuarterSecondsRemaining": null,
+    "currentIntermission": null,
+    "awayScoreTotal": 124,
+    "homeScoreTotal": 109,
+    "quarters": [
+      {
+        "quarterNumber": 1,
+        "awayScore": 22,
+        "homeScore": 23,
+        "scoringPlays": [
+          {
+            "quarterSecondsElapsed": 34,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 1,
+            "homeScore": 0,
+            "playDescription": "Antetokounmpo Free Throw 1 of 2 (1 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 34,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 2,
+            "homeScore": 0,
+            "playDescription": "Antetokounmpo Free Throw 2 of 2 (2 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 56,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 3,
+            "awayScore": 2,
+            "homeScore": 3,
+            "playDescription": "Maxey 26' 3PT Step Back Jump Shot (3 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 167,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 4,
+            "homeScore": 3,
+            "playDescription": "Antetokounmpo 1' Cutting Dunk Shot (4 PTS) (Prince 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 203,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 4,
+            "homeScore": 4,
+            "playDescription": "K. Martin Free Throw 2 of 2 (1 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 228,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 4,
+            "homeScore": 6,
+            "playDescription": "Drummond Tip Layup Shot (2 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 249,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 4,
+            "homeScore": 8,
+            "playDescription": "K. Martin Tip Layup Shot (3 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 284,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 5,
+            "homeScore": 8,
+            "playDescription": "Lillard Free Throw 1 of 2 (1 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 284,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 6,
+            "homeScore": 8,
+            "playDescription": "Lillard Free Throw 2 of 2 (2 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 300,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 6,
+            "homeScore": 10,
+            "playDescription": "Oubre Jr. 2' Cutting Layup Shot (2 PTS) (C. Martin 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 312,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 8,
+            "homeScore": 10,
+            "playDescription": "Lillard 7' Step Back Bank Jump Shot (4 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 337,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 10,
+            "homeScore": 10,
+            "playDescription": "Antetokounmpo 17' Pullup Jump Shot (6 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 369,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 10,
+            "homeScore": 12,
+            "playDescription": "Maxey 7' Driving Floating Jump Shot (5 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 413,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 12,
+            "homeScore": 12,
+            "playDescription": "Portis 1' Layup (2 PTS) (Prince 2 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 467,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 3,
+            "awayScore": 12,
+            "homeScore": 15,
+            "playDescription": "Yabusele 3PT Jump Shot (3 PTS) (C. Martin 2 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 515,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 12,
+            "homeScore": 17,
+            "playDescription": "C. Martin 21' Step Back Jump Shot (2 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 535,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 14,
+            "homeScore": 17,
+            "playDescription": "Portis 2' Layup (4 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 577,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 16,
+            "homeScore": 17,
+            "playDescription": "Portis 1' Driving Layup (6 PTS) (Antetokounmpo 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 606,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 19,
+            "homeScore": 17,
+            "playDescription": "Portis 3PT Jump Shot (9 PTS) (Antetokounmpo 2 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 660,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 19,
+            "homeScore": 19,
+            "playDescription": "Lowry 21' Pullup Jump Shot (2 PTS) (Yabusele 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 677,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 21,
+            "homeScore": 19,
+            "playDescription": "Antetokounmpo 1' Driving Layup (8 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 677,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 22,
+            "homeScore": 19,
+            "playDescription": "Antetokounmpo Free Throw 1 of 1 (9 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 689,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 22,
+            "homeScore": 21,
+            "playDescription": "Yabusele 1' Cutting Layup Shot (5 PTS) (Gordon 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 720,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 22,
+            "homeScore": 23,
+            "playDescription": "Maxey 2' Driving Finger Roll Layup (7 PTS)"
+          }
+        ]
+      },
+      {
+        "quarterNumber": 2,
+        "awayScore": 36,
+        "homeScore": 24,
+        "scoringPlays": [
+          {
+            "quarterSecondsElapsed": 58,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 0,
+            "homeScore": 2,
+            "playDescription": "Oubre Jr. 6' Driving Floating Jump Shot (4 PTS) (Yabusele 2 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 83,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 2,
+            "homeScore": 2,
+            "playDescription": "Portis 20' Jump Shot (11 PTS) (Green 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 116,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 5,
+            "homeScore": 2,
+            "playDescription": "Connaughton 26' 3PT Jump Shot (3 PTS) (Antetokounmpo 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 141,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 5,
+            "homeScore": 4,
+            "playDescription": "Oubre Jr. 4' Driving Floating Jump Shot (6 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 165,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 7,
+            "homeScore": 4,
+            "playDescription": "Connaughton 5' Driving Layup (5 PTS) (Antetokounmpo 4 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 197,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 9,
+            "homeScore": 4,
+            "playDescription": "Antetokounmpo 1' Running Dunk (11 PTS) (Connaughton 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 215,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 9,
+            "homeScore": 6,
+            "playDescription": "Maxey 8' Driving Floating Jump Shot (9 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 242,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 9,
+            "homeScore": 8,
+            "playDescription": "Maxey 12' Fadeaway Jumper (11 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 259,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 11,
+            "homeScore": 8,
+            "playDescription": "Connaughton 2' Cutting Dunk Shot (7 PTS) (Portis 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 335,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 11,
+            "homeScore": 10,
+            "playDescription": "Gordon 1' Driving Layup (2 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 353,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 14,
+            "homeScore": 10,
+            "playDescription": "Lillard 3PT Pullup Jump Shot (7 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 362,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 14,
+            "homeScore": 12,
+            "playDescription": "C. Martin 12' Driving Floating Jump Shot (4 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 415,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 16,
+            "homeScore": 12,
+            "playDescription": "Trent Jr. 2' Cutting Layup Shot (2 PTS) (Portis 2 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 415,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 17,
+            "homeScore": 12,
+            "playDescription": "Trent Jr. Free Throw 1 of 1 (3 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 432,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 17,
+            "homeScore": 14,
+            "playDescription": "Oubre Jr. 5' Driving Floating Jump Shot (8 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 444,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 19,
+            "homeScore": 14,
+            "playDescription": "Lillard 1' Driving Reverse Layup (9 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 470,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 21,
+            "homeScore": 14,
+            "playDescription": "Prince 2' Layup (2 PTS) (Portis 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 487,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 23,
+            "homeScore": 14,
+            "playDescription": "Portis 2' Running Layup (13 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 515,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 26,
+            "homeScore": 14,
+            "playDescription": "Prince 25' 3PT Jump Shot (5 PTS) (Lillard 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 535,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 26,
+            "homeScore": 16,
+            "playDescription": "Maxey 9' Driving Floating Jump Shot (13 PTS) (Lowry 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 551,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 29,
+            "homeScore": 16,
+            "playDescription": "Prince 3PT Jump Shot (8 PTS) (Lopez 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 564,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 3,
+            "awayScore": 29,
+            "homeScore": 19,
+            "playDescription": "Lowry 24' 3PT Jump Shot (5 PTS) (Maxey 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 575,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 32,
+            "homeScore": 19,
+            "playDescription": "Lillard 26' 3PT Pullup Jump Shot (12 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 606,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 32,
+            "homeScore": 20,
+            "playDescription": "Maxey Free Throw 1 of 2 (14 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 606,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 32,
+            "homeScore": 21,
+            "playDescription": "Maxey Free Throw 2 of 2 (15 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 623,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 33,
+            "homeScore": 21,
+            "playDescription": "Lopez Free Throw 2 of 2 (1 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 663,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 34,
+            "homeScore": 21,
+            "playDescription": "Lillard Free Throw 1 of 2 (13 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 679,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 34,
+            "homeScore": 22,
+            "playDescription": "Maxey Free Throw 2 of 2 (16 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 687,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 36,
+            "homeScore": 22,
+            "playDescription": "Lillard 1' Driving Finger Roll Layup (15 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 720,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 36,
+            "homeScore": 24,
+            "playDescription": "Yabusele 16' Pullup Jump Shot (7 PTS) (Lowry 2 AST)"
+          }
+        ]
+      },
+      {
+        "quarterNumber": 3,
+        "awayScore": 42,
+        "homeScore": 34,
+        "scoringPlays": [
+          {
+            "quarterSecondsElapsed": 15,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 3,
+            "homeScore": 0,
+            "playDescription": "Prince 25' 3PT Jump Shot (11 PTS) (Antetokounmpo 5 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 34,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 3,
+            "homeScore": 1,
+            "playDescription": "Drummond Free Throw 1 of 2 (3 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 34,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 3,
+            "homeScore": 2,
+            "playDescription": "Drummond Free Throw 2 of 2 (4 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 55,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 3,
+            "homeScore": 3,
+            "playDescription": "C. Martin Free Throw 1 of 2 (5 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 55,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 3,
+            "homeScore": 4,
+            "playDescription": "C. Martin Free Throw 2 of 2 (6 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 71,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 6,
+            "homeScore": 4,
+            "playDescription": "Trent Jr. 25' 3PT Jump Shot (6 PTS) (Antetokounmpo 6 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 82,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 6,
+            "homeScore": 6,
+            "playDescription": "Oubre Jr. 2' Driving Layup (10 PTS) (Maxey 2 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 93,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 9,
+            "homeScore": 6,
+            "playDescription": "Prince 24' 3PT Pullup Jump Shot (14 PTS) (Lillard 2 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 106,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 9,
+            "homeScore": 8,
+            "playDescription": "Drummond 2' Alley Oop Dunk (6 PTS) (Oubre Jr. 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 173,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 12,
+            "homeScore": 8,
+            "playDescription": "Trent Jr. 27' 3PT Step Back Jump Shot (9 PTS) (Lillard 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 183,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 12,
+            "homeScore": 9,
+            "playDescription": "Oubre Jr. Free Throw 1 of 2 (11 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 183,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 12,
+            "homeScore": 10,
+            "playDescription": "Oubre Jr. Free Throw 2 of 2 (12 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 200,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 14,
+            "homeScore": 10,
+            "playDescription": "Antetokounmpo 3' Driving Finger Roll Layup (13 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 236,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 14,
+            "homeScore": 12,
+            "playDescription": "Drummond 1' Putback Layup (8 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 264,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 14,
+            "homeScore": 14,
+            "playDescription": "C. Martin Putback Layup (8 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 280,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 16,
+            "homeScore": 14,
+            "playDescription": "Antetokounmpo 2' Driving Layup (15 PTS) (Lillard 4 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 296,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 16,
+            "homeScore": 16,
+            "playDescription": "C. Martin 2' Driving Finger Roll Layup (10 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 308,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 19,
+            "homeScore": 16,
+            "playDescription": "Lillard 26' 3PT Pullup Jump Shot (18 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 320,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 19,
+            "homeScore": 17,
+            "playDescription": "Oubre Jr. Free Throw 2 of 2 (13 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 361,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 22,
+            "homeScore": 17,
+            "playDescription": "Lillard 27' 3PT Jump Shot (21 PTS) (Lopez 2 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 385,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 24,
+            "homeScore": 17,
+            "playDescription": "Prince 3' Cutting Layup Shot (16 PTS) (Antetokounmpo 7 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 412,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 24,
+            "homeScore": 18,
+            "playDescription": "Oubre Jr. Free Throw 2 of 2 (14 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 433,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 3,
+            "awayScore": 24,
+            "homeScore": 21,
+            "playDescription": "Maxey 27' 3PT Pullup Jump Shot (19 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 447,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 24,
+            "homeScore": 22,
+            "playDescription": "Lowry Free Throw 1 of 2 (6 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 469,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 26,
+            "homeScore": 22,
+            "playDescription": "Lopez Tip Dunk Shot (3 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 475,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 26,
+            "homeScore": 24,
+            "playDescription": "Yabusele 2' Cutting Layup Shot (9 PTS) (Lowry 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 475,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 26,
+            "homeScore": 25,
+            "playDescription": "Yabusele Free Throw 1 of 1 (10 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 509,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 27,
+            "homeScore": 25,
+            "playDescription": "Lillard Free Throw 1 of 2 (22 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 509,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 28,
+            "homeScore": 25,
+            "playDescription": "Lillard Free Throw 2 of 2 (23 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 521,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 31,
+            "homeScore": 25,
+            "playDescription": "Lillard 25' 3PT Pullup Jump Shot (26 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 540,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 31,
+            "homeScore": 26,
+            "playDescription": "Lowry Free Throw 2 of 2 (7 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 549,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 34,
+            "homeScore": 26,
+            "playDescription": "Lillard 28' 3PT Pullup Jump Shot (29 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 566,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 3,
+            "awayScore": 34,
+            "homeScore": 29,
+            "playDescription": "Council IV 29' 3PT Jump Shot (3 PTS) (Yabusele 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 596,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 36,
+            "homeScore": 29,
+            "playDescription": "Wright 2' Driving Finger Roll Layup (2 PTS) (Lopez 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 637,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 36,
+            "homeScore": 31,
+            "playDescription": "Oubre Jr. 6' Fadeaway Jumper (16 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 664,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 37,
+            "homeScore": 31,
+            "playDescription": "Lillard Free Throw Technical (30 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 666,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 40,
+            "homeScore": 31,
+            "playDescription": "Lopez 26' 3PT Jump Shot (6 PTS) (Lillard 5 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 715,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 42,
+            "homeScore": 31,
+            "playDescription": "Antetokounmpo 1' Cutting Layup Shot (17 PTS) (Lopez 4 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 719,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 3,
+            "awayScore": 42,
+            "homeScore": 34,
+            "playDescription": "Lowry 27' 3PT Pullup Jump Shot (10 PTS)"
+          }
+        ]
+      },
+      {
+        "quarterNumber": 4,
+        "awayScore": 24,
+        "homeScore": 28,
+        "scoringPlays": [
+          {
+            "quarterSecondsElapsed": 24,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 1,
+            "homeScore": 0,
+            "playDescription": "Antetokounmpo Free Throw 1 of 2 (18 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 24,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 2,
+            "homeScore": 0,
+            "playDescription": "Antetokounmpo Free Throw 2 of 2 (19 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 48,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 3,
+            "awayScore": 2,
+            "homeScore": 3,
+            "playDescription": "Lowry 25' 3PT Jump Shot (13 PTS) (C. Martin 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 124,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 2,
+            "homeScore": 5,
+            "playDescription": "C. Martin 10' Turnaround Jump Shot (12 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 172,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 2,
+            "homeScore": 7,
+            "playDescription": "Maxey 1' Driving Reverse Layup (21 PTS) (Lowry 4 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 177,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 4,
+            "homeScore": 7,
+            "playDescription": "Antetokounmpo 7' Driving Floating Bank Jump Shot (21 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 177,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 5,
+            "homeScore": 7,
+            "playDescription": "Antetokounmpo Free Throw 1 of 1 (22 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 229,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 5,
+            "homeScore": 9,
+            "playDescription": "Maxey 1' Running Dunk (23 PTS) (Lowry 5 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 258,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 5,
+            "homeScore": 11,
+            "playDescription": "Oubre Jr. 2' Running Reverse Layup (18 PTS) (Maxey 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 268,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 7,
+            "homeScore": 11,
+            "playDescription": "Connaughton 1' Cutting Layup Shot (9 PTS) (Lopez 5 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 348,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 3,
+            "awayScore": 7,
+            "homeScore": 14,
+            "playDescription": "Oubre Jr. 26' 3PT Jump Shot (21 PTS) (Lowry 6 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 367,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 9,
+            "homeScore": 14,
+            "playDescription": "Portis 1' Layup (15 PTS) (Lopez 6 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 367,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 10,
+            "homeScore": 14,
+            "playDescription": "Portis Free Throw 1 of 1 (16 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 416,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 10,
+            "homeScore": 16,
+            "playDescription": "Maxey 2' Driving Finger Roll Layup (25 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 432,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 12,
+            "homeScore": 16,
+            "playDescription": "Lopez Layup (8 PTS) (Prince 3 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 462,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 13,
+            "homeScore": 16,
+            "playDescription": "Antetokounmpo Free Throw 2 of 2 (23 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 488,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 14,
+            "homeScore": 16,
+            "playDescription": "Lopez Free Throw 1 of 2 (9 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 488,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 15,
+            "homeScore": 16,
+            "playDescription": "Lopez Free Throw 2 of 2 (10 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 514,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 15,
+            "homeScore": 18,
+            "playDescription": "Drummond Tip Dunk Shot (10 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 561,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 16,
+            "homeScore": 18,
+            "playDescription": "Antetokounmpo Free Throw 1 of 2 (24 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 561,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 17,
+            "homeScore": 18,
+            "playDescription": "Antetokounmpo Free Throw 2 of 2 (25 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 573,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 17,
+            "homeScore": 20,
+            "playDescription": "McCain 18' Pullup Jump Shot (2 PTS) (Quinones 1 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 608,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 17,
+            "homeScore": 22,
+            "playDescription": "McCain Tip Layup Shot (4 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 617,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 3,
+            "awayScore": 20,
+            "homeScore": 22,
+            "playDescription": "Smith 24' 3PT Jump Shot (3 PTS) (Lillard 6 AST)"
+          },
+          {
+            "quarterSecondsElapsed": 634,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 2,
+            "awayScore": 20,
+            "homeScore": 24,
+            "playDescription": "Bona Putback Layup (2 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 676,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 21,
+            "homeScore": 24,
+            "playDescription": "Trent Jr. Free Throw 1 of 2 (10 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 676,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 1,
+            "awayScore": 22,
+            "homeScore": 24,
+            "playDescription": "Trent Jr. Free Throw 2 of 2 (11 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 683,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 22,
+            "homeScore": 25,
+            "playDescription": "Council IV Free Throw 1 of 2 (4 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 683,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 22,
+            "homeScore": 26,
+            "playDescription": "Council IV Free Throw 2 of 2 (5 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 697,
+            "team": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "scoreChange": 2,
+            "awayScore": 24,
+            "homeScore": 26,
+            "playDescription": "Smith Tip Dunk Shot (5 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 718,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 24,
+            "homeScore": 27,
+            "playDescription": "Council IV Free Throw 1 of 2 (6 PTS)"
+          },
+          {
+            "quarterSecondsElapsed": 718,
+            "team": {
+              "id": 85,
+              "abbreviation": "PHI"
+            },
+            "scoreChange": 1,
+            "awayScore": 24,
+            "homeScore": 28,
+            "playDescription": "Council IV Free Throw 2 of 2 (7 PTS)"
+          }
+        ]
+      }
+    ]
+  },
+  "stats": {
+    "away": {
+      "teamStats": [
+        {
+          "fieldGoals": {
+            "fg2PtAtt": 43,
+            "fg2PtAttPerGame": 43.0,
+            "fg2PtMade": 27,
+            "fg2PtMadePerGame": 27.0,
+            "fg2PtPct": 62.8,
+            "fg3PtAtt": 37,
+            "fg3PtAttPerGame": 37.0,
+            "fg3PtMade": 16,
+            "fg3PtMadePerGame": 16.0,
+            "fg3PtPct": 43.2,
+            "fgAtt": 80,
+            "fgAttPerGame": 80.0,
+            "fgMade": 43,
+            "fgMadePerGame": 43.0,
+            "fgPct": 53.8
+          },
+          "freeThrows": {
+            "ftAtt": 31,
+            "ftAttPerGame": 31.0,
+            "ftMade": 22,
+            "ftMadePerGame": 22.0,
+            "ftPct": 71.0
+          },
+          "rebounds": {
+            "offReb": 8,
+            "offRebPerGame": 8.0,
+            "defReb": 38,
+            "defRebPerGame": 38.0,
+            "reb": 46,
+            "rebPerGame": 46.0
+          },
+          "offense": {
+            "ast": 27,
+            "astPerGame": 27.0,
+            "pts": 124,
+            "ptsPerGame": 124.0
+          },
+          "defense": {
+            "tov": 14,
+            "tovPerGame": 14.0,
+            "stl": 4,
+            "stlPerGame": 4.0,
+            "blk": 9,
+            "blkPerGame": 9.0,
+            "blkAgainst": 2,
+            "blkAgainstPerGame": 2.0,
+            "ptsAgainst": 109,
+            "ptsAgainstPerGame": 109.0
+          },
+          "miscellaneous": {
+            "fouls": 23,
+            "foulsPerGame": 23.0,
+            "foulsDrawn": 0,
+            "foulsDrawnPerGame": 0.0,
+            "foulPers": 23,
+            "foulPersPerGame": 23.0,
+            "foulPersDrawn": 0,
+            "foulPersDrawnPerGame": 0.0,
+            "foulTech": 0,
+            "foulTechPerGame": 0.0,
+            "foulTechDrawn": 0,
+            "foulTechDrawnPerGame": 0.0,
+            "foulFlag1": 0,
+            "foulFlag1PerGame": 0.0,
+            "foulFlag1Drawn": 0,
+            "foulFlag1DrawnPerGame": 0.0,
+            "foulFlag2": 0,
+            "foulFlag2PerGame": 0.0,
+            "foulFlag2Drawn": 0,
+            "foulFlag2DrawnPerGame": 0.0,
+            "ejections": 0,
+            "plusMinus": 15,
+            "plusMinusPerGame": 15.0
+          },
+          "standings": {
+            "wins": 1,
+            "losses": 0,
+            "winPct": 1.0,
+            "gamesBack": 0.0
+          }
+        }
+      ],
+      "players": [
+        {
+          "player": {
+            "id": 9325,
+            "firstName": "Giannis",
+            "lastName": "Antetokounmpo",
+            "position": "SF",
+            "jerseyNumber": 34
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 11,
+                "fg2PtAttPerGame": 11.0,
+                "fg2PtMade": 8,
+                "fg2PtMadePerGame": 8.0,
+                "fg2PtPct": 72.7,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 11,
+                "fgAttPerGame": 11.0,
+                "fgMade": 8,
+                "fgMadePerGame": 8.0,
+                "fgPct": 72.7
+              },
+              "freeThrows": {
+                "ftAtt": 16,
+                "ftAttPerGame": 16.0,
+                "ftMade": 9,
+                "ftMadePerGame": 9.0,
+                "ftPct": 56.2
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 13,
+                "defRebPerGame": 13.0,
+                "reb": 14,
+                "rebPerGame": 14.0
+              },
+              "offense": {
+                "ast": 7,
+                "astPerGame": 7.0,
+                "pts": 25,
+                "ptsPerGame": 25.0
+              },
+              "defense": {
+                "tov": 3,
+                "tovPerGame": 3.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 1,
+                "blkPerGame": 1.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 4,
+                "foulsPerGame": 4.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 4,
+                "foulPersPerGame": 4.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 7,
+                "plusMinusPerGame": 7.0,
+                "minSeconds": 1872,
+                "minSecondsPerGame": 1872.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 39835,
+            "firstName": "MarJon",
+            "lastName": "Beauchamp",
+            "position": "SF",
+            "jerseyNumber": 3
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 0,
+                "fg2PtAttPerGame": 0.0,
+                "fg2PtMade": 0,
+                "fg2PtMadePerGame": 0.0,
+                "fg2PtPct": 0.0,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 0,
+                "fgAttPerGame": 0.0,
+                "fgMade": 0,
+                "fgMadePerGame": 0.0,
+                "fgPct": 0.0
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 0,
+                "rebPerGame": 0.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 0,
+                "ptsPerGame": 0.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 0,
+                "foulsPerGame": 0.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 0,
+                "foulPersPerGame": 0.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 0,
+                "plusMinusPerGame": 0.0,
+                "minSeconds": 37,
+                "minSecondsPerGame": 37.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9456,
+            "firstName": "Pat",
+            "lastName": "Connaughton",
+            "position": "SG",
+            "jerseyNumber": 24
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 4,
+                "fg2PtAttPerGame": 4.0,
+                "fg2PtMade": 3,
+                "fg2PtMadePerGame": 3.0,
+                "fg2PtPct": 75.0,
+                "fg3PtAtt": 5,
+                "fg3PtAttPerGame": 5.0,
+                "fg3PtMade": 1,
+                "fg3PtMadePerGame": 1.0,
+                "fg3PtPct": 20.0,
+                "fgAtt": 9,
+                "fgAttPerGame": 9.0,
+                "fgMade": 4,
+                "fgMadePerGame": 4.0,
+                "fgPct": 44.4
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 3,
+                "defRebPerGame": 3.0,
+                "reb": 4,
+                "rebPerGame": 4.0
+              },
+              "offense": {
+                "ast": 1,
+                "astPerGame": 1.0,
+                "pts": 9,
+                "ptsPerGame": 9.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 1,
+                "blkPerGame": 1.0,
+                "blkAgainst": 1,
+                "blkAgainstPerGame": 1.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 5,
+                "plusMinusPerGame": 5.0,
+                "minSeconds": 1254,
+                "minSecondsPerGame": 1254.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 39849,
+            "firstName": "A.J.",
+            "lastName": "Green",
+            "position": "SG",
+            "jerseyNumber": 20
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 0,
+                "fg2PtAttPerGame": 0.0,
+                "fg2PtMade": 0,
+                "fg2PtMadePerGame": 0.0,
+                "fg2PtPct": 0.0,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 0,
+                "fgAttPerGame": 0.0,
+                "fgMade": 0,
+                "fgMadePerGame": 0.0,
+                "fgPct": 0.0
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 0,
+                "rebPerGame": 0.0
+              },
+              "offense": {
+                "ast": 1,
+                "astPerGame": 1.0,
+                "pts": 0,
+                "ptsPerGame": 0.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 1,
+                "stlPerGame": 1.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 0,
+                "foulsPerGame": 0.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 0,
+                "foulPersPerGame": 0.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 4,
+                "plusMinusPerGame": 4.0,
+                "minSeconds": 244,
+                "minSecondsPerGame": 244.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 111232,
+            "firstName": "Andre",
+            "lastName": "Jackson Jr.",
+            "position": "SG",
+            "jerseyNumber": 44
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 0,
+                "fg2PtAttPerGame": 0.0,
+                "fg2PtMade": 0,
+                "fg2PtMadePerGame": 0.0,
+                "fg2PtPct": 0.0,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 0,
+                "fgAttPerGame": 0.0,
+                "fgMade": 0,
+                "fgMadePerGame": 0.0,
+                "fgPct": 0.0
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 0,
+                "rebPerGame": 0.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 0,
+                "ptsPerGame": 0.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 0,
+                "foulsPerGame": 0.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 0,
+                "foulPersPerGame": 0.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 0,
+                "plusMinusPerGame": 0.0,
+                "minSeconds": 66,
+                "minSecondsPerGame": 66.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 134172,
+            "firstName": "AJ",
+            "lastName": "Johnson",
+            "position": "PG",
+            "jerseyNumber": 7
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 1,
+                "fg2PtAttPerGame": 1.0,
+                "fg2PtMade": 0,
+                "fg2PtMadePerGame": 0.0,
+                "fg2PtPct": 0.0,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 1,
+                "fgAttPerGame": 1.0,
+                "fgMade": 0,
+                "fgMadePerGame": 0.0,
+                "fgPct": 0.0
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 0,
+                "rebPerGame": 0.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 0,
+                "ptsPerGame": 0.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 0,
+                "foulsPerGame": 0.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 0,
+                "foulPersPerGame": 0.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 0,
+                "plusMinusPerGame": 0.0,
+                "minSeconds": 66,
+                "minSecondsPerGame": 66.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9445,
+            "firstName": "Damian",
+            "lastName": "Lillard",
+            "position": "PG",
+            "jerseyNumber": 0
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 7,
+                "fg2PtAttPerGame": 7.0,
+                "fg2PtMade": 3,
+                "fg2PtMadePerGame": 3.0,
+                "fg2PtPct": 42.9,
+                "fg3PtAtt": 12,
+                "fg3PtAttPerGame": 12.0,
+                "fg3PtMade": 6,
+                "fg3PtMadePerGame": 6.0,
+                "fg3PtPct": 50.0,
+                "fgAtt": 19,
+                "fgAttPerGame": 19.0,
+                "fgMade": 9,
+                "fgMadePerGame": 9.0,
+                "fgPct": 47.4
+              },
+              "freeThrows": {
+                "ftAtt": 7,
+                "ftAttPerGame": 7.0,
+                "ftMade": 6,
+                "ftMadePerGame": 6.0,
+                "ftPct": 85.7
+              },
+              "rebounds": {
+                "offReb": 3,
+                "offRebPerGame": 3.0,
+                "defReb": 6,
+                "defRebPerGame": 6.0,
+                "reb": 9,
+                "rebPerGame": 9.0
+              },
+              "offense": {
+                "ast": 6,
+                "astPerGame": 6.0,
+                "pts": 30,
+                "ptsPerGame": 30.0
+              },
+              "defense": {
+                "tov": 3,
+                "tovPerGame": 3.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 1,
+                "blkAgainstPerGame": 1.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 19,
+                "plusMinusPerGame": 19.0,
+                "minSeconds": 2298,
+                "minSecondsPerGame": 2298.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9118,
+            "firstName": "Brook",
+            "lastName": "Lopez",
+            "position": "C",
+            "jerseyNumber": 11
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 5,
+                "fg2PtAttPerGame": 5.0,
+                "fg2PtMade": 2,
+                "fg2PtMadePerGame": 2.0,
+                "fg2PtPct": 40.0,
+                "fg3PtAtt": 6,
+                "fg3PtAttPerGame": 6.0,
+                "fg3PtMade": 1,
+                "fg3PtMadePerGame": 1.0,
+                "fg3PtPct": 16.7,
+                "fgAtt": 11,
+                "fgAttPerGame": 11.0,
+                "fgMade": 3,
+                "fgMadePerGame": 3.0,
+                "fgPct": 27.3
+              },
+              "freeThrows": {
+                "ftAtt": 4,
+                "ftAttPerGame": 4.0,
+                "ftMade": 3,
+                "ftMadePerGame": 3.0,
+                "ftPct": 75.0
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 7,
+                "defRebPerGame": 7.0,
+                "reb": 8,
+                "rebPerGame": 8.0
+              },
+              "offense": {
+                "ast": 6,
+                "astPerGame": 6.0,
+                "pts": 10,
+                "ptsPerGame": 10.0
+              },
+              "defense": {
+                "tov": 4,
+                "tovPerGame": 4.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 6,
+                "blkPerGame": 6.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 4,
+                "foulsPerGame": 4.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 4,
+                "foulPersPerGame": 4.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 18,
+                "plusMinusPerGame": 18.0,
+                "minSeconds": 2132,
+                "minSecondsPerGame": 2132.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9151,
+            "firstName": "Bobby",
+            "lastName": "Portis",
+            "position": "PF",
+            "jerseyNumber": 9
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 9,
+                "fg2PtAttPerGame": 9.0,
+                "fg2PtMade": 6,
+                "fg2PtMadePerGame": 6.0,
+                "fg2PtPct": 66.7,
+                "fg3PtAtt": 1,
+                "fg3PtAttPerGame": 1.0,
+                "fg3PtMade": 1,
+                "fg3PtMadePerGame": 1.0,
+                "fg3PtPct": 100.0,
+                "fgAtt": 10,
+                "fgAttPerGame": 10.0,
+                "fgMade": 7,
+                "fgMadePerGame": 7.0,
+                "fgPct": 70.0
+              },
+              "freeThrows": {
+                "ftAtt": 1,
+                "ftAttPerGame": 1.0,
+                "ftMade": 1,
+                "ftMadePerGame": 1.0,
+                "ftPct": 100.0
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 2,
+                "defRebPerGame": 2.0,
+                "reb": 3,
+                "rebPerGame": 3.0
+              },
+              "offense": {
+                "ast": 3,
+                "astPerGame": 3.0,
+                "pts": 16,
+                "ptsPerGame": 16.0
+              },
+              "defense": {
+                "tov": 4,
+                "tovPerGame": 4.0,
+                "stl": 2,
+                "stlPerGame": 2.0,
+                "blk": 1,
+                "blkPerGame": 1.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 4,
+                "foulsPerGame": 4.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 4,
+                "foulPersPerGame": 4.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 8,
+                "plusMinusPerGame": 8.0,
+                "minSeconds": 1551,
+                "minSecondsPerGame": 1551.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 10155,
+            "firstName": "Taurean",
+            "lastName": "Prince",
+            "position": "SF",
+            "jerseyNumber": 12
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 2,
+                "fg2PtAttPerGame": 2.0,
+                "fg2PtMade": 2,
+                "fg2PtMadePerGame": 2.0,
+                "fg2PtPct": 100.0,
+                "fg3PtAtt": 5,
+                "fg3PtAttPerGame": 5.0,
+                "fg3PtMade": 4,
+                "fg3PtMadePerGame": 4.0,
+                "fg3PtPct": 80.0,
+                "fgAtt": 7,
+                "fgAttPerGame": 7.0,
+                "fgMade": 6,
+                "fgMadePerGame": 6.0,
+                "fgPct": 85.7
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 5,
+                "defRebPerGame": 5.0,
+                "reb": 5,
+                "rebPerGame": 5.0
+              },
+              "offense": {
+                "ast": 3,
+                "astPerGame": 3.0,
+                "pts": 16,
+                "ptsPerGame": 16.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 2,
+                "foulsPerGame": 2.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 2,
+                "foulPersPerGame": 2.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 2,
+                "plusMinusPerGame": 2.0,
+                "minSeconds": 1824,
+                "minSecondsPerGame": 1824.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 38954,
+            "firstName": "Ryan",
+            "lastName": "Rollins",
+            "position": "SG",
+            "jerseyNumber": 55
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 0,
+                "fg2PtAttPerGame": 0.0,
+                "fg2PtMade": 0,
+                "fg2PtMadePerGame": 0.0,
+                "fg2PtPct": 0.0,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 0,
+                "fgAttPerGame": 0.0,
+                "fgMade": 0,
+                "fgMadePerGame": 0.0,
+                "fgPct": 0.0
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 0,
+                "rebPerGame": 0.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 0,
+                "ptsPerGame": 0.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 0,
+                "plusMinusPerGame": 0.0,
+                "minSeconds": 66,
+                "minSecondsPerGame": 66.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 134175,
+            "firstName": "Tyler",
+            "lastName": "Smith",
+            "position": "PF",
+            "jerseyNumber": 15
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 1,
+                "fg2PtAttPerGame": 1.0,
+                "fg2PtMade": 1,
+                "fg2PtMadePerGame": 1.0,
+                "fg2PtPct": 100.0,
+                "fg3PtAtt": 2,
+                "fg3PtAttPerGame": 2.0,
+                "fg3PtMade": 1,
+                "fg3PtMadePerGame": 1.0,
+                "fg3PtPct": 50.0,
+                "fgAtt": 3,
+                "fgAttPerGame": 3.0,
+                "fgMade": 2,
+                "fgMadePerGame": 2.0,
+                "fgPct": 66.7
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 1,
+                "rebPerGame": 1.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 5,
+                "ptsPerGame": 5.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": -1,
+                "plusMinusPerGame": -1.0,
+                "minSeconds": 133,
+                "minSecondsPerGame": 133.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 15355,
+            "firstName": "Gary",
+            "lastName": "Trent Jr.",
+            "position": "SG",
+            "jerseyNumber": 33
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 1,
+                "fg2PtAttPerGame": 1.0,
+                "fg2PtMade": 1,
+                "fg2PtMadePerGame": 1.0,
+                "fg2PtPct": 100.0,
+                "fg3PtAtt": 5,
+                "fg3PtAttPerGame": 5.0,
+                "fg3PtMade": 2,
+                "fg3PtMadePerGame": 2.0,
+                "fg3PtPct": 40.0,
+                "fgAtt": 6,
+                "fgAttPerGame": 6.0,
+                "fgMade": 3,
+                "fgMadePerGame": 3.0,
+                "fgPct": 50.0
+              },
+              "freeThrows": {
+                "ftAtt": 3,
+                "ftAttPerGame": 3.0,
+                "ftMade": 3,
+                "ftMadePerGame": 3.0,
+                "ftPct": 100.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 2,
+                "defRebPerGame": 2.0,
+                "reb": 2,
+                "rebPerGame": 2.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 11,
+                "ptsPerGame": 11.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 5,
+                "foulsPerGame": 5.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 5,
+                "foulPersPerGame": 5.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 11,
+                "plusMinusPerGame": 11.0,
+                "minSeconds": 2067,
+                "minSecondsPerGame": 2067.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9495,
+            "firstName": "Delon",
+            "lastName": "Wright",
+            "position": "SG",
+            "jerseyNumber": 4
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 2,
+                "fg2PtAttPerGame": 2.0,
+                "fg2PtMade": 1,
+                "fg2PtMadePerGame": 1.0,
+                "fg2PtPct": 50.0,
+                "fg3PtAtt": 1,
+                "fg3PtAttPerGame": 1.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 3,
+                "fgAttPerGame": 3.0,
+                "fgMade": 1,
+                "fgMadePerGame": 1.0,
+                "fgPct": 33.3
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 0,
+                "rebPerGame": 0.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 2,
+                "ptsPerGame": 2.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 1,
+                "stlPerGame": 1.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 0,
+                "foulsPerGame": 0.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 0,
+                "foulPersPerGame": 0.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 2,
+                "plusMinusPerGame": 2.0,
+                "minSeconds": 789,
+                "minSecondsPerGame": 789.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "home": {
+      "teamStats": [
+        {
+          "fieldGoals": {
+            "fg2PtAtt": 67,
+            "fg2PtAttPerGame": 67.0,
+            "fg2PtMade": 33,
+            "fg2PtMadePerGame": 33.0,
+            "fg2PtPct": 49.2,
+            "fg3PtAtt": 31,
+            "fg3PtAttPerGame": 31.0,
+            "fg3PtMade": 8,
+            "fg3PtMadePerGame": 8.0,
+            "fg3PtPct": 25.8,
+            "fgAtt": 98,
+            "fgAttPerGame": 98.0,
+            "fgMade": 41,
+            "fgMadePerGame": 41.0,
+            "fgPct": 41.8
+          },
+          "freeThrows": {
+            "ftAtt": 27,
+            "ftAttPerGame": 27.0,
+            "ftMade": 19,
+            "ftMadePerGame": 19.0,
+            "ftPct": 70.4
+          },
+          "rebounds": {
+            "offReb": 17,
+            "offRebPerGame": 17.0,
+            "defReb": 32,
+            "defRebPerGame": 32.0,
+            "reb": 49,
+            "rebPerGame": 49.0
+          },
+          "offense": {
+            "ast": 18,
+            "astPerGame": 18.0,
+            "pts": 109,
+            "ptsPerGame": 109.0
+          },
+          "defense": {
+            "tov": 10,
+            "tovPerGame": 10.0,
+            "stl": 4,
+            "stlPerGame": 4.0,
+            "blk": 2,
+            "blkPerGame": 2.0,
+            "blkAgainst": 9,
+            "blkAgainstPerGame": 9.0,
+            "ptsAgainst": 124,
+            "ptsAgainstPerGame": 124.0
+          },
+          "miscellaneous": {
+            "fouls": 29,
+            "foulsPerGame": 29.0,
+            "foulsDrawn": 0,
+            "foulsDrawnPerGame": 0.0,
+            "foulPers": 28,
+            "foulPersPerGame": 28.0,
+            "foulPersDrawn": 0,
+            "foulPersDrawnPerGame": 0.0,
+            "foulTech": 0,
+            "foulTechPerGame": 0.0,
+            "foulTechDrawn": 0,
+            "foulTechDrawnPerGame": 0.0,
+            "foulFlag1": 0,
+            "foulFlag1PerGame": 0.0,
+            "foulFlag1Drawn": 0,
+            "foulFlag1DrawnPerGame": 0.0,
+            "foulFlag2": 0,
+            "foulFlag2PerGame": 0.0,
+            "foulFlag2Drawn": 0,
+            "foulFlag2DrawnPerGame": 0.0,
+            "ejections": 0,
+            "plusMinus": -15,
+            "plusMinusPerGame": -15.0
+          },
+          "standings": {
+            "wins": 0,
+            "losses": 1,
+            "winPct": 0.0,
+            "gamesBack": 0.0
+          }
+        }
+      ],
+      "players": [
+        {
+          "player": {
+            "id": 134193,
+            "firstName": "Adem",
+            "lastName": "Bona",
+            "position": "C",
+            "jerseyNumber": 30
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 1,
+                "fg2PtAttPerGame": 1.0,
+                "fg2PtMade": 1,
+                "fg2PtMadePerGame": 1.0,
+                "fg2PtPct": 100.0,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 1,
+                "fgAttPerGame": 1.0,
+                "fgMade": 1,
+                "fgMadePerGame": 1.0,
+                "fgPct": 100.0
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 1,
+                "rebPerGame": 1.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 2,
+                "ptsPerGame": 2.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 3,
+                "plusMinusPerGame": 3.0,
+                "minSeconds": 159,
+                "minSecondsPerGame": 159.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 111265,
+            "firstName": "Ricky",
+            "lastName": "Council IV",
+            "position": "SG",
+            "jerseyNumber": 14
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 1,
+                "fg2PtAttPerGame": 1.0,
+                "fg2PtMade": 0,
+                "fg2PtMadePerGame": 0.0,
+                "fg2PtPct": 0.0,
+                "fg3PtAtt": 1,
+                "fg3PtAttPerGame": 1.0,
+                "fg3PtMade": 1,
+                "fg3PtMadePerGame": 1.0,
+                "fg3PtPct": 100.0,
+                "fgAtt": 2,
+                "fgAttPerGame": 2.0,
+                "fgMade": 1,
+                "fgMadePerGame": 1.0,
+                "fgPct": 50.0
+              },
+              "freeThrows": {
+                "ftAtt": 4,
+                "ftAttPerGame": 4.0,
+                "ftMade": 4,
+                "ftMadePerGame": 4.0,
+                "ftPct": 100.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 1,
+                "defRebPerGame": 1.0,
+                "reb": 1,
+                "rebPerGame": 1.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 7,
+                "ptsPerGame": 7.0
+              },
+              "defense": {
+                "tov": 1,
+                "tovPerGame": 1.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 1,
+                "plusMinusPerGame": 1.0,
+                "minSeconds": 540,
+                "minSecondsPerGame": 540.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 28554,
+            "firstName": "Jeff",
+            "lastName": "Dowtin",
+            "position": "PG",
+            "jerseyNumber": 11
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 0,
+                "fg2PtAttPerGame": 0.0,
+                "fg2PtMade": 0,
+                "fg2PtMadePerGame": 0.0,
+                "fg2PtPct": 0.0,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 0,
+                "fgAttPerGame": 0.0,
+                "fgMade": 0,
+                "fgMadePerGame": 0.0,
+                "fgPct": 0.0
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 0,
+                "rebPerGame": 0.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 0,
+                "ptsPerGame": 0.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 0,
+                "foulsPerGame": 0.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 0,
+                "foulPersPerGame": 0.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 3,
+                "plusMinusPerGame": 3.0,
+                "minSeconds": 159,
+                "minSecondsPerGame": 159.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9202,
+            "firstName": "Andre",
+            "lastName": "Drummond",
+            "position": "C",
+            "jerseyNumber": 5
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 7,
+                "fg2PtAttPerGame": 7.0,
+                "fg2PtMade": 4,
+                "fg2PtMadePerGame": 4.0,
+                "fg2PtPct": 57.1,
+                "fg3PtAtt": 1,
+                "fg3PtAttPerGame": 1.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 8,
+                "fgAttPerGame": 8.0,
+                "fgMade": 4,
+                "fgMadePerGame": 4.0,
+                "fgPct": 50.0
+              },
+              "freeThrows": {
+                "ftAtt": 2,
+                "ftAttPerGame": 2.0,
+                "ftMade": 2,
+                "ftMadePerGame": 2.0,
+                "ftPct": 100.0
+              },
+              "rebounds": {
+                "offReb": 5,
+                "offRebPerGame": 5.0,
+                "defReb": 8,
+                "defRebPerGame": 8.0,
+                "reb": 13,
+                "rebPerGame": 13.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 10,
+                "ptsPerGame": 10.0
+              },
+              "defense": {
+                "tov": 1,
+                "tovPerGame": 1.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 6,
+                "foulsPerGame": 6.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 5,
+                "foulPersPerGame": 5.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": -6,
+                "plusMinusPerGame": -6.0,
+                "minSeconds": 1503,
+                "minSecondsPerGame": 1503.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9352,
+            "firstName": "Eric",
+            "lastName": "Gordon",
+            "position": "SG",
+            "jerseyNumber": 23
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 4,
+                "fg2PtAttPerGame": 4.0,
+                "fg2PtMade": 1,
+                "fg2PtMadePerGame": 1.0,
+                "fg2PtPct": 25.0,
+                "fg3PtAtt": 2,
+                "fg3PtAttPerGame": 2.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 6,
+                "fgAttPerGame": 6.0,
+                "fgMade": 1,
+                "fgMadePerGame": 1.0,
+                "fgPct": 16.7
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 1,
+                "defRebPerGame": 1.0,
+                "reb": 1,
+                "rebPerGame": 1.0
+              },
+              "offense": {
+                "ast": 1,
+                "astPerGame": 1.0,
+                "pts": 2,
+                "ptsPerGame": 2.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 3,
+                "blkAgainstPerGame": 3.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 6,
+                "plusMinusPerGame": 6.0,
+                "minSeconds": 1349,
+                "minSecondsPerGame": 1349.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9490,
+            "firstName": "Kyle",
+            "lastName": "Lowry",
+            "position": "PG",
+            "jerseyNumber": 7
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 2,
+                "fg2PtAttPerGame": 2.0,
+                "fg2PtMade": 1,
+                "fg2PtMadePerGame": 1.0,
+                "fg2PtPct": 50.0,
+                "fg3PtAtt": 5,
+                "fg3PtAttPerGame": 5.0,
+                "fg3PtMade": 3,
+                "fg3PtMadePerGame": 3.0,
+                "fg3PtPct": 60.0,
+                "fgAtt": 7,
+                "fgAttPerGame": 7.0,
+                "fgMade": 4,
+                "fgMadePerGame": 4.0,
+                "fgPct": 57.1
+              },
+              "freeThrows": {
+                "ftAtt": 4,
+                "ftAttPerGame": 4.0,
+                "ftMade": 2,
+                "ftMadePerGame": 2.0,
+                "ftPct": 50.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 4,
+                "defRebPerGame": 4.0,
+                "reb": 4,
+                "rebPerGame": 4.0
+              },
+              "offense": {
+                "ast": 6,
+                "astPerGame": 6.0,
+                "pts": 13,
+                "ptsPerGame": 13.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": -11,
+                "plusMinusPerGame": -11.0,
+                "minSeconds": 1452,
+                "minSecondsPerGame": 1452.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 17312,
+            "firstName": "Caleb",
+            "lastName": "Martin",
+            "position": "SF",
+            "jerseyNumber": 16
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 9,
+                "fg2PtAttPerGame": 9.0,
+                "fg2PtMade": 5,
+                "fg2PtMadePerGame": 5.0,
+                "fg2PtPct": 55.6,
+                "fg3PtAtt": 1,
+                "fg3PtAttPerGame": 1.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 10,
+                "fgAttPerGame": 10.0,
+                "fgMade": 5,
+                "fgMadePerGame": 5.0,
+                "fgPct": 50.0
+              },
+              "freeThrows": {
+                "ftAtt": 2,
+                "ftAttPerGame": 2.0,
+                "ftMade": 2,
+                "ftMadePerGame": 2.0,
+                "ftPct": 100.0
+              },
+              "rebounds": {
+                "offReb": 4,
+                "offRebPerGame": 4.0,
+                "defReb": 5,
+                "defRebPerGame": 5.0,
+                "reb": 9,
+                "rebPerGame": 9.0
+              },
+              "offense": {
+                "ast": 3,
+                "astPerGame": 3.0,
+                "pts": 12,
+                "ptsPerGame": 12.0
+              },
+              "defense": {
+                "tov": 3,
+                "tovPerGame": 3.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 1,
+                "blkPerGame": 1.0,
+                "blkAgainst": 1,
+                "blkAgainstPerGame": 1.0
+              },
+              "miscellaneous": {
+                "fouls": 4,
+                "foulsPerGame": 4.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 4,
+                "foulPersPerGame": 4.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": -20,
+                "plusMinusPerGame": -20.0,
+                "minSeconds": 2247,
+                "minSecondsPerGame": 2247.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 27624,
+            "firstName": "Kenyon",
+            "lastName": "Martin Jr.",
+            "position": "SF",
+            "jerseyNumber": 1
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 3,
+                "fg2PtAttPerGame": 3.0,
+                "fg2PtMade": 1,
+                "fg2PtMadePerGame": 1.0,
+                "fg2PtPct": 33.3,
+                "fg3PtAtt": 0,
+                "fg3PtAttPerGame": 0.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 3,
+                "fgAttPerGame": 3.0,
+                "fgMade": 1,
+                "fgMadePerGame": 1.0,
+                "fgPct": 33.3
+              },
+              "freeThrows": {
+                "ftAtt": 2,
+                "ftAttPerGame": 2.0,
+                "ftMade": 1,
+                "ftMadePerGame": 1.0,
+                "ftPct": 50.0
+              },
+              "rebounds": {
+                "offReb": 2,
+                "offRebPerGame": 2.0,
+                "defReb": 3,
+                "defRebPerGame": 3.0,
+                "reb": 5,
+                "rebPerGame": 5.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 3,
+                "ptsPerGame": 3.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 3,
+                "foulsPerGame": 3.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 3,
+                "foulPersPerGame": 3.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": -12,
+                "plusMinusPerGame": -12.0,
+                "minSeconds": 904,
+                "minSecondsPerGame": 904.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 27450,
+            "firstName": "Tyrese",
+            "lastName": "Maxey",
+            "position": "PG",
+            "jerseyNumber": 0
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 22,
+                "fg2PtAttPerGame": 22.0,
+                "fg2PtMade": 8,
+                "fg2PtMadePerGame": 8.0,
+                "fg2PtPct": 36.4,
+                "fg3PtAtt": 9,
+                "fg3PtAttPerGame": 9.0,
+                "fg3PtMade": 2,
+                "fg3PtMadePerGame": 2.0,
+                "fg3PtPct": 22.2,
+                "fgAtt": 31,
+                "fgAttPerGame": 31.0,
+                "fgMade": 10,
+                "fgMadePerGame": 10.0,
+                "fgPct": 32.3
+              },
+              "freeThrows": {
+                "ftAtt": 4,
+                "ftAttPerGame": 4.0,
+                "ftMade": 3,
+                "ftMadePerGame": 3.0,
+                "ftPct": 75.0
+              },
+              "rebounds": {
+                "offReb": 0,
+                "offRebPerGame": 0.0,
+                "defReb": 6,
+                "defRebPerGame": 6.0,
+                "reb": 6,
+                "rebPerGame": 6.0
+              },
+              "offense": {
+                "ast": 3,
+                "astPerGame": 3.0,
+                "pts": 25,
+                "ptsPerGame": 25.0
+              },
+              "defense": {
+                "tov": 1,
+                "tovPerGame": 1.0,
+                "stl": 1,
+                "stlPerGame": 1.0,
+                "blk": 1,
+                "blkPerGame": 1.0,
+                "blkAgainst": 2,
+                "blkAgainstPerGame": 2.0
+              },
+              "miscellaneous": {
+                "fouls": 1,
+                "foulsPerGame": 1.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 1,
+                "foulPersPerGame": 1.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": -13,
+                "plusMinusPerGame": -13.0,
+                "minSeconds": 2340,
+                "minSecondsPerGame": 2340.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 144620,
+            "firstName": "Jared",
+            "lastName": "McCain",
+            "position": "SG",
+            "jerseyNumber": 20
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 2,
+                "fg2PtAttPerGame": 2.0,
+                "fg2PtMade": 2,
+                "fg2PtMadePerGame": 2.0,
+                "fg2PtPct": 100.0,
+                "fg3PtAtt": 1,
+                "fg3PtAttPerGame": 1.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 3,
+                "fgAttPerGame": 3.0,
+                "fgMade": 2,
+                "fgMadePerGame": 2.0,
+                "fgPct": 66.7
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 1,
+                "defRebPerGame": 1.0,
+                "reb": 2,
+                "rebPerGame": 2.0
+              },
+              "offense": {
+                "ast": 0,
+                "astPerGame": 0.0,
+                "pts": 4,
+                "ptsPerGame": 4.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 0,
+                "foulsPerGame": 0.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 0,
+                "foulPersPerGame": 0.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 3,
+                "plusMinusPerGame": 3.0,
+                "minSeconds": 232,
+                "minSecondsPerGame": 232.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 9526,
+            "firstName": "Kelly",
+            "lastName": "Oubre Jr.",
+            "position": "SF",
+            "jerseyNumber": 9
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 12,
+                "fg2PtAttPerGame": 12.0,
+                "fg2PtMade": 7,
+                "fg2PtMadePerGame": 7.0,
+                "fg2PtPct": 58.3,
+                "fg3PtAtt": 6,
+                "fg3PtAttPerGame": 6.0,
+                "fg3PtMade": 1,
+                "fg3PtMadePerGame": 1.0,
+                "fg3PtPct": 16.7,
+                "fgAtt": 18,
+                "fgAttPerGame": 18.0,
+                "fgMade": 8,
+                "fgMadePerGame": 8.0,
+                "fgPct": 44.4
+              },
+              "freeThrows": {
+                "ftAtt": 6,
+                "ftAttPerGame": 6.0,
+                "ftMade": 4,
+                "ftMadePerGame": 4.0,
+                "ftPct": 66.7
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 1,
+                "defRebPerGame": 1.0,
+                "reb": 2,
+                "rebPerGame": 2.0
+              },
+              "offense": {
+                "ast": 1,
+                "astPerGame": 1.0,
+                "pts": 21,
+                "ptsPerGame": 21.0
+              },
+              "defense": {
+                "tov": 1,
+                "tovPerGame": 1.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 3,
+                "blkAgainstPerGame": 3.0
+              },
+              "miscellaneous": {
+                "fouls": 5,
+                "foulsPerGame": 5.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 5,
+                "foulPersPerGame": 5.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": -20,
+                "plusMinusPerGame": -20.0,
+                "minSeconds": 1825,
+                "minSecondsPerGame": 1825.0,
+                "gamesStarted": 1
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 40857,
+            "firstName": "Lester",
+            "lastName": "Quinones",
+            "position": "SG",
+            "jerseyNumber": 25
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 0,
+                "fg2PtAttPerGame": 0.0,
+                "fg2PtMade": 0,
+                "fg2PtMadePerGame": 0.0,
+                "fg2PtPct": 0.0,
+                "fg3PtAtt": 1,
+                "fg3PtAttPerGame": 1.0,
+                "fg3PtMade": 0,
+                "fg3PtMadePerGame": 0.0,
+                "fg3PtPct": 0.0,
+                "fgAtt": 1,
+                "fgAttPerGame": 1.0,
+                "fgMade": 0,
+                "fgMadePerGame": 0.0,
+                "fgPct": 0.0
+              },
+              "freeThrows": {
+                "ftAtt": 0,
+                "ftAttPerGame": 0.0,
+                "ftMade": 0,
+                "ftMadePerGame": 0.0,
+                "ftPct": 0.0
+              },
+              "rebounds": {
+                "offReb": 1,
+                "offRebPerGame": 1.0,
+                "defReb": 0,
+                "defRebPerGame": 0.0,
+                "reb": 1,
+                "rebPerGame": 1.0
+              },
+              "offense": {
+                "ast": 1,
+                "astPerGame": 1.0,
+                "pts": 0,
+                "ptsPerGame": 0.0
+              },
+              "defense": {
+                "tov": 0,
+                "tovPerGame": 0.0,
+                "stl": 0,
+                "stlPerGame": 0.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 0,
+                "foulsPerGame": 0.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 0,
+                "foulPersPerGame": 0.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": 3,
+                "plusMinusPerGame": 3.0,
+                "minSeconds": 159,
+                "minSecondsPerGame": 159.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        },
+        {
+          "player": {
+            "id": 13778,
+            "firstName": "Guerschon",
+            "lastName": "Yabusele",
+            "position": "PF",
+            "jerseyNumber": 28
+          },
+          "playerStats": [
+            {
+              "fieldGoals": {
+                "fg2PtAtt": 4,
+                "fg2PtAttPerGame": 4.0,
+                "fg2PtMade": 3,
+                "fg2PtMadePerGame": 3.0,
+                "fg2PtPct": 75.0,
+                "fg3PtAtt": 4,
+                "fg3PtAttPerGame": 4.0,
+                "fg3PtMade": 1,
+                "fg3PtMadePerGame": 1.0,
+                "fg3PtPct": 25.0,
+                "fgAtt": 8,
+                "fgAttPerGame": 8.0,
+                "fgMade": 4,
+                "fgMadePerGame": 4.0,
+                "fgPct": 50.0
+              },
+              "freeThrows": {
+                "ftAtt": 3,
+                "ftAttPerGame": 3.0,
+                "ftMade": 1,
+                "ftMadePerGame": 1.0,
+                "ftPct": 33.3
+              },
+              "rebounds": {
+                "offReb": 2,
+                "offRebPerGame": 2.0,
+                "defReb": 2,
+                "defRebPerGame": 2.0,
+                "reb": 4,
+                "rebPerGame": 4.0
+              },
+              "offense": {
+                "ast": 3,
+                "astPerGame": 3.0,
+                "pts": 10,
+                "ptsPerGame": 10.0
+              },
+              "defense": {
+                "tov": 3,
+                "tovPerGame": 3.0,
+                "stl": 3,
+                "stlPerGame": 3.0,
+                "blk": 0,
+                "blkPerGame": 0.0,
+                "blkAgainst": 0,
+                "blkAgainstPerGame": 0.0
+              },
+              "miscellaneous": {
+                "fouls": 6,
+                "foulsPerGame": 6.0,
+                "foulsDrawn": 0,
+                "foulsDrawnPerGame": 0.0,
+                "foulPers": 6,
+                "foulPersPerGame": 6.0,
+                "foulPersDrawn": 0,
+                "foulPersDrawnPerGame": 0.0,
+                "foulTech": 0,
+                "foulTechPerGame": 0.0,
+                "foulTechDrawn": 0,
+                "foulTechDrawnPerGame": 0.0,
+                "foulFlag1": 0,
+                "foulFlag1PerGame": 0.0,
+                "foulFlag1Drawn": 0,
+                "foulFlag1DrawnPerGame": 0.0,
+                "foulFlag2": 0,
+                "foulFlag2PerGame": 0.0,
+                "foulFlag2Drawn": 0,
+                "foulFlag2DrawnPerGame": 0.0,
+                "ejections": 0,
+                "plusMinus": -12,
+                "plusMinusPerGame": -12.0,
+                "minSeconds": 1531,
+                "minSecondsPerGame": 1531.0,
+                "gamesStarted": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "references": {
+    "teamReferences": [
+      {
+        "id": 85,
+        "city": "Philadelphia",
+        "name": "76ers",
+        "abbreviation": "PHI",
+        "homeVenue": {
+          "id": 29,
+          "name": "Wells Fargo Center"
+        },
+        "teamColoursHex": [
+          "#006bb6",
+          "#ed174c",
+          "#002b5c",
+          "#c4ced4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "sixers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg"
+      },
+      {
+        "id": 90,
+        "city": "Milwaukee",
+        "name": "Bucks",
+        "abbreviation": "MIL",
+        "homeVenue": {
+          "id": 152,
+          "name": "Fiserv Forum"
+        },
+        "teamColoursHex": [
+          "#00471b",
+          "#eee1c6",
+          "#0077c0",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Bucks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg"
+      }
+    ],
+    "venueReferences": [
+      {
+        "id": 29,
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia, PA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.901111,
+          "longitude": -75.171944
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 19306
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20478
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 17597
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      }
+    ],
+    "playerReferences": [
+      {
+        "id": 9118,
+        "firstName": "Brook",
+        "lastName": "Lopez",
+        "primaryPosition": "C",
+        "jerseyNumber": 11,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "7'0\"",
+        "weight": 270,
+        "birthDate": "1988-04-01",
+        "age": 37,
+        "birthCity": "North Hollywood, CA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "San Joaquin Memorial",
+        "college": "Stanford",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/201572.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 9151,
+        "firstName": "Bobby",
+        "lastName": "Portis",
+        "primaryPosition": "PF",
+        "jerseyNumber": 9,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'10\"",
+        "weight": 250,
+        "birthDate": "1995-02-10",
+        "age": 30,
+        "birthCity": "Little Rock, AR",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Hall",
+        "college": "Arkansas",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626171.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "BPortistime"
+          }
+        ]
+      },
+      {
+        "id": 9202,
+        "firstName": "Andre",
+        "lastName": "Drummond",
+        "primaryPosition": "C",
+        "jerseyNumber": 5,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'10\"",
+        "weight": 279,
+        "birthDate": "1993-08-10",
+        "age": 32,
+        "birthCity": "Mount Vernon, NY",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "St. Thomas More School",
+        "college": "Connecticut",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203083.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "AndreDrummond"
+          }
+        ]
+      },
+      {
+        "id": 9325,
+        "firstName": "Giannis",
+        "lastName": "Antetokounmpo",
+        "primaryPosition": "SF",
+        "jerseyNumber": 34,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'11\"",
+        "weight": 242,
+        "birthDate": "1994-12-06",
+        "age": 30,
+        "birthCity": "Athens",
+        "birthCountry": "Greece",
+        "rookie": false,
+        "highSchool": null,
+        "college": "Filathlitikos Div II Greece",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Giannis_An34"
+          }
+        ]
+      },
+      {
+        "id": 9352,
+        "firstName": "Eric",
+        "lastName": "Gordon",
+        "primaryPosition": "SG",
+        "jerseyNumber": 23,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'3\"",
+        "weight": 215,
+        "birthDate": "1988-12-25",
+        "age": 36,
+        "birthCity": "Indianapolis, IN",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "North Central",
+        "college": "Indiana",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/201569.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "TheofficialEG10"
+          }
+        ]
+      },
+      {
+        "id": 9445,
+        "firstName": "Damian",
+        "lastName": "Lillard",
+        "primaryPosition": "PG",
+        "jerseyNumber": 0,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'2\"",
+        "weight": 200,
+        "birthDate": "1990-07-15",
+        "age": 35,
+        "birthCity": "Oakland, CA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Oakland",
+        "college": "Weber State",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203081.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Dame_Lillard"
+          }
+        ]
+      },
+      {
+        "id": 9456,
+        "firstName": "Pat",
+        "lastName": "Connaughton",
+        "primaryPosition": "SG",
+        "jerseyNumber": 24,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'4\"",
+        "weight": 209,
+        "birthDate": "1993-01-06",
+        "age": 32,
+        "birthCity": "Arlington, MA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "St. John's Prep",
+        "college": "Notre Dame",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626192.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 9490,
+        "firstName": "Kyle",
+        "lastName": "Lowry",
+        "primaryPosition": "PG",
+        "jerseyNumber": 7,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'1\"",
+        "weight": 196,
+        "birthDate": "1986-03-25",
+        "age": 39,
+        "birthCity": "Philadelphia, PA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Cardinal Dougherty",
+        "college": "Villanova",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/200768.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Klow7"
+          }
+        ]
+      },
+      {
+        "id": 9495,
+        "firstName": "Delon",
+        "lastName": "Wright",
+        "primaryPosition": "SG",
+        "jerseyNumber": 4,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 185,
+        "birthDate": "1992-04-26",
+        "age": 33,
+        "birthCity": "Lawndale, CA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Leuzinger",
+        "college": "Utah",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626153.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "delonwright"
+          }
+        ]
+      },
+      {
+        "id": 9526,
+        "firstName": "Kelly",
+        "lastName": "Oubre Jr.",
+        "primaryPosition": "SF",
+        "jerseyNumber": 9,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 203,
+        "birthDate": "1995-12-09",
+        "age": 29,
+        "birthCity": "Fort Bend, TX",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Findlay Prep",
+        "college": "Kansas",
+        "handedness": {
+          "shoots": "L"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626162.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "KELLYOUBREJR"
+          }
+        ]
+      },
+      {
+        "id": 10155,
+        "firstName": "Taurean",
+        "lastName": "Prince",
+        "primaryPosition": "SF",
+        "jerseyNumber": 12,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 218,
+        "birthDate": "1994-03-22",
+        "age": 31,
+        "birthCity": "San Antonio, TX",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Earl Warren",
+        "college": "Baylor",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627752.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "taureanprince"
+          }
+        ]
+      },
+      {
+        "id": 13778,
+        "firstName": "Guerschon",
+        "lastName": "Yabusele",
+        "primaryPosition": "PF",
+        "jerseyNumber": 28,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'8\"",
+        "weight": 260,
+        "birthDate": "1995-12-17",
+        "age": 29,
+        "birthCity": "Dreux",
+        "birthCountry": "France",
+        "rookie": false,
+        "highSchool": null,
+        "college": null,
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627824.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 15355,
+        "firstName": "Gary",
+        "lastName": "Trent Jr.",
+        "primaryPosition": "SG",
+        "jerseyNumber": 33,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 205,
+        "birthDate": "1999-01-18",
+        "age": 26,
+        "birthCity": "Apple Valley, MN",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": null,
+        "college": "Duke",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629018.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 17312,
+        "firstName": "Caleb",
+        "lastName": "Martin",
+        "primaryPosition": "SF",
+        "jerseyNumber": 16,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 205,
+        "birthDate": "1995-09-28",
+        "age": 29,
+        "birthCity": "Mocksville, NC",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": "Oak Hill Academy",
+        "college": "Nevada",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628997.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 27450,
+        "firstName": "Tyrese",
+        "lastName": "Maxey",
+        "primaryPosition": "PG",
+        "jerseyNumber": 0,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'2\"",
+        "weight": 195,
+        "birthDate": "2000-11-04",
+        "age": 24,
+        "birthCity": "Garland, TX",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Kentucky",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 27624,
+        "firstName": "Kenyon",
+        "lastName": "Martin Jr.",
+        "primaryPosition": "SF",
+        "jerseyNumber": 1,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 215,
+        "birthDate": "2001-01-06",
+        "age": 24,
+        "birthCity": "West Hills, CA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "IMG Academy",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630231.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 28554,
+        "firstName": "Jeff",
+        "lastName": "Dowtin",
+        "primaryPosition": "PG",
+        "jerseyNumber": 11,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'3\"",
+        "weight": 185,
+        "birthDate": "1997-05-10",
+        "age": 28,
+        "birthCity": "Washington, DC",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": "St. John's College",
+        "college": "Rhode Island",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630288.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 38954,
+        "firstName": "Ryan",
+        "lastName": "Rollins",
+        "primaryPosition": "SG",
+        "jerseyNumber": 55,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'4\"",
+        "weight": 180,
+        "birthDate": "2002-07-03",
+        "age": 23,
+        "birthCity": "Macomb, MI",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Toledo",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631157.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 39835,
+        "firstName": "MarJon",
+        "lastName": "Beauchamp",
+        "primaryPosition": "SF",
+        "jerseyNumber": 3,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 197,
+        "birthDate": "2000-10-12",
+        "age": 24,
+        "birthCity": "Seattle, WA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Yakima Valley",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630699.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 39849,
+        "firstName": "A.J.",
+        "lastName": "Green",
+        "primaryPosition": "SG",
+        "jerseyNumber": 20,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'4\"",
+        "weight": 190,
+        "birthDate": "1999-09-27",
+        "age": 25,
+        "birthCity": "Cedar Falls, IA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Northern Iowa",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631260.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 40857,
+        "firstName": "Lester",
+        "lastName": "Quinones",
+        "primaryPosition": "SG",
+        "jerseyNumber": 25,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 208,
+        "birthDate": "2000-11-16",
+        "age": 24,
+        "birthCity": "Brentwood, NY",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Memphis",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631311.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 111232,
+        "firstName": "Andre",
+        "lastName": "Jackson Jr.",
+        "primaryPosition": "SG",
+        "jerseyNumber": 44,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 200,
+        "birthDate": "2001-11-13",
+        "age": 23,
+        "birthCity": "Amsterdam, NY",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "UConn",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641748.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 111265,
+        "firstName": "Ricky",
+        "lastName": "Council IV",
+        "primaryPosition": "SG",
+        "jerseyNumber": 14,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 205,
+        "birthDate": "2001-08-03",
+        "age": 24,
+        "birthCity": "Durham, NC",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Arkansas",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641741.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 134172,
+        "firstName": "AJ",
+        "lastName": "Johnson",
+        "primaryPosition": "PG",
+        "jerseyNumber": 7,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'5\"",
+        "weight": 165,
+        "birthDate": "2004-12-01",
+        "age": 20,
+        "birthCity": "Woodland Hills, CA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": null,
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1642358.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 134175,
+        "firstName": "Tyler",
+        "lastName": "Smith",
+        "primaryPosition": "PF",
+        "jerseyNumber": 15,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'9\"",
+        "weight": 224,
+        "birthDate": "2004-11-02",
+        "age": 20,
+        "birthCity": "New Orleans, LA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": null,
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641890.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 134193,
+        "firstName": "Adem",
+        "lastName": "Bona",
+        "primaryPosition": "C",
+        "jerseyNumber": 30,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'9\"",
+        "weight": 245,
+        "birthDate": "2003-03-28",
+        "age": 22,
+        "birthCity": "Ebonyi",
+        "birthCountry": "Nigeria",
+        "rookie": true,
+        "highSchool": null,
+        "college": "UCLA",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641737.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 144620,
+        "firstName": "Jared",
+        "lastName": "McCain",
+        "primaryPosition": "SG",
+        "jerseyNumber": 20,
+        "currentTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'3\"",
+        "weight": 195,
+        "birthDate": "2004-02-20",
+        "age": 21,
+        "birthCity": "Sacramento, CA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Duke",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1642272.png",
+        "socialMediaAccounts": []
+      }
+    ],
+    "playerStatReferences": [
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtAtt",
+        "description": "2Pt Field Goal Attempts",
+        "abbreviation": "2PA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtAttPerGame",
+        "description": "2Pt Field Goal Attempts / Game",
+        "abbreviation": "2PA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtMade",
+        "description": "2Pt Field Goals Made",
+        "abbreviation": "2PM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtMadePerGame",
+        "description": "2Pt Field Goals Made / Game",
+        "abbreviation": "2PM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtPct",
+        "description": "2Pt Field Goal %",
+        "abbreviation": "2P%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtAtt",
+        "description": "3Pt Field Goal Attempts",
+        "abbreviation": "3PA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtAttPerGame",
+        "description": "3Pt Field Goal Attempts / Game",
+        "abbreviation": "3PA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtMade",
+        "description": "3Pt Field Goals Made",
+        "abbreviation": "3PM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtMadePerGame",
+        "description": "3Pt Field Goals Made / Game",
+        "abbreviation": "3PM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtPct",
+        "description": "3Pt Field Goal %",
+        "abbreviation": "3P%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgAtt",
+        "description": "Total Field Goal Attempts",
+        "abbreviation": "FGA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgAttPerGame",
+        "description": "Total Field Goal Attempts / Game",
+        "abbreviation": "FGA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgMade",
+        "description": "Total Field Goals Made",
+        "abbreviation": "FGM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgMadePerGame",
+        "description": "Total Field Goals Made / Game",
+        "abbreviation": "FGM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgPct",
+        "description": "Total Field Goal %",
+        "abbreviation": "FG%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftAtt",
+        "description": "Free Throw Attempts",
+        "abbreviation": "FTA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftAttPerGame",
+        "description": "Free Throw Attempts / Game",
+        "abbreviation": "FTA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftMade",
+        "description": "Free Throws Made",
+        "abbreviation": "FTM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftMadePerGame",
+        "description": "Free Throws Made / Game",
+        "abbreviation": "FTM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftPct",
+        "description": "Free Throw %",
+        "abbreviation": "FT%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "offReb",
+        "description": "Offensive Rebounds",
+        "abbreviation": "OREB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "offRebPerGame",
+        "description": "Offensive Rebounds / Game",
+        "abbreviation": "OREB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "defReb",
+        "description": "Defensive Rebounds",
+        "abbreviation": "DREB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "defRebPerGame",
+        "description": "Defensive Rebounds / Game",
+        "abbreviation": "DREB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "reb",
+        "description": "Total Rebounds",
+        "abbreviation": "REB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "rebPerGame",
+        "description": "Total Rebounds / Game",
+        "abbreviation": "REB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Offense",
+        "fullName": "ast",
+        "description": "Assists",
+        "abbreviation": "AST",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Offense",
+        "fullName": "astPerGame",
+        "description": "Assists / Game",
+        "abbreviation": "AST/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Offense",
+        "fullName": "pts",
+        "description": "Points",
+        "abbreviation": "PTS",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Offense",
+        "fullName": "ptsPerGame",
+        "description": "Points / Game",
+        "abbreviation": "PTS/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "tov",
+        "description": "Turnovers",
+        "abbreviation": "TOV",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "tovPerGame",
+        "description": "Turnovers / Game",
+        "abbreviation": "TOV/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "stl",
+        "description": "Steals",
+        "abbreviation": "STL",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "stlPerGame",
+        "description": "Steals / Game",
+        "abbreviation": "STL/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blk",
+        "description": "Blocks",
+        "abbreviation": "BS",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkPerGame",
+        "description": "Blocks / Game",
+        "abbreviation": "BS/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkAgainst",
+        "description": "Blocks Against",
+        "abbreviation": "BA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkAgainstPerGame",
+        "description": "Blocks Against / Game",
+        "abbreviation": "BA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPers",
+        "description": "Personal Fouls",
+        "abbreviation": "PF",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersPerGame",
+        "description": "Personal Fouls / Game",
+        "abbreviation": "PF/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "plusMinus",
+        "description": "Plus/Minus",
+        "abbreviation": "+/-",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "plusMinusPerGame",
+        "description": "Plus/Minus / Game",
+        "abbreviation": "+/-/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "minSeconds",
+        "description": "Minutes Played",
+        "abbreviation": "MIN",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "minSecondsPerGame",
+        "description": "Minutes Played / Game",
+        "abbreviation": "MIN/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "fouls",
+        "description": "Fouls",
+        "abbreviation": "F",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsPerGame",
+        "description": "Fouls / Game",
+        "abbreviation": "F/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsDrawn",
+        "description": "Fouls Drawn",
+        "abbreviation": "FD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsDrawnPerGame",
+        "description": "Fouls Drawn / Game",
+        "abbreviation": "FD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersDrawn",
+        "description": "Personal Fouls Drawn",
+        "abbreviation": "PFD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersDrawnPerGame",
+        "description": "Personal Fouls Drawn / Game",
+        "abbreviation": "PFD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTech",
+        "description": "Technical Fouls",
+        "abbreviation": "TF",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechPerGame",
+        "description": "Technical Fouls / Game",
+        "abbreviation": "TF/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechDrawn",
+        "description": "Technical Fouls Drawn",
+        "abbreviation": "TFD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechDrawnPerGame",
+        "description": "Technical Fouls Drawn / Game",
+        "abbreviation": "TFD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1",
+        "description": "Flagrant 1 Fouls",
+        "abbreviation": "FF1",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1PerGame",
+        "description": "Flagrant 1 Fouls / Game",
+        "abbreviation": "FF1/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1Drawn",
+        "description": "Flagrant 1 Fouls Drawn",
+        "abbreviation": "FF1D",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1DrawnPerGame",
+        "description": "Flagrant 1 Fouls Drawn / Game",
+        "abbreviation": "FF1D/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2",
+        "description": "Flagrant 2 Fouls",
+        "abbreviation": "FF2",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2PerGame",
+        "description": "Flagrant 2 Fouls / Game",
+        "abbreviation": "FF2/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2Drawn",
+        "description": "Flagrant 2 Fouls Drawn",
+        "abbreviation": "FF2D",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2DrawnPerGame",
+        "description": "Flagrant 2 Fouls Drawn / Game",
+        "abbreviation": "FF2D/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "ejections",
+        "description": "Ejections From Games",
+        "abbreviation": "EJE",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "gamesStarted",
+        "description": "Games Started",
+        "abbreviation": "GS",
+        "type": "INTEGER"
+      }
+    ],
+    "teamStatReferences": [
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtAtt",
+        "description": "2Pt Field Goal Attempts",
+        "abbreviation": "2PA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtAttPerGame",
+        "description": "2Pt Field Goal Attempts / Game",
+        "abbreviation": "2PA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtMade",
+        "description": "2Pt Field Goals Made",
+        "abbreviation": "2PM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtMadePerGame",
+        "description": "2Pt Field Goals Made / Game",
+        "abbreviation": "2PM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtPct",
+        "description": "2Pt Field Goal %",
+        "abbreviation": "2P%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtAtt",
+        "description": "3Pt Field Goal Attempts",
+        "abbreviation": "3PA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtAttPerGame",
+        "description": "3Pt Field Goal Attempts / Game",
+        "abbreviation": "3PA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtMade",
+        "description": "3Pt Field Goals Made",
+        "abbreviation": "3PM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtMadePerGame",
+        "description": "3Pt Field Goals Made / Game",
+        "abbreviation": "3PM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtPct",
+        "description": "3Pt Field Goal %",
+        "abbreviation": "3P%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgAtt",
+        "description": "Total Field Goal Attempts",
+        "abbreviation": "FGA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgAttPerGame",
+        "description": "Total Field Goal Attempts / Game",
+        "abbreviation": "FGA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgMade",
+        "description": "Total Field Goals Made",
+        "abbreviation": "FGM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgMadePerGame",
+        "description": "Total Field Goals Made / Game",
+        "abbreviation": "FGM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgPct",
+        "description": "Total Field Goal %",
+        "abbreviation": "FG%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftAtt",
+        "description": "Free Throw Attempts",
+        "abbreviation": "FTA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftAttPerGame",
+        "description": "Free Throw Attempts / Game",
+        "abbreviation": "FTA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftMade",
+        "description": "Free Throws Made",
+        "abbreviation": "FTM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftMadePerGame",
+        "description": "Free Throws Made / Game",
+        "abbreviation": "FTM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftPct",
+        "description": "Free Throw %",
+        "abbreviation": "FT%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "offReb",
+        "description": "Offensive Rebounds",
+        "abbreviation": "OREB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "offRebPerGame",
+        "description": "Offensive Rebounds / Game",
+        "abbreviation": "OREB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "defReb",
+        "description": "Defensive Rebounds",
+        "abbreviation": "DREB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "defRebPerGame",
+        "description": "Defensive Rebounds / Game",
+        "abbreviation": "DREB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "reb",
+        "description": "Total Rebounds",
+        "abbreviation": "REB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "rebPerGame",
+        "description": "Total Rebounds / Game",
+        "abbreviation": "REB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Offense",
+        "fullName": "ast",
+        "description": "Assists",
+        "abbreviation": "AST",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Offense",
+        "fullName": "astPerGame",
+        "description": "Assists / Game",
+        "abbreviation": "AST/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Offense",
+        "fullName": "pts",
+        "description": "Points",
+        "abbreviation": "PTS",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Offense",
+        "fullName": "ptsPerGame",
+        "description": "Points / Game",
+        "abbreviation": "PTS/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "tov",
+        "description": "Turnovers",
+        "abbreviation": "TOV",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "tovPerGame",
+        "description": "Turnovers / Game",
+        "abbreviation": "TOV/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "stl",
+        "description": "Steals",
+        "abbreviation": "STL",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "stlPerGame",
+        "description": "Steals / Game",
+        "abbreviation": "STL/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blk",
+        "description": "Blocks",
+        "abbreviation": "BS",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkPerGame",
+        "description": "Blocks / Game",
+        "abbreviation": "BS/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkAgainst",
+        "description": "Blocks Against",
+        "abbreviation": "BA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkAgainstPerGame",
+        "description": "Blocks Against / Game",
+        "abbreviation": "BA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "ptsAgainst",
+        "description": "Points Against",
+        "abbreviation": "PTSA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "ptsAgainstPerGame",
+        "description": "Points Against / Game",
+        "abbreviation": "PTSA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "fouls",
+        "description": "Fouls",
+        "abbreviation": "F",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsPerGame",
+        "description": "Fouls / Game",
+        "abbreviation": "F/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPers",
+        "description": "Personal Fouls",
+        "abbreviation": "PF",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersPerGame",
+        "description": "Personal Fouls / Game",
+        "abbreviation": "PF/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTech",
+        "description": "Technical Fouls",
+        "abbreviation": "TF",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechPerGame",
+        "description": "Technical Fouls / Game",
+        "abbreviation": "TF/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "plusMinus",
+        "description": "Plus/Minus",
+        "abbreviation": "+/-",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "plusMinusPerGame",
+        "description": "Plus/Minus / Game",
+        "abbreviation": "+/-/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Standings",
+        "fullName": "wins",
+        "description": "Wins",
+        "abbreviation": "W",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Standings",
+        "fullName": "losses",
+        "description": "Losses",
+        "abbreviation": "L",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Standings",
+        "fullName": "winPct",
+        "description": "Win %",
+        "abbreviation": "Win %",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Standings",
+        "fullName": "gamesBack",
+        "description": "Games Back",
+        "abbreviation": "GB",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsDrawn",
+        "description": "Fouls Drawn",
+        "abbreviation": "FD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsDrawnPerGame",
+        "description": "Fouls Drawn / Game",
+        "abbreviation": "FD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersDrawn",
+        "description": "Personal Fouls Drawn",
+        "abbreviation": "PFD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersDrawnPerGame",
+        "description": "Personal Fouls Drawn / Game",
+        "abbreviation": "PFD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechDrawn",
+        "description": "Technical Fouls Drawn",
+        "abbreviation": "TFD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechDrawnPerGame",
+        "description": "Technical Fouls Drawn / Game",
+        "abbreviation": "TFD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1",
+        "description": "Flagrant 1 Fouls",
+        "abbreviation": "FF1",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1PerGame",
+        "description": "Flagrant 1 Fouls / Game",
+        "abbreviation": "FF1/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1Drawn",
+        "description": "Flagrant 1 Fouls Drawn",
+        "abbreviation": "FF1D",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1DrawnPerGame",
+        "description": "Flagrant 1 Fouls Drawn / Game",
+        "abbreviation": "FF1D/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2",
+        "description": "Flagrant 2 Fouls",
+        "abbreviation": "FF2",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2PerGame",
+        "description": "Flagrant 2 Fouls / Game",
+        "abbreviation": "FF2/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2Drawn",
+        "description": "Flagrant 2 Fouls Drawn",
+        "abbreviation": "FF2D",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2DrawnPerGame",
+        "description": "Flagrant 2 Fouls Drawn / Game",
+        "abbreviation": "FF2D/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "ejections",
+        "description": "Player Ejections",
+        "abbreviation": "EJE",
+        "type": "INTEGER"
+      }
+    ]
+  }
+}

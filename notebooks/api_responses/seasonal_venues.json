@@ -1,0 +1,1706 @@
+{
+  "lastUpdatedOn": "2025-04-15T20:09:07.051Z",
+  "venues": [
+    {
+      "venue": {
+        "id": 1363,
+        "name": "Accor Arena",
+        "city": "Paris",
+        "country": "France",
+        "geoCoordinates": {
+          "latitude": 48.838611,
+          "longitude": 2.378611
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 13877
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 15609
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 20300
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": null
+    },
+    {
+      "venue": {
+        "id": 2,
+        "name": "American Airlines Center",
+        "city": "Dallas, TX",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 32.790556,
+          "longitude": -96.810278
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 19323
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 21146
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 21000
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 108,
+        "city": "Dallas",
+        "name": "Mavericks",
+        "abbreviation": "DAL",
+        "homeVenue": {
+          "id": 2,
+          "name": "American Airlines Center"
+        },
+        "teamColoursHex": [
+          "#00538c",
+          "#002b5e",
+          "#b8c4ca",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "dallasmavs"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612742/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 1362,
+        "name": "Arena CDMX",
+        "city": "Mexico City",
+        "country": "Mexico",
+        "geoCoordinates": {
+          "latitude": 19.496309,
+          "longitude": -99.175429
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "GENERAL",
+            "capacity": 22300
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": null
+    },
+    {
+      "venue": {
+        "id": 99,
+        "name": "AT&T Center",
+        "city": "San Antonio, TX",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 29.426944,
+          "longitude": -98.4375
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 16151
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18418
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19000
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 106,
+        "city": "San Antonio",
+        "name": "Spurs",
+        "abbreviation": "SAS",
+        "homeVenue": {
+          "id": 99,
+          "name": "AT&T Center"
+        },
+        "teamColoursHex": [
+          "#c4ced4",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "spurs"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612759/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 19,
+        "name": "Ball Arena",
+        "city": "Denver, CO",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.748611,
+          "longitude": -105.0075
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 17809
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 19520
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 17417
+          },
+          {
+            "eventType": "LACROSSE",
+            "capacity": 17809
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 20000
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 99,
+        "city": "Denver",
+        "name": "Nuggets",
+        "abbreviation": "DEN",
+        "homeVenue": {
+          "id": 19,
+          "name": "Ball Arena"
+        },
+        "teamColoursHex": [
+          "#0e2240",
+          "#fec524",
+          "#8b2131",
+          "#1d428a"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "nuggets"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612743/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 78,
+        "name": "Barclays Center",
+        "city": "Brooklyn, NY",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 40.682661,
+          "longitude": -73.975225
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 15795
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 17732
+          },
+          {
+            "eventType": "BOXING",
+            "capacity": 16000
+          },
+          {
+            "eventType": "MMA",
+            "capacity": 16000
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 17000
+          },
+          {
+            "eventType": "WRESTLING",
+            "capacity": 16000
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 84,
+        "city": "Brooklyn",
+        "name": "Nets",
+        "abbreviation": "BRO",
+        "homeVenue": {
+          "id": 78,
+          "name": "Barclays Center"
+        },
+        "teamColoursHex": [
+          "#000000",
+          "#ffffff"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "BrooklynNets"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612751/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 13,
+        "name": "Capital One Arena",
+        "city": "Washington, DC",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 38.89801,
+          "longitude": -77.0231909
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 18506
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20356
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 94,
+        "city": "Washington",
+        "name": "Wizards",
+        "abbreviation": "WAS",
+        "homeVenue": {
+          "id": 13,
+          "name": "Capital One Arena"
+        },
+        "teamColoursHex": [
+          "#002b5c",
+          "#e31837",
+          "#c4ced4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "WashWizards"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612764/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 150,
+        "name": "Chase Center",
+        "city": "San Francisco, CA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 37.768056,
+          "longitude": -122.3875
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18064
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 101,
+        "city": "Golden State",
+        "name": "Warriors",
+        "abbreviation": "GSW",
+        "homeVenue": {
+          "id": 150,
+          "name": "Chase Center"
+        },
+        "teamColoursHex": [
+          "#006bb6",
+          "#fdb927",
+          "#26282a"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "warriors"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612744/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 25,
+        "name": "Crypto.com Arena",
+        "city": "Los Angeles, CA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 34.043056,
+          "longitude": -118.267222
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 18230
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 19060
+          },
+          {
+            "eventType": "BOXING",
+            "capacity": 21000
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 16096
+          },
+          {
+            "eventType": "THEATER",
+            "capacity": 8000
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 13000
+          },
+          {
+            "eventType": "WRESTLING",
+            "capacity": 21000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 105,
+        "city": "Los Angeles",
+        "name": "Lakers",
+        "abbreviation": "LAL",
+        "homeVenue": {
+          "id": 25,
+          "name": "Crypto.com Arena"
+        },
+        "teamColoursHex": [
+          "#552583",
+          "#fdb927",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Lakers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612747/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 92,
+        "name": "Delta Center",
+        "city": "Salt Lake City, UT",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 40.768333,
+          "longitude": -111.901111
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18306
+          },
+          {
+            "eventType": "HOCKEY",
+            "capacity": 16200
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 20000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 98,
+        "city": "Utah",
+        "name": "Jazz",
+        "abbreviation": "UTA",
+        "homeVenue": {
+          "id": 92,
+          "name": "Delta Center"
+        },
+        "teamColoursHex": [
+          "#002b5c",
+          "#00471b",
+          "#f9a01b"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "utahjazz"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612762/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 100,
+        "name": "FedEx Forum",
+        "city": "Memphis, TN",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 35.138333,
+          "longitude": -90.050556
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 16411
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18119
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 107,
+        "city": "Memphis",
+        "name": "Grizzlies",
+        "abbreviation": "MEM",
+        "homeVenue": {
+          "id": 100,
+          "name": "FedEx Forum"
+        },
+        "teamColoursHex": [
+          "#5d76a9",
+          "#12173f",
+          "#f5b112",
+          "#707271"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "memgrizz"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612763/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 152,
+        "name": "Fiserv Forum",
+        "city": "Milwaukee, WI",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 43.045028,
+          "longitude": -87.918167
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "GENERAL",
+            "capacity": 17341
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 90,
+        "city": "Milwaukee",
+        "name": "Bucks",
+        "abbreviation": "MIL",
+        "homeVenue": {
+          "id": 152,
+          "name": "Fiserv Forum"
+        },
+        "teamColoursHex": [
+          "#00471b",
+          "#eee1c6",
+          "#0077c0",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Bucks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 98,
+        "name": "Footprint Center",
+        "city": "Phoenix, AZ",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 33.445833,
+          "longitude": -112.071389
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "GENERAL",
+            "capacity": 18422
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 104,
+        "city": "Phoenix",
+        "name": "Suns",
+        "abbreviation": "PHX",
+        "homeVenue": {
+          "id": 98,
+          "name": "Footprint Center"
+        },
+        "teamColoursHex": [
+          "#1d1160",
+          "#e56020",
+          "#000000",
+          "#63727a",
+          "#f9ad1b",
+          "#b95915",
+          "#bec0c2"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Suns"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 1170,
+        "name": "Franklin Field",
+        "city": "Philadelphia, PA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.95,
+          "longitude": -75.19
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "GENERAL",
+            "capacity": 52958
+          }
+        ],
+        "playingSurface": "Sprinturf",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": null
+    },
+    {
+      "venue": {
+        "id": 86,
+        "name": "Kaseya Center",
+        "city": "Miani, FL",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 25.781389,
+          "longitude": -80.188056
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 19600
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 20021
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 92,
+        "city": "Miami",
+        "name": "Heat",
+        "abbreviation": "MIA",
+        "homeVenue": {
+          "id": 86,
+          "name": "Kaseya Center"
+        },
+        "teamColoursHex": [
+          "#98002e",
+          "#f9a01b",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "MiamiHEAT"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612748/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 81,
+        "name": "Gainbridge Fieldhouse",
+        "city": "Indianapolis, IN",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.763889,
+          "longitude": -86.155556
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 12300
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 17923
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19000
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 87,
+        "city": "Indiana",
+        "name": "Pacers",
+        "abbreviation": "IND",
+        "homeVenue": {
+          "id": 81,
+          "name": "Gainbridge Fieldhouse"
+        },
+        "teamColoursHex": [
+          "#002d62",
+          "#fdbb30",
+          "#bec0c2"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Pacers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612754/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 151,
+        "name": "Golden 1 Center",
+        "city": "Sacramento, CA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 38.580361,
+          "longitude": -121.499611
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 17608
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 103,
+        "city": "Sacramento",
+        "name": "Kings",
+        "abbreviation": "SAC",
+        "homeVenue": {
+          "id": 151,
+          "name": "Golden 1 Center"
+        },
+        "teamColoursHex": [
+          "#5a2d81",
+          "#63727a",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "SacramentoKings"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612758/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 1361,
+        "name": "Intuit Dome",
+        "city": "Inglewood, CA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 33.9451,
+          "longitude": -118.3431
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "GENERAL",
+            "capacity": 18000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 102,
+        "city": "Los Angeles",
+        "name": "Clippers",
+        "abbreviation": "LAC",
+        "homeVenue": {
+          "id": 1361,
+          "name": "Intuit Dome"
+        },
+        "teamColoursHex": [
+          "#c8102e",
+          "#1d428a",
+          "#bec0c2",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "LAClippers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612746/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 145,
+        "name": "Little Caesars Arena",
+        "city": "Detroit, MI",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 42.341111,
+          "longitude": -83.055
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 19515
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20491
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 22000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 88,
+        "city": "Detroit",
+        "name": "Pistons",
+        "abbreviation": "DET",
+        "homeVenue": {
+          "id": 145,
+          "name": "Little Caesars Arena"
+        },
+        "teamColoursHex": [
+          "#c8102e",
+          "#006bb6",
+          "#bec0c2",
+          "#002d62"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "DetroitPistons"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612765/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 12,
+        "name": "Madison Square Garden",
+        "city": "New York, NY",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 40.750556,
+          "longitude": -73.993611
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 18006
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 19812
+          },
+          {
+            "eventType": "THEATER",
+            "capacity": 5600
+          },
+          {
+            "eventType": "BOXING",
+            "capacity": 20789
+          },
+          {
+            "eventType": "WRESTLING",
+            "capacity": 18500
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 20000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 83,
+        "city": "New York",
+        "name": "Knicks",
+        "abbreviation": "NYK",
+        "homeVenue": {
+          "id": 12,
+          "name": "Madison Square Garden"
+        },
+        "teamColoursHex": [
+          "#006bb6",
+          "#f58426",
+          "#bec0c2",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "nyknicks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612752/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 91,
+        "name": "Moda Center",
+        "city": "Portland, OR",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 45.531667,
+          "longitude": -122.666667
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 18280
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 19393
+          },
+          {
+            "eventType": "THEATER",
+            "capacity": 6500
+          },
+          {
+            "eventType": "LACROSSE",
+            "capacity": 18280
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 20500
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 97,
+        "city": "Portland",
+        "name": "Trail Blazers",
+        "abbreviation": "POR",
+        "homeVenue": {
+          "id": 91,
+          "name": "Moda Center"
+        },
+        "teamColoursHex": [
+          "#e03a3e",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "trailblazers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612757/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 1325,
+        "name": "Moody Center",
+        "city": "Austin, TX",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 30.280972,
+          "longitude": -97.730472
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "GENERAL",
+            "capacity": 15000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": null
+    },
+    {
+      "venue": {
+        "id": 90,
+        "name": "Paycom Center",
+        "city": "Oklahoma, OK",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 35.463333,
+          "longitude": -97.515
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 15152
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18203
+          },
+          {
+            "eventType": "BOXING",
+            "capacity": 16757
+          },
+          {
+            "eventType": "MMA",
+            "capacity": 16757
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 16591
+          },
+          {
+            "eventType": "WRESTLING",
+            "capacity": 16757
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 96,
+        "city": "Oklahoma City",
+        "name": "Thunder",
+        "abbreviation": "OKL",
+        "homeVenue": {
+          "id": 90,
+          "name": "Paycom Center"
+        },
+        "teamColoursHex": [
+          "#007ac1",
+          "#ef3b24",
+          "#002d62",
+          "#fdbb30"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "okcthunder"
+          }
+        ],
+        "officialLogoImageSrc": "https://global.nba.com/media/img/teams/00/logos/OKC_logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 80,
+        "name": "Rocket Mortgage FieldHouse",
+        "city": "Cleveland, OH",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 41.496389,
+          "longitude": -81.688056
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 18926
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 19432
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 18926
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 86,
+        "city": "Cleveland",
+        "name": "Cavaliers",
+        "abbreviation": "CLE",
+        "homeVenue": {
+          "id": 80,
+          "name": "Rocket Mortgage FieldHouse"
+        },
+        "teamColoursHex": [
+          "#6f263d",
+          "#041e42",
+          "#ffb81c",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "cavs"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612739/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 1,
+        "name": "Scotiabank Arena",
+        "city": "Toronto, ON",
+        "country": "Canada",
+        "geoCoordinates": {
+          "latitude": 43.643333,
+          "longitude": -79.379167
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 20270
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20511
+          },
+          {
+            "eventType": "THEATER",
+            "capacity": 5200
+          },
+          {
+            "eventType": "LACROSSE",
+            "capacity": 18800
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19800
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 81,
+        "city": "Toronto",
+        "name": "Raptors",
+        "abbreviation": "TOR",
+        "homeVenue": {
+          "id": 1,
+          "name": "Scotiabank Arena"
+        },
+        "teamColoursHex": [
+          "#ce1141",
+          "#000000",
+          "#a1a1a4",
+          "#b4975a"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Raptors"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612761/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 103,
+        "name": "Smoothie King Center",
+        "city": "New Orleans, LA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 29.948889,
+          "longitude": -90.081944
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 16900
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18500
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 16900
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 17805
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 110,
+        "city": "New Orleans",
+        "name": "Pelicans",
+        "abbreviation": "NOP",
+        "homeVenue": {
+          "id": 103,
+          "name": "Smoothie King Center"
+        },
+        "teamColoursHex": [
+          "#0c2340",
+          "#c8102e",
+          "#857a4d"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "PelicansNBA"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612740/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 87,
+        "name": "Spectrum Center",
+        "city": "Charlotte, NC",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 35.225,
+          "longitude": -80.839167
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20200
+          },
+          {
+            "eventType": "THEATER",
+            "capacity": 7000
+          },
+          {
+            "eventType": "WRESTLING",
+            "capacity": 20200
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 18504
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 93,
+        "city": "Charlotte",
+        "name": "Hornets",
+        "abbreviation": "CHA",
+        "homeVenue": {
+          "id": 87,
+          "name": "Spectrum Center"
+        },
+        "teamColoursHex": [
+          "#1d1160",
+          "#00788c",
+          "#a1a1a4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "hornets"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612766/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 20,
+        "name": "State Farm Arena",
+        "city": "Atlanta, GA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 33.757222,
+          "longitude": -84.396389
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 17624
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 16600
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 21000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 91,
+        "city": "Atlanta",
+        "name": "Hawks",
+        "abbreviation": "ATL",
+        "homeVenue": {
+          "id": 20,
+          "name": "State Farm Arena"
+        },
+        "teamColoursHex": [
+          "#e03a3e",
+          "#c1d32f",
+          "#26282a"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "ATLHawks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612737/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 139,
+        "name": "T-Mobile Arena",
+        "city": "Paradise, NV",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 36.102778,
+          "longitude": -115.178333
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 17500
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18000
+          },
+          {
+            "eventType": "BOXING",
+            "capacity": 20000
+          },
+          {
+            "eventType": "MMA",
+            "capacity": 20000
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 20000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": null
+    },
+    {
+      "venue": {
+        "id": 94,
+        "name": "Target Center",
+        "city": "Minneapolis, MN",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 44.979444,
+          "longitude": -93.276111
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 17500
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18798
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 20500
+          }
+        ],
+        "playingSurface": "Multiple",
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 100,
+        "city": "Minnesota",
+        "name": "Timberwolves",
+        "abbreviation": "MIN",
+        "homeVenue": {
+          "id": 94,
+          "name": "Target Center"
+        },
+        "teamColoursHex": [
+          "#0c2340",
+          "#236192",
+          "#9ea2a2",
+          "#78be20"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Timberwolves"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612750/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 27,
+        "name": "TD Garden",
+        "city": "Boston, MA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 42.366303,
+          "longitude": -71.062228
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 17565
+          },
+          {
+            "eventType": "LACROSSE",
+            "capacity": 17565
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18624
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19580
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 82,
+        "city": "Boston",
+        "name": "Celtics",
+        "abbreviation": "BOS",
+        "homeVenue": {
+          "id": 27,
+          "name": "TD Garden"
+        },
+        "teamColoursHex": [
+          "#007a33",
+          "#ba9653",
+          "#963821",
+          "#e59e6d",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "celtics"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612738/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 102,
+        "name": "Toyota Center",
+        "city": "Houston, TX",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 29.750833,
+          "longitude": -95.362222
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 18055
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 19000
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 109,
+        "city": "Houston",
+        "name": "Rockets",
+        "abbreviation": "HOU",
+        "homeVenue": {
+          "id": 102,
+          "name": "Toyota Center"
+        },
+        "teamColoursHex": [
+          "#ce1141",
+          "#000000",
+          "#c4ced4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "HoustonRockets"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612745/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 28,
+        "name": "United Center",
+        "city": "Chicago, IL",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 41.880556,
+          "longitude": -87.674167
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 22428
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 23129
+          },
+          {
+            "eventType": "CONCERT",
+            "capacity": 23500
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 89,
+        "city": "Chicago",
+        "name": "Bulls",
+        "abbreviation": "CHI",
+        "homeVenue": {
+          "id": 28,
+          "name": "United Center"
+        },
+        "teamColoursHex": [
+          "#ce1141",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "chicagobulls"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612741/primary/L/logo.svg"
+      }
+    },
+    {
+      "venue": {
+        "id": 29,
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia, PA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.901111,
+          "longitude": -75.171944
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 19306
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20478
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 17597
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      },
+      "homeTeam": {
+        "id": 85,
+        "city": "Philadelphia",
+        "name": "76ers",
+        "abbreviation": "PHI",
+        "homeVenue": {
+          "id": 29,
+          "name": "Wells Fargo Center"
+        },
+        "teamColoursHex": [
+          "#006bb6",
+          "#ed174c",
+          "#002b5c",
+          "#c4ced4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "sixers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg"
+      }
+    }
+  ]
+}

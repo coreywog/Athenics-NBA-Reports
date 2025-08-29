@@ -1,0 +1,1264 @@
+{
+  "lastUpdatedOn": "2025-08-23T20:59:29.828Z",
+  "feedUpdates": [
+    {
+      "feed": {
+        "name": "Cumulative Player Stats",
+        "version": "v1_0",
+        "abbreviation": "CUMULATIVE_PLAYER_STATS",
+        "description": "A list of player stats totals for all roster players, summarized by their latest team."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Cumulative Player Stats",
+        "version": "v1_1",
+        "abbreviation": "CUMULATIVE_PLAYER_STATS",
+        "description": "A list of player stats totals for all roster players, summarized by their latest team."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Cumulative Player Stats",
+        "version": "v1_2",
+        "abbreviation": "CUMULATIVE_PLAYER_STATS",
+        "description": "A list of player stats totals for all roster players, summarized by their latest team."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Seasonal Games",
+        "version": "v2_0",
+        "abbreviation": "SEASONAL_GAMES",
+        "description": "All games for a season including schedule, status and scores."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Daily Games",
+        "version": "v2_0",
+        "abbreviation": "DAILY_GAMES",
+        "description": "All games on a given date including schedule, status and scores."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily DFS",
+        "version": "v2_0",
+        "abbreviation": "DAILY_DFS",
+        "description": "All DFS entries for a given date including salaries and fantasy points."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Player Gamelogs",
+        "version": "v2_0",
+        "abbreviation": "DAILY_PLAYER_GAMELOGS",
+        "description": "All player game logs for a date including game and stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Team Gamelogs",
+        "version": "v2_0",
+        "abbreviation": "DAILY_TEAM_GAMELOGS",
+        "description": "All team game logs for a date including game and stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Boxscore",
+        "version": "v2_0",
+        "abbreviation": "GAME_BOXSCORE",
+        "description": "A boxscore for a game including game details and team/player stats."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Play-By-Play",
+        "version": "v2_0",
+        "abbreviation": "GAME_PLAYBYPLAY",
+        "description": "All play-by-play events for a game with full details."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Lineup",
+        "version": "v2_0",
+        "abbreviation": "GAME_LINEUP",
+        "description": "Lists the expected and actual lineup for a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Current Season",
+        "version": "v2_0",
+        "abbreviation": "CURRENT_SEASON",
+        "description": "Returns the current season and supported stats, for a given date."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Player Injuries",
+        "version": "v2_0",
+        "abbreviation": "INJURIES",
+        "description": "A list of all currently injured players."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Latest Updates",
+        "version": "v2_0",
+        "abbreviation": "LATEST_UPDATES",
+        "description": "Lists all the latest update timestamps for each feed."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Seasonal Team Stats",
+        "version": "v2_0",
+        "abbreviation": "SEASONAL_TEAM_STATS",
+        "description": "Lists each team along with their seasonal stats totals on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Player Stats",
+        "version": "v2_0",
+        "abbreviation": "SEASONAL_PLAYER_STATS",
+        "description": "Lists each player along with their seasonal stats totals on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Venues",
+        "version": "v2_0",
+        "abbreviation": "SEASONAL_VENUES",
+        "description": "Lists all venues used in a league's specific season."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Players",
+        "version": "v2_0",
+        "abbreviation": "PLAYERS",
+        "description": "Lists all players for a league on a given date, with full bio and other details."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Standings",
+        "version": "v2_0",
+        "abbreviation": "SEASONAL_STANDINGS",
+        "description": "Lists all teams along with their stats and overall/conf/div/playoff rankings, on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Game Lines (Odds)",
+        "version": "v2_0",
+        "abbreviation": "DAILY_ODDS_GAMELINES",
+        "description": "All Game Lines (Odds) entries for a given date including line history."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Futures (Odds)",
+        "version": "v2_0",
+        "abbreviation": "DAILY_ODDS_FUTURES",
+        "description": "All Futures (Odds) entries applicable for a given date including line history."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Games",
+        "version": "v2_1",
+        "abbreviation": "SEASONAL_GAMES",
+        "description": "All games for a season including schedule, status and scores."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Daily Games",
+        "version": "v2_1",
+        "abbreviation": "DAILY_GAMES",
+        "description": "All games on a given date including schedule, status and scores."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Player Gamelogs",
+        "version": "v2_1",
+        "abbreviation": "DAILY_PLAYER_GAMELOGS",
+        "description": "All player game logs for a date including game and stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Team Gamelogs",
+        "version": "v2_1",
+        "abbreviation": "DAILY_TEAM_GAMELOGS",
+        "description": "All team game logs for a date including game and stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Boxscore",
+        "version": "v2_1",
+        "abbreviation": "GAME_BOXSCORE",
+        "description": "A boxscore for a game including game details and team/player stats."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Play-By-Play",
+        "version": "v2_1",
+        "abbreviation": "GAME_PLAYBYPLAY",
+        "description": "All play-by-play events for a game with full details."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Lineup",
+        "version": "v2_1",
+        "abbreviation": "GAME_LINEUP",
+        "description": "Lists the expected and actual lineup for a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Current Season",
+        "version": "v2_1",
+        "abbreviation": "CURRENT_SEASON",
+        "description": "Returns the current season and supported stats, for a given date."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Player Injuries",
+        "version": "v2_1",
+        "abbreviation": "INJURIES",
+        "description": "A list of all currently injured players."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Latest Updates",
+        "version": "v2_1",
+        "abbreviation": "LATEST_UPDATES",
+        "description": "Lists all the latest update timestamps for each feed."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Seasonal Team Stats",
+        "version": "v2_1",
+        "abbreviation": "SEASONAL_TEAM_STATS",
+        "description": "Lists each team along with their seasonal stats totals on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Player Stats",
+        "version": "v2_1",
+        "abbreviation": "SEASONAL_PLAYER_STATS",
+        "description": "Lists each player along with their seasonal stats totals on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Venues",
+        "version": "v2_1",
+        "abbreviation": "SEASONAL_VENUES",
+        "description": "Lists all venues used in a league's specific season."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Players",
+        "version": "v2_1",
+        "abbreviation": "PLAYERS",
+        "description": "Lists all players for a league on a given date, with full bio and other details."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Standings",
+        "version": "v2_1",
+        "abbreviation": "SEASONAL_STANDINGS",
+        "description": "Lists all teams along with their stats and overall/conf/div/playoff rankings, on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Game Lines (Odds)",
+        "version": "v2_1",
+        "abbreviation": "DAILY_ODDS_GAMELINES",
+        "description": "All Game Lines (Odds) entries for a given date including line history."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Futures (Odds)",
+        "version": "v2_1",
+        "abbreviation": "DAILY_ODDS_FUTURES",
+        "description": "All Futures (Odds) entries applicable for a given date including line history."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Player Stats Projections",
+        "version": "v2_0",
+        "abbreviation": "SEASONAL_PLAYER_STATS_PROJECTIONS",
+        "description": "Lists all players who *could* play, along with their projected season stat totals."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Daily Player Gamelogs Projections",
+        "version": "v2_0",
+        "abbreviation": "DAILY_PLAYER_GAMELOGS_PROJECTIONS",
+        "description": "Lists all players who *could* play, along with their projected game-by-game stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily DFS Projections",
+        "version": "v2_0",
+        "abbreviation": "DAILY_DFS_PROJECTIONS",
+        "description": "Lists all players who *could* play, along with their projected fantasy points, for each supported DFS source."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Player Gamelogs Projections",
+        "version": "v2_1",
+        "abbreviation": "DAILY_PLAYER_GAMELOGS_PROJECTIONS",
+        "description": "Lists all players who *could* play, along with their projected game-by-game stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily DFS Projections",
+        "version": "v2_1",
+        "abbreviation": "DAILY_DFS_PROJECTIONS",
+        "description": "Lists all players who *could* play, along with their projected fantasy points, for each supported DFS source."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Seasonal Player Stats Projections",
+        "version": "v2_1",
+        "abbreviation": "SEASONAL_PLAYER_STATS_PROJECTIONS",
+        "description": "Lists all players who *could* play, along with their projected season stat totals."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Full Game Schedule",
+        "version": "v1_0",
+        "abbreviation": "FULL_GAME_SCHEDULE",
+        "description": "A list of all games to be played for the entire season."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Full Game Schedule",
+        "version": "v1_1",
+        "abbreviation": "FULL_GAME_SCHEDULE",
+        "description": "A list of all games to be played for the entire season."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Full Game Schedule",
+        "version": "v1_2",
+        "abbreviation": "FULL_GAME_SCHEDULE",
+        "description": "A list of all games to be played for the entire season."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Daily Game Schedule",
+        "version": "v1_0",
+        "abbreviation": "DAILY_GAME_SCHEDULE",
+        "description": "A list of games to be played for a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Game Schedule",
+        "version": "v1_1",
+        "abbreviation": "DAILY_GAME_SCHEDULE",
+        "description": "A list of games to be played for a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Game Schedule",
+        "version": "v1_2",
+        "abbreviation": "DAILY_GAME_SCHEDULE",
+        "description": "A list of games to be played for a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Player Stats",
+        "version": "v1_0",
+        "abbreviation": "DAILY_PLAYER_STATS",
+        "description": "A list of player stats totals for those players who particpated in games on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Player Stats",
+        "version": "v1_1",
+        "abbreviation": "DAILY_PLAYER_STATS",
+        "description": "A list of player stats totals for those players who particpated in games on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily Player Stats",
+        "version": "v1_2",
+        "abbreviation": "DAILY_PLAYER_STATS",
+        "description": "A list of player stats totals for those players who particpated in games on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game BoxScore",
+        "version": "v1_0",
+        "abbreviation": "GAME_BOXSCORE",
+        "description": "A boxscore of scoring plays and player stats, for a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Play-by-Play",
+        "version": "v1_0",
+        "abbreviation": "GAME_PLAYBYPLAY",
+        "description": "All plays that have occurred for a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Scoreboard",
+        "version": "v1_0",
+        "abbreviation": "SCOREBOARD",
+        "description": "Scores and status for all games on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game BoxScore",
+        "version": "v1_1",
+        "abbreviation": "GAME_BOXSCORE",
+        "description": "A boxscore of scoring plays and player stats, for a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Play-by-Play",
+        "version": "v1_1",
+        "abbreviation": "GAME_PLAYBYPLAY",
+        "description": "All plays that have occurred for a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Scoreboard",
+        "version": "v1_1",
+        "abbreviation": "SCOREBOARD",
+        "description": "Scores and status for all games on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game BoxScore",
+        "version": "v1_2",
+        "abbreviation": "GAME_BOXSCORE",
+        "description": "A boxscore of scoring plays and player stats, for a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Play-by-Play",
+        "version": "v1_2",
+        "abbreviation": "GAME_PLAYBYPLAY",
+        "description": "All plays that have occurred for a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Scoreboard",
+        "version": "v1_2",
+        "abbreviation": "SCOREBOARD",
+        "description": "Scores and status for all games on a given day."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Roster Players",
+        "version": "v1_0",
+        "abbreviation": "ROSTER_PLAYERS",
+        "description": "A list of players, along with details, currently assigned to a team's roster."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Starting Lineup",
+        "version": "v1_0",
+        "abbreviation": "GAME_STARTINGLINEUP",
+        "description": "Expected and Actual starting lineup for both teams of a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Player Game Logs",
+        "version": "v1_0",
+        "abbreviation": "PLAYER_GAMELOGS",
+        "description": "Game logs for one or more players"
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Team Game Logs",
+        "version": "v1_0",
+        "abbreviation": "TEAM_GAMELOGS",
+        "description": "Game logs for one or more teams"
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Roster Players",
+        "version": "v1_1",
+        "abbreviation": "ROSTER_PLAYERS",
+        "description": "A list of players, along with details, currently assigned to a team's roster."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Starting Lineup",
+        "version": "v1_1",
+        "abbreviation": "GAME_STARTINGLINEUP",
+        "description": "Expected and Actual starting lineup for both teams of a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Player Game Logs",
+        "version": "v1_1",
+        "abbreviation": "PLAYER_GAMELOGS",
+        "description": "Game logs for one or more players"
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Team Game Logs",
+        "version": "v1_1",
+        "abbreviation": "TEAM_GAMELOGS",
+        "description": "Game logs for one or more teams"
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Roster Players",
+        "version": "v1_2",
+        "abbreviation": "ROSTER_PLAYERS",
+        "description": "A list of players, along with details, currently assigned to a team's roster."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Game Starting Lineup",
+        "version": "v1_2",
+        "abbreviation": "GAME_STARTINGLINEUP",
+        "description": "Expected and Actual starting lineup for both teams of a game."
+      },
+      "forGames": [
+        {
+          "game": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Player Game Logs",
+        "version": "v1_2",
+        "abbreviation": "PLAYER_GAMELOGS",
+        "description": "Game logs for one or more players"
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Team Game Logs",
+        "version": "v1_2",
+        "abbreviation": "TEAM_GAMELOGS",
+        "description": "Game logs for one or more teams"
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Active Players",
+        "version": "v1_0",
+        "abbreviation": "ACTIVE_PLAYERS",
+        "description": "A list of players for the entire league, regardless of whether assigned to a team's roster."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Active Players",
+        "version": "v1_1",
+        "abbreviation": "ACTIVE_PLAYERS",
+        "description": "A list of players for the entire league, regardless of whether assigned to a team's roster."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Active Players",
+        "version": "v1_2",
+        "abbreviation": "ACTIVE_PLAYERS",
+        "description": "A list of players for the entire league, regardless of whether assigned to a team's roster."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Overall Team Standings",
+        "version": "v1_0",
+        "abbreviation": "OVERALL_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for ALL teams, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Overall Team Standings",
+        "version": "v1_1",
+        "abbreviation": "OVERALL_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for ALL teams, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Overall Team Standings",
+        "version": "v1_2",
+        "abbreviation": "OVERALL_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for ALL teams, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Conference Team Standings",
+        "version": "v1_0",
+        "abbreviation": "CONFERENCE_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for each Conference, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Conference Team Standings",
+        "version": "v1_1",
+        "abbreviation": "CONFERENCE_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for each Conference, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Conference Team Standings",
+        "version": "v1_2",
+        "abbreviation": "CONFERENCE_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for each Conference, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Division Team Standings",
+        "version": "v1_0",
+        "abbreviation": "DIVISION_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for each Division, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Division Team Standings",
+        "version": "v1_1",
+        "abbreviation": "DIVISION_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for each Division, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Division Team Standings",
+        "version": "v1_2",
+        "abbreviation": "DIVISION_TEAM_STANDINGS",
+        "description": "A list of ranked team standings for each Division, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Playoff Team Standings",
+        "version": "v1_0",
+        "abbreviation": "PLAYOFF_TEAM_STANDINGS",
+        "description": "A list of playoff-ranked team standings for each Conference, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Playoff Team Standings",
+        "version": "v1_1",
+        "abbreviation": "PLAYOFF_TEAM_STANDINGS",
+        "description": "A list of playoff-ranked team standings for each Conference, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Playoff Team Standings",
+        "version": "v1_2",
+        "abbreviation": "PLAYOFF_TEAM_STANDINGS",
+        "description": "A list of playoff-ranked team standings for each Conference, along with stats."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Player Injuries",
+        "version": "v1_0",
+        "abbreviation": "PLAYER_INJURIES",
+        "description": "A list of all currently injured players."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Player Injuries",
+        "version": "v1_1",
+        "abbreviation": "PLAYER_INJURIES",
+        "description": "A list of all currently injured players."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Player Injuries",
+        "version": "v1_2",
+        "abbreviation": "PLAYER_INJURIES",
+        "description": "A list of all currently injured players."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Latest Updates",
+        "version": "v1_0",
+        "abbreviation": "LATEST_UPDATES",
+        "description": "This feed lists the last updated date/time for each available feed."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Daily DFS",
+        "version": "v1_0",
+        "abbreviation": "DAILY_DFS",
+        "description": "A list of players, along with their DFS salaries and actual fantasy points."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Current Season",
+        "version": "v1_0",
+        "abbreviation": "CURRENT_SEASON",
+        "description": "The current season for a given date (or today), along with supported team/player stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Latest Updates",
+        "version": "v1_1",
+        "abbreviation": "LATEST_UPDATES",
+        "description": "This feed lists the last updated date/time for each available feed."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Daily DFS",
+        "version": "v1_1",
+        "abbreviation": "DAILY_DFS",
+        "description": "A list of players, along with their DFS salaries and actual fantasy points."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Current Season",
+        "version": "v1_1",
+        "abbreviation": "CURRENT_SEASON",
+        "description": "The current season for a given date (or today), along with supported team/player stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Latest Updates",
+        "version": "v1_2",
+        "abbreviation": "LATEST_UPDATES",
+        "description": "This feed lists the last updated date/time for each available feed."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Daily DFS",
+        "version": "v1_2",
+        "abbreviation": "DAILY_DFS",
+        "description": "A list of players, along with their DFS salaries and actual fantasy points."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Current Season",
+        "version": "v1_2",
+        "abbreviation": "CURRENT_SEASON",
+        "description": "The current season for a given date (or today), along with supported team/player stats."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Daily DFS",
+        "version": "v2_1",
+        "abbreviation": "DAILY_DFS",
+        "description": "A list of slates with games/contests/players, including salaries and fantasy points."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Injury History",
+        "version": "v2_0",
+        "abbreviation": "INJURY_HISTORY",
+        "description": "Injury history for all players on a specific date (defaults to today)."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Injury History",
+        "version": "v2_1",
+        "abbreviation": "INJURY_HISTORY",
+        "description": "Injury history for all players on a specific date (defaults to today)."
+      },
+      "forDates": [
+        {
+          "forDate": null,
+          "lastUpdatedOn": null
+        }
+      ]
+    },
+    {
+      "feed": {
+        "name": "Drafts",
+        "version": "v2_0",
+        "abbreviation": "DRAFTS",
+        "description": "Lists all drafts for the league, including draft picks for each round."
+      },
+      "lastUpdatedOn": null
+    },
+    {
+      "feed": {
+        "name": "Drafts",
+        "version": "v2_1",
+        "abbreviation": "DRAFTS",
+        "description": "Lists all drafts for the league, including draft picks for each round."
+      },
+      "lastUpdatedOn": null
+    }
+  ]
+}

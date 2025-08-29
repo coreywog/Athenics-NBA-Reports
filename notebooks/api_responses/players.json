@@ -1,0 +1,914 @@
+{
+  "lastUpdatedOn": "2025-08-27T15:22:16.060Z",
+  "players": [
+    {
+      "player": {
+        "id": 144265,
+        "firstName": "James",
+        "lastName": "Akinjo",
+        "primaryPosition": "PG",
+        "alternatePositions": [],
+        "jerseyNumber": 23,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "UNDRAFTED",
+        "currentInjury": null,
+        "height": "6'1\"",
+        "weight": 190,
+        "birthDate": "2000-11-27",
+        "age": 24,
+        "birthCity": "Oakland, CA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Baylor",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631231.png",
+        "socialMediaAccounts": [],
+        "currentContractYear": null,
+        "drafted": null,
+        "externalMappings": [
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:785813"
+          },
+          {
+            "source": "FanDuel",
+            "id": 213249
+          },
+          {
+            "source": "DraftKings",
+            "id": 1134627
+          },
+          {
+            "source": "NBA.com",
+            "id": 1631231
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 9325,
+        "firstName": "Giannis",
+        "lastName": "Antetokounmpo",
+        "primaryPosition": "SF",
+        "alternatePositions": [],
+        "jerseyNumber": 34,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'11\"",
+        "weight": 242,
+        "birthDate": "1994-12-06",
+        "age": 30,
+        "birthCity": "Athens",
+        "birthCountry": "Greece",
+        "rookie": false,
+        "highSchool": null,
+        "college": "Filathlitikos Div II Greece",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Giannis_An34"
+          }
+        ],
+        "currentContractYear": {
+          "seasonStartYear": 2025,
+          "baseSalary": 51935268,
+          "minorsSalary": 51935268,
+          "signingBonus": 0,
+          "otherBonuses": 0,
+          "capHit": 51935268,
+          "fullNoTradeClause": false,
+          "modifiedNoTradeClause": false,
+          "noMovementClause": false,
+          "overallContract": {
+            "signingTeam": {
+              "id": 90,
+              "abbreviation": "MIL"
+            },
+            "signedOn": "2020-12-15T10:00:00.000Z",
+            "totalYears": 5,
+            "totalSalary": 228200420,
+            "totalBonuses": 0,
+            "expiryStatus": "UFA",
+            "annualAverageSalary": 45640084
+          }
+        },
+        "drafted": {
+          "year": 2013,
+          "team": {
+            "id": 90,
+            "abbreviation": "MIL"
+          },
+          "pickTeam": {
+            "id": 90,
+            "abbreviation": "MIL"
+          },
+          "round": 1,
+          "roundPick": 15,
+          "overallPick": 15
+        },
+        "externalMappings": [
+          {
+            "source": "FantasyCruncher",
+            "id": 1973
+          },
+          {
+            "source": "FanDuel",
+            "id": 40199
+          },
+          {
+            "source": "DraftKings",
+            "id": 739957
+          },
+          {
+            "source": "NBA.com",
+            "id": 203507
+          },
+          {
+            "source": "Rotowire",
+            "id": "giannis-antetokounmpo-3456"
+          },
+          {
+            "source": "RealGM",
+            "id": 49629
+          },
+          {
+            "source": "Yahoo",
+            "id": "nba.p.5185"
+          },
+          {
+            "source": "FantasyDraft",
+            "id": 739957
+          },
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:755620"
+          },
+          {
+            "source": "spotrac",
+            "id": 13328
+          },
+          {
+            "source": "basketball-reference.com",
+            "id": "antetgi01"
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 16852
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 9560,
+        "firstName": "Thanasis",
+        "lastName": "Antetokounmpo",
+        "primaryPosition": "SF",
+        "alternatePositions": [],
+        "jerseyNumber": 43,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 215,
+        "birthDate": "1992-07-17",
+        "age": 33,
+        "birthCity": "Athens",
+        "birthCountry": "Greece",
+        "rookie": false,
+        "highSchool": null,
+        "college": null,
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203648.png",
+        "socialMediaAccounts": [],
+        "currentContractYear": null,
+        "drafted": {
+          "year": 2014,
+          "team": {
+            "id": 83,
+            "abbreviation": "NYK"
+          },
+          "pickTeam": {
+            "id": 108,
+            "abbreviation": "DAL"
+          },
+          "round": 2,
+          "roundPick": 21,
+          "overallPick": 51
+        },
+        "externalMappings": [
+          {
+            "source": "NBA.com",
+            "id": 203648
+          },
+          {
+            "source": "FantasyCruncher",
+            "id": 1193535
+          },
+          {
+            "source": "RealGM",
+            "id": 50244
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 31759
+          },
+          {
+            "source": "FantasyDraft",
+            "id": 803207
+          },
+          {
+            "source": "Yahoo",
+            "id": "nba.p.5362"
+          },
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:761263"
+          },
+          {
+            "source": "DraftKings",
+            "id": 803207
+          },
+          {
+            "source": "FanDuel",
+            "id": 111372
+          },
+          {
+            "source": "spotrac",
+            "id": 15403
+          },
+          {
+            "source": "basketball-reference.com",
+            "id": "antetth01"
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 27590,
+        "firstName": "Cole",
+        "lastName": "Anthony",
+        "primaryPosition": "PG",
+        "alternatePositions": [],
+        "jerseyNumber": 50,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'3\"",
+        "weight": 195,
+        "birthDate": "2000-05-15",
+        "age": 25,
+        "birthCity": "Queens, NY",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": null,
+        "college": "North Carolina",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630175.png",
+        "socialMediaAccounts": [],
+        "currentContractYear": null,
+        "drafted": {
+          "year": 2020,
+          "team": {
+            "id": 95,
+            "abbreviation": "ORL"
+          },
+          "pickTeam": {
+            "id": 95,
+            "abbreviation": "ORL"
+          },
+          "round": 1,
+          "roundPick": 15,
+          "overallPick": 15
+        },
+        "externalMappings": [
+          {
+            "source": "spotrac",
+            "id": 70657
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 2439330
+          },
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:790855"
+          },
+          {
+            "source": "Yahoo",
+            "id": "nba.p.6407"
+          },
+          {
+            "source": "DraftKings",
+            "id": 1185943
+          },
+          {
+            "source": "FanDuel",
+            "id": 145327
+          },
+          {
+            "source": "NBA.com",
+            "id": 1630175
+          },
+          {
+            "source": "Rotowire",
+            "id": "cole-anthony-5232"
+          },
+          {
+            "source": "RealGM",
+            "id": 105342
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 56038,
+        "firstName": "Ibou",
+        "lastName": "Badji",
+        "primaryPosition": "C",
+        "alternatePositions": [],
+        "jerseyNumber": null,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "UNDRAFTED",
+        "currentInjury": null,
+        "height": "7'2\"",
+        "weight": 230,
+        "birthDate": "2002-10-13",
+        "age": 22,
+        "birthCity": "Dakar",
+        "birthCountry": "Senegal",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Forca Lleida CE",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630641.png",
+        "socialMediaAccounts": [],
+        "currentContractYear": null,
+        "drafted": null,
+        "externalMappings": [
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:807020"
+          },
+          {
+            "source": "RealGM",
+            "id": 133690
+          },
+          {
+            "source": "Yahoo",
+            "id": "nba.p.6821"
+          },
+          {
+            "source": "NBA.com",
+            "id": 1630641
+          },
+          {
+            "source": "FanDuel",
+            "id": 180016
+          },
+          {
+            "source": "DraftKings",
+            "id": 1351728
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 4579357
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 9239,
+        "firstName": "Patrick",
+        "lastName": "Beverley",
+        "primaryPosition": "PG",
+        "alternatePositions": [],
+        "jerseyNumber": 21,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'1\"",
+        "weight": 180,
+        "birthDate": "1988-07-12",
+        "age": 37,
+        "birthCity": "Chicago, IL",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Marshall",
+        "college": "Dnipro Dnipropetrovsk",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/201976.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "patbev21"
+          }
+        ],
+        "currentContractYear": null,
+        "drafted": {
+          "year": 2009,
+          "team": {
+            "id": 105,
+            "abbreviation": "LAL"
+          },
+          "pickTeam": {
+            "id": 105,
+            "abbreviation": "LAL"
+          },
+          "round": 2,
+          "roundPick": 42,
+          "overallPick": 72
+        },
+        "externalMappings": [
+          {
+            "source": "Yahoo",
+            "id": "nba.p.4647"
+          },
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:747396"
+          },
+          {
+            "source": "spotrac",
+            "id": 6297
+          },
+          {
+            "source": "basketball-reference.com",
+            "id": "beverpa01"
+          },
+          {
+            "source": "FantasyCruncher",
+            "id": 702
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 14108
+          },
+          {
+            "source": "DraftKings",
+            "id": 332691
+          },
+          {
+            "source": "FanDuel",
+            "id": 12474
+          },
+          {
+            "source": "NBA.com",
+            "id": 201976
+          },
+          {
+            "source": "RealGM",
+            "id": 1684
+          },
+          {
+            "source": "FantasyDraft",
+            "id": 332691
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 53703,
+        "firstName": "Jamaree",
+        "lastName": "Bouyea",
+        "primaryPosition": "PG",
+        "alternatePositions": [],
+        "jerseyNumber": 15,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'2\"",
+        "weight": 170,
+        "birthDate": null,
+        "age": null,
+        "birthCity": null,
+        "birthCountry": null,
+        "rookie": true,
+        "highSchool": null,
+        "college": null,
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631123.png",
+        "socialMediaAccounts": [],
+        "currentContractYear": null,
+        "drafted": null,
+        "externalMappings": [
+          {
+            "source": "Yahoo",
+            "id": "nba.p.6800"
+          },
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:780238"
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 3583725
+          },
+          {
+            "source": "DraftKings",
+            "id": 1068236
+          },
+          {
+            "source": "FanDuel",
+            "id": 171679
+          },
+          {
+            "source": "NBA.com",
+            "id": 1631123
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 17215,
+        "firstName": "Amir",
+        "lastName": "Coffey",
+        "primaryPosition": "SG",
+        "alternatePositions": [],
+        "jerseyNumber": 7,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 210,
+        "birthDate": "1997-06-17",
+        "age": 28,
+        "birthCity": "Minnetonka, MN",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Hopkins",
+        "college": "Minnesota",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629599.png",
+        "socialMediaAccounts": [],
+        "currentContractYear": null,
+        "drafted": null,
+        "externalMappings": [
+          {
+            "source": "FanDuel",
+            "id": 111492
+          },
+          {
+            "source": "NBA.com",
+            "id": 1629599
+          },
+          {
+            "source": "DraftKings",
+            "id": 944822
+          },
+          {
+            "source": "Rotowire",
+            "id": "amir-coffey-4836"
+          },
+          {
+            "source": "RealGM",
+            "id": 59502
+          },
+          {
+            "source": "spotrac",
+            "id": 32198
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 1167676
+          },
+          {
+            "source": "FantasyDraft",
+            "id": 944822
+          },
+          {
+            "source": "Yahoo",
+            "id": "nba.p.6315"
+          },
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:775641"
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 10120,
+        "firstName": "Henry",
+        "lastName": "Ellenson",
+        "primaryPosition": "PF",
+        "alternatePositions": [],
+        "jerseyNumber": 44,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "UNDRAFTED",
+        "currentInjury": null,
+        "height": "6'11\"",
+        "weight": 245,
+        "birthDate": "1997-01-13",
+        "age": 28,
+        "birthCity": "Rice Lake, WI",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "Rice Lake",
+        "college": "Marquette University",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1627740.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "HenryEllenson13"
+          }
+        ],
+        "currentContractYear": null,
+        "drafted": {
+          "year": 2016,
+          "team": {
+            "id": 88,
+            "abbreviation": "DET"
+          },
+          "pickTeam": {
+            "id": 88,
+            "abbreviation": "DET"
+          },
+          "round": 1,
+          "roundPick": 18,
+          "overallPick": 18
+        },
+        "externalMappings": [
+          {
+            "source": "FanDuel",
+            "id": 66455
+          },
+          {
+            "source": "DraftKings",
+            "id": 882284
+          },
+          {
+            "source": "NBA.com",
+            "id": 1627740
+          },
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:767036"
+          },
+          {
+            "source": "Yahoo",
+            "id": "nba.p.5649"
+          },
+          {
+            "source": "spotrac",
+            "id": 20223
+          },
+          {
+            "source": "basketball-reference.com",
+            "id": "ellenhe01"
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 35191
+          },
+          {
+            "source": "FantasyCruncher",
+            "id": 1532716
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    },
+    {
+      "player": {
+        "id": 9187,
+        "firstName": "Danilo",
+        "lastName": "Gallinari",
+        "primaryPosition": "SF",
+        "alternatePositions": [],
+        "jerseyNumber": 12,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'10\"",
+        "weight": 233,
+        "birthDate": "1988-08-08",
+        "age": 37,
+        "birthCity": "Sant'Angelo Lodigiano",
+        "birthCountry": "Italy",
+        "rookie": false,
+        "highSchool": null,
+        "college": "AX Armani Exchange Milan",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/201568.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "gallinari8888"
+          }
+        ],
+        "currentContractYear": null,
+        "drafted": {
+          "year": 2008,
+          "team": {
+            "id": 83,
+            "abbreviation": "NYK"
+          },
+          "pickTeam": {
+            "id": 83,
+            "abbreviation": "NYK"
+          },
+          "round": 1,
+          "roundPick": 6,
+          "overallPick": 6
+        },
+        "externalMappings": [
+          {
+            "source": "NBA.com",
+            "id": 201568
+          },
+          {
+            "source": "RealGM",
+            "id": 761
+          },
+          {
+            "source": "Yahoo",
+            "id": "nba.p.4468"
+          },
+          {
+            "source": "FantasyDraft",
+            "id": 456448
+          },
+          {
+            "source": "Gracenote Sports",
+            "id": "/sport/basketball/player:739854"
+          },
+          {
+            "source": "spotrac",
+            "id": 6138
+          },
+          {
+            "source": "basketball-reference.com",
+            "id": "gallida01"
+          },
+          {
+            "source": "RotoGrinders",
+            "id": 1329
+          },
+          {
+            "source": "FantasyCruncher",
+            "id": 1907
+          },
+          {
+            "source": "FanDuel",
+            "id": 9637
+          },
+          {
+            "source": "DraftKings",
+            "id": 456448
+          }
+        ]
+      },
+      "teamAsOfDate": {
+        "id": 90,
+        "abbreviation": "MIL"
+      }
+    }
+  ],
+  "references": {
+    "teamReferences": [
+      {
+        "id": 90,
+        "city": "Milwaukee",
+        "name": "Bucks",
+        "abbreviation": "MIL",
+        "homeVenue": {
+          "id": 152,
+          "name": "Fiserv Forum"
+        },
+        "teamColoursHex": [
+          "#00471b",
+          "#eee1c6",
+          "#0077c0",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Bucks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg"
+      }
+    ],
+    "venueReferences": [
+      {
+        "id": 152,
+        "name": "Fiserv Forum",
+        "city": "Milwaukee, WI",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 43.045028,
+          "longitude": -87.918167
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "GENERAL",
+            "capacity": 17341
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,1221 @@
+{
+  "lastUpdatedOn": "2025-04-15T07:38:41.753Z",
+  "gamelogs": [
+    {
+      "game": {
+        "id": 137621,
+        "startTime": "2024-10-23T23:30:00.000Z",
+        "awayTeamAbbreviation": "MIL",
+        "homeTeamAbbreviation": "PHI"
+      },
+      "player": {
+        "id": 9325,
+        "firstName": "Giannis",
+        "lastName": "Antetokounmpo",
+        "position": "SF",
+        "jerseyNumber": 34
+      },
+      "team": {
+        "id": 90,
+        "abbreviation": "MIL"
+      },
+      "stats": {
+        "fieldGoals": {
+          "fg2PtAtt": 11,
+          "fg2PtAttPerGame": 11.0,
+          "fg2PtMade": 8,
+          "fg2PtMadePerGame": 8.0,
+          "fg2PtPct": 72.7,
+          "fg3PtAtt": 0,
+          "fg3PtAttPerGame": 0.0,
+          "fg3PtMade": 0,
+          "fg3PtMadePerGame": 0.0,
+          "fg3PtPct": 0.0,
+          "fgAtt": 11,
+          "fgAttPerGame": 11.0,
+          "fgMade": 8,
+          "fgMadePerGame": 8.0,
+          "fgPct": 72.7
+        },
+        "freeThrows": {
+          "ftAtt": 16,
+          "ftAttPerGame": 16.0,
+          "ftMade": 9,
+          "ftMadePerGame": 9.0,
+          "ftPct": 56.2
+        },
+        "rebounds": {
+          "offReb": 1,
+          "offRebPerGame": 1.0,
+          "defReb": 13,
+          "defRebPerGame": 13.0,
+          "reb": 14,
+          "rebPerGame": 14.0
+        },
+        "offense": {
+          "ast": 7,
+          "astPerGame": 7.0,
+          "pts": 25,
+          "ptsPerGame": 25.0
+        },
+        "defense": {
+          "tov": 3,
+          "tovPerGame": 3.0,
+          "stl": 0,
+          "stlPerGame": 0.0,
+          "blk": 1,
+          "blkPerGame": 1.0,
+          "blkAgainst": 0,
+          "blkAgainstPerGame": 0.0
+        },
+        "miscellaneous": {
+          "fouls": 4,
+          "foulsPerGame": 4.0,
+          "foulsDrawn": 0,
+          "foulsDrawnPerGame": 0.0,
+          "foulPers": 4,
+          "foulPersPerGame": 4.0,
+          "foulPersDrawn": 0,
+          "foulPersDrawnPerGame": 0.0,
+          "foulTech": 0,
+          "foulTechPerGame": 0.0,
+          "foulTechDrawn": 0,
+          "foulTechDrawnPerGame": 0.0,
+          "foulFlag1": 0,
+          "foulFlag1PerGame": 0.0,
+          "foulFlag1Drawn": 0,
+          "foulFlag1DrawnPerGame": 0.0,
+          "foulFlag2": 0,
+          "foulFlag2PerGame": 0.0,
+          "foulFlag2Drawn": 0,
+          "foulFlag2DrawnPerGame": 0.0,
+          "ejections": 0,
+          "plusMinus": 7,
+          "plusMinusPerGame": 7.0,
+          "minSeconds": 1872,
+          "minSecondsPerGame": 1872.0,
+          "gamesStarted": 1
+        }
+      }
+    },
+    {
+      "game": {
+        "id": 137621,
+        "startTime": "2024-10-23T23:30:00.000Z",
+        "awayTeamAbbreviation": "MIL",
+        "homeTeamAbbreviation": "PHI"
+      },
+      "player": {
+        "id": 39835,
+        "firstName": "MarJon",
+        "lastName": "Beauchamp",
+        "position": "SF",
+        "jerseyNumber": 3
+      },
+      "team": {
+        "id": 90,
+        "abbreviation": "MIL"
+      },
+      "stats": {
+        "fieldGoals": {
+          "fg2PtAtt": 0,
+          "fg2PtAttPerGame": 0.0,
+          "fg2PtMade": 0,
+          "fg2PtMadePerGame": 0.0,
+          "fg2PtPct": 0.0,
+          "fg3PtAtt": 0,
+          "fg3PtAttPerGame": 0.0,
+          "fg3PtMade": 0,
+          "fg3PtMadePerGame": 0.0,
+          "fg3PtPct": 0.0,
+          "fgAtt": 0,
+          "fgAttPerGame": 0.0,
+          "fgMade": 0,
+          "fgMadePerGame": 0.0,
+          "fgPct": 0.0
+        },
+        "freeThrows": {
+          "ftAtt": 0,
+          "ftAttPerGame": 0.0,
+          "ftMade": 0,
+          "ftMadePerGame": 0.0,
+          "ftPct": 0.0
+        },
+        "rebounds": {
+          "offReb": 0,
+          "offRebPerGame": 0.0,
+          "defReb": 0,
+          "defRebPerGame": 0.0,
+          "reb": 0,
+          "rebPerGame": 0.0
+        },
+        "offense": {
+          "ast": 0,
+          "astPerGame": 0.0,
+          "pts": 0,
+          "ptsPerGame": 0.0
+        },
+        "defense": {
+          "tov": 0,
+          "tovPerGame": 0.0,
+          "stl": 0,
+          "stlPerGame": 0.0,
+          "blk": 0,
+          "blkPerGame": 0.0,
+          "blkAgainst": 0,
+          "blkAgainstPerGame": 0.0
+        },
+        "miscellaneous": {
+          "fouls": 0,
+          "foulsPerGame": 0.0,
+          "foulsDrawn": 0,
+          "foulsDrawnPerGame": 0.0,
+          "foulPers": 0,
+          "foulPersPerGame": 0.0,
+          "foulPersDrawn": 0,
+          "foulPersDrawnPerGame": 0.0,
+          "foulTech": 0,
+          "foulTechPerGame": 0.0,
+          "foulTechDrawn": 0,
+          "foulTechDrawnPerGame": 0.0,
+          "foulFlag1": 0,
+          "foulFlag1PerGame": 0.0,
+          "foulFlag1Drawn": 0,
+          "foulFlag1DrawnPerGame": 0.0,
+          "foulFlag2": 0,
+          "foulFlag2PerGame": 0.0,
+          "foulFlag2Drawn": 0,
+          "foulFlag2DrawnPerGame": 0.0,
+          "ejections": 0,
+          "plusMinus": 0,
+          "plusMinusPerGame": 0.0,
+          "minSeconds": 37,
+          "minSecondsPerGame": 37.0,
+          "gamesStarted": 0
+        }
+      }
+    },
+    {
+      "game": {
+        "id": 137621,
+        "startTime": "2024-10-23T23:30:00.000Z",
+        "awayTeamAbbreviation": "MIL",
+        "homeTeamAbbreviation": "PHI"
+      },
+      "player": {
+        "id": 9456,
+        "firstName": "Pat",
+        "lastName": "Connaughton",
+        "position": "SG",
+        "jerseyNumber": 24
+      },
+      "team": {
+        "id": 90,
+        "abbreviation": "MIL"
+      },
+      "stats": {
+        "fieldGoals": {
+          "fg2PtAtt": 4,
+          "fg2PtAttPerGame": 4.0,
+          "fg2PtMade": 3,
+          "fg2PtMadePerGame": 3.0,
+          "fg2PtPct": 75.0,
+          "fg3PtAtt": 5,
+          "fg3PtAttPerGame": 5.0,
+          "fg3PtMade": 1,
+          "fg3PtMadePerGame": 1.0,
+          "fg3PtPct": 20.0,
+          "fgAtt": 9,
+          "fgAttPerGame": 9.0,
+          "fgMade": 4,
+          "fgMadePerGame": 4.0,
+          "fgPct": 44.4
+        },
+        "freeThrows": {
+          "ftAtt": 0,
+          "ftAttPerGame": 0.0,
+          "ftMade": 0,
+          "ftMadePerGame": 0.0,
+          "ftPct": 0.0
+        },
+        "rebounds": {
+          "offReb": 1,
+          "offRebPerGame": 1.0,
+          "defReb": 3,
+          "defRebPerGame": 3.0,
+          "reb": 4,
+          "rebPerGame": 4.0
+        },
+        "offense": {
+          "ast": 1,
+          "astPerGame": 1.0,
+          "pts": 9,
+          "ptsPerGame": 9.0
+        },
+        "defense": {
+          "tov": 0,
+          "tovPerGame": 0.0,
+          "stl": 0,
+          "stlPerGame": 0.0,
+          "blk": 1,
+          "blkPerGame": 1.0,
+          "blkAgainst": 1,
+          "blkAgainstPerGame": 1.0
+        },
+        "miscellaneous": {
+          "fouls": 1,
+          "foulsPerGame": 1.0,
+          "foulsDrawn": 0,
+          "foulsDrawnPerGame": 0.0,
+          "foulPers": 1,
+          "foulPersPerGame": 1.0,
+          "foulPersDrawn": 0,
+          "foulPersDrawnPerGame": 0.0,
+          "foulTech": 0,
+          "foulTechPerGame": 0.0,
+          "foulTechDrawn": 0,
+          "foulTechDrawnPerGame": 0.0,
+          "foulFlag1": 0,
+          "foulFlag1PerGame": 0.0,
+          "foulFlag1Drawn": 0,
+          "foulFlag1DrawnPerGame": 0.0,
+          "foulFlag2": 0,
+          "foulFlag2PerGame": 0.0,
+          "foulFlag2Drawn": 0,
+          "foulFlag2DrawnPerGame": 0.0,
+          "ejections": 0,
+          "plusMinus": 5,
+          "plusMinusPerGame": 5.0,
+          "minSeconds": 1254,
+          "minSecondsPerGame": 1254.0,
+          "gamesStarted": 0
+        }
+      }
+    },
+    {
+      "game": {
+        "id": 137621,
+        "startTime": "2024-10-23T23:30:00.000Z",
+        "awayTeamAbbreviation": "MIL",
+        "homeTeamAbbreviation": "PHI"
+      },
+      "player": {
+        "id": 39849,
+        "firstName": "A.J.",
+        "lastName": "Green",
+        "position": "SG",
+        "jerseyNumber": 20
+      },
+      "team": {
+        "id": 90,
+        "abbreviation": "MIL"
+      },
+      "stats": {
+        "fieldGoals": {
+          "fg2PtAtt": 0,
+          "fg2PtAttPerGame": 0.0,
+          "fg2PtMade": 0,
+          "fg2PtMadePerGame": 0.0,
+          "fg2PtPct": 0.0,
+          "fg3PtAtt": 0,
+          "fg3PtAttPerGame": 0.0,
+          "fg3PtMade": 0,
+          "fg3PtMadePerGame": 0.0,
+          "fg3PtPct": 0.0,
+          "fgAtt": 0,
+          "fgAttPerGame": 0.0,
+          "fgMade": 0,
+          "fgMadePerGame": 0.0,
+          "fgPct": 0.0
+        },
+        "freeThrows": {
+          "ftAtt": 0,
+          "ftAttPerGame": 0.0,
+          "ftMade": 0,
+          "ftMadePerGame": 0.0,
+          "ftPct": 0.0
+        },
+        "rebounds": {
+          "offReb": 0,
+          "offRebPerGame": 0.0,
+          "defReb": 0,
+          "defRebPerGame": 0.0,
+          "reb": 0,
+          "rebPerGame": 0.0
+        },
+        "offense": {
+          "ast": 1,
+          "astPerGame": 1.0,
+          "pts": 0,
+          "ptsPerGame": 0.0
+        },
+        "defense": {
+          "tov": 0,
+          "tovPerGame": 0.0,
+          "stl": 1,
+          "stlPerGame": 1.0,
+          "blk": 0,
+          "blkPerGame": 0.0,
+          "blkAgainst": 0,
+          "blkAgainstPerGame": 0.0
+        },
+        "miscellaneous": {
+          "fouls": 0,
+          "foulsPerGame": 0.0,
+          "foulsDrawn": 0,
+          "foulsDrawnPerGame": 0.0,
+          "foulPers": 0,
+          "foulPersPerGame": 0.0,
+          "foulPersDrawn": 0,
+          "foulPersDrawnPerGame": 0.0,
+          "foulTech": 0,
+          "foulTechPerGame": 0.0,
+          "foulTechDrawn": 0,
+          "foulTechDrawnPerGame": 0.0,
+          "foulFlag1": 0,
+          "foulFlag1PerGame": 0.0,
+          "foulFlag1Drawn": 0,
+          "foulFlag1DrawnPerGame": 0.0,
+          "foulFlag2": 0,
+          "foulFlag2PerGame": 0.0,
+          "foulFlag2Drawn": 0,
+          "foulFlag2DrawnPerGame": 0.0,
+          "ejections": 0,
+          "plusMinus": 4,
+          "plusMinusPerGame": 4.0,
+          "minSeconds": 244,
+          "minSecondsPerGame": 244.0,
+          "gamesStarted": 0
+        }
+      }
+    },
+    {
+      "game": {
+        "id": 137621,
+        "startTime": "2024-10-23T23:30:00.000Z",
+        "awayTeamAbbreviation": "MIL",
+        "homeTeamAbbreviation": "PHI"
+      },
+      "player": {
+        "id": 111232,
+        "firstName": "Andre",
+        "lastName": "Jackson Jr.",
+        "position": "SG",
+        "jerseyNumber": 44
+      },
+      "team": {
+        "id": 90,
+        "abbreviation": "MIL"
+      },
+      "stats": {
+        "fieldGoals": {
+          "fg2PtAtt": 0,
+          "fg2PtAttPerGame": 0.0,
+          "fg2PtMade": 0,
+          "fg2PtMadePerGame": 0.0,
+          "fg2PtPct": 0.0,
+          "fg3PtAtt": 0,
+          "fg3PtAttPerGame": 0.0,
+          "fg3PtMade": 0,
+          "fg3PtMadePerGame": 0.0,
+          "fg3PtPct": 0.0,
+          "fgAtt": 0,
+          "fgAttPerGame": 0.0,
+          "fgMade": 0,
+          "fgMadePerGame": 0.0,
+          "fgPct": 0.0
+        },
+        "freeThrows": {
+          "ftAtt": 0,
+          "ftAttPerGame": 0.0,
+          "ftMade": 0,
+          "ftMadePerGame": 0.0,
+          "ftPct": 0.0
+        },
+        "rebounds": {
+          "offReb": 0,
+          "offRebPerGame": 0.0,
+          "defReb": 0,
+          "defRebPerGame": 0.0,
+          "reb": 0,
+          "rebPerGame": 0.0
+        },
+        "offense": {
+          "ast": 0,
+          "astPerGame": 0.0,
+          "pts": 0,
+          "ptsPerGame": 0.0
+        },
+        "defense": {
+          "tov": 0,
+          "tovPerGame": 0.0,
+          "stl": 0,
+          "stlPerGame": 0.0,
+          "blk": 0,
+          "blkPerGame": 0.0,
+          "blkAgainst": 0,
+          "blkAgainstPerGame": 0.0
+        },
+        "miscellaneous": {
+          "fouls": 0,
+          "foulsPerGame": 0.0,
+          "foulsDrawn": 0,
+          "foulsDrawnPerGame": 0.0,
+          "foulPers": 0,
+          "foulPersPerGame": 0.0,
+          "foulPersDrawn": 0,
+          "foulPersDrawnPerGame": 0.0,
+          "foulTech": 0,
+          "foulTechPerGame": 0.0,
+          "foulTechDrawn": 0,
+          "foulTechDrawnPerGame": 0.0,
+          "foulFlag1": 0,
+          "foulFlag1PerGame": 0.0,
+          "foulFlag1Drawn": 0,
+          "foulFlag1DrawnPerGame": 0.0,
+          "foulFlag2": 0,
+          "foulFlag2PerGame": 0.0,
+          "foulFlag2Drawn": 0,
+          "foulFlag2DrawnPerGame": 0.0,
+          "ejections": 0,
+          "plusMinus": 0,
+          "plusMinusPerGame": 0.0,
+          "minSeconds": 66,
+          "minSecondsPerGame": 66.0,
+          "gamesStarted": 0
+        }
+      }
+    }
+  ],
+  "references": {
+    "teamReferences": [
+      {
+        "id": 85,
+        "city": "Philadelphia",
+        "name": "76ers",
+        "abbreviation": "PHI",
+        "homeVenue": {
+          "id": 29,
+          "name": "Wells Fargo Center"
+        },
+        "teamColoursHex": [
+          "#006bb6",
+          "#ed174c",
+          "#002b5c",
+          "#c4ced4"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "sixers"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612755/primary/L/logo.svg"
+      },
+      {
+        "id": 90,
+        "city": "Milwaukee",
+        "name": "Bucks",
+        "abbreviation": "MIL",
+        "homeVenue": {
+          "id": 152,
+          "name": "Fiserv Forum"
+        },
+        "teamColoursHex": [
+          "#00471b",
+          "#eee1c6",
+          "#0077c0",
+          "#000000"
+        ],
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Bucks"
+          }
+        ],
+        "officialLogoImageSrc": "https://cdn.nba.com/logos/nba/1610612749/primary/L/logo.svg"
+      }
+    ],
+    "venueReferences": [
+      {
+        "id": 29,
+        "name": "Wells Fargo Center",
+        "city": "Philadelphia, PA",
+        "country": "USA",
+        "geoCoordinates": {
+          "latitude": 39.901111,
+          "longitude": -75.171944
+        },
+        "capacitiesByEventType": [
+          {
+            "eventType": "ICE_HOCKEY",
+            "capacity": 19306
+          },
+          {
+            "eventType": "BASKETBALL",
+            "capacity": 20478
+          },
+          {
+            "eventType": "ARENA_FOOTBALL",
+            "capacity": 17597
+          }
+        ],
+        "playingSurface": null,
+        "baseballDimensions": [],
+        "hasRoof": true,
+        "hasRetractableRoof": false
+      }
+    ],
+    "gameReferences": [
+      {
+        "id": 137621,
+        "startTime": "2024-10-23T23:30:00.000Z",
+        "endedTime": "2024-10-24T01:57:00.000Z",
+        "awayTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "homeTeam": {
+          "id": 85,
+          "abbreviation": "PHI"
+        },
+        "venue": {
+          "id": 29,
+          "name": "Wells Fargo Center"
+        },
+        "venueAllegiance": "HOME",
+        "scheduleStatus": "NORMAL",
+        "originalStartTime": null,
+        "delayedOrPostponedReason": null,
+        "playedStatus": "COMPLETED",
+        "attendance": 19754,
+        "officials": [],
+        "broadcasters": [
+          "TSN",
+          "ESPN"
+        ],
+        "weather": {
+          "type": "CLOUDY",
+          "description": "scattered clouds",
+          "wind": {
+            "speed": {
+              "milesPerHour": 10,
+              "kilometersPerHour": 16
+            },
+            "direction": {
+              "degrees": 229,
+              "label": "WSW"
+            }
+          },
+          "temperature": {
+            "fahrenheit": 73,
+            "celsius": 23
+          },
+          "precipitation": {
+            "type": null,
+            "percent": null,
+            "amount": {
+              "millimeters": null,
+              "centimeters": null,
+              "inches": null,
+              "feet": null
+            }
+          },
+          "humidityPercent": 64
+        }
+      }
+    ],
+    "playerReferences": [
+      {
+        "id": 9325,
+        "firstName": "Giannis",
+        "lastName": "Antetokounmpo",
+        "primaryPosition": "SF",
+        "jerseyNumber": 34,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'11\"",
+        "weight": 242,
+        "birthDate": "1994-12-06",
+        "age": 30,
+        "birthCity": "Athens",
+        "birthCountry": "Greece",
+        "rookie": false,
+        "highSchool": null,
+        "college": "Filathlitikos Div II Greece",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/203507.png",
+        "socialMediaAccounts": [
+          {
+            "mediaType": "TWITTER",
+            "value": "Giannis_An34"
+          }
+        ]
+      },
+      {
+        "id": 9456,
+        "firstName": "Pat",
+        "lastName": "Connaughton",
+        "primaryPosition": "SG",
+        "jerseyNumber": 24,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'4\"",
+        "weight": 209,
+        "birthDate": "1993-01-06",
+        "age": 32,
+        "birthCity": "Arlington, MA",
+        "birthCountry": "USA",
+        "rookie": false,
+        "highSchool": "St. John's Prep",
+        "college": "Notre Dame",
+        "handedness": {
+          "shoots": "R"
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1626192.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 39835,
+        "firstName": "MarJon",
+        "lastName": "Beauchamp",
+        "primaryPosition": "SF",
+        "jerseyNumber": 3,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'7\"",
+        "weight": 197,
+        "birthDate": "2000-10-12",
+        "age": 24,
+        "birthCity": "Seattle, WA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Yakima Valley",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630699.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 39849,
+        "firstName": "A.J.",
+        "lastName": "Green",
+        "primaryPosition": "SG",
+        "jerseyNumber": 20,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'4\"",
+        "weight": 190,
+        "birthDate": "1999-09-27",
+        "age": 25,
+        "birthCity": "Cedar Falls, IA",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "Northern Iowa",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631260.png",
+        "socialMediaAccounts": []
+      },
+      {
+        "id": 111232,
+        "firstName": "Andre",
+        "lastName": "Jackson Jr.",
+        "primaryPosition": "SG",
+        "jerseyNumber": 44,
+        "currentTeam": {
+          "id": 90,
+          "abbreviation": "MIL"
+        },
+        "currentRosterStatus": "ROSTER",
+        "currentInjury": null,
+        "height": "6'6\"",
+        "weight": 200,
+        "birthDate": "2001-11-13",
+        "age": 23,
+        "birthCity": "Amsterdam, NY",
+        "birthCountry": "USA",
+        "rookie": true,
+        "highSchool": null,
+        "college": "UConn",
+        "handedness": {
+          "shoots": null
+        },
+        "officialImageSrc": "https://cdn.nba.com/headshots/nba/latest/1040x760/1641748.png",
+        "socialMediaAccounts": []
+      }
+    ],
+    "playerStatReferences": [
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtAtt",
+        "description": "2Pt Field Goal Attempts",
+        "abbreviation": "2PA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtAttPerGame",
+        "description": "2Pt Field Goal Attempts / Game",
+        "abbreviation": "2PA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtMade",
+        "description": "2Pt Field Goals Made",
+        "abbreviation": "2PM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtMadePerGame",
+        "description": "2Pt Field Goals Made / Game",
+        "abbreviation": "2PM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg2PtPct",
+        "description": "2Pt Field Goal %",
+        "abbreviation": "2P%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtAtt",
+        "description": "3Pt Field Goal Attempts",
+        "abbreviation": "3PA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtAttPerGame",
+        "description": "3Pt Field Goal Attempts / Game",
+        "abbreviation": "3PA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtMade",
+        "description": "3Pt Field Goals Made",
+        "abbreviation": "3PM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtMadePerGame",
+        "description": "3Pt Field Goals Made / Game",
+        "abbreviation": "3PM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fg3PtPct",
+        "description": "3Pt Field Goal %",
+        "abbreviation": "3P%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgAtt",
+        "description": "Total Field Goal Attempts",
+        "abbreviation": "FGA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgAttPerGame",
+        "description": "Total Field Goal Attempts / Game",
+        "abbreviation": "FGA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgMade",
+        "description": "Total Field Goals Made",
+        "abbreviation": "FGM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgMadePerGame",
+        "description": "Total Field Goals Made / Game",
+        "abbreviation": "FGM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Field Goals",
+        "fullName": "fgPct",
+        "description": "Total Field Goal %",
+        "abbreviation": "FG%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftAtt",
+        "description": "Free Throw Attempts",
+        "abbreviation": "FTA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftAttPerGame",
+        "description": "Free Throw Attempts / Game",
+        "abbreviation": "FTA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftMade",
+        "description": "Free Throws Made",
+        "abbreviation": "FTM",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftMadePerGame",
+        "description": "Free Throws Made / Game",
+        "abbreviation": "FTM/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Free Throws",
+        "fullName": "ftPct",
+        "description": "Free Throw %",
+        "abbreviation": "FT%",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "offReb",
+        "description": "Offensive Rebounds",
+        "abbreviation": "OREB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "offRebPerGame",
+        "description": "Offensive Rebounds / Game",
+        "abbreviation": "OREB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "defReb",
+        "description": "Defensive Rebounds",
+        "abbreviation": "DREB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "defRebPerGame",
+        "description": "Defensive Rebounds / Game",
+        "abbreviation": "DREB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "reb",
+        "description": "Total Rebounds",
+        "abbreviation": "REB",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Rebounds",
+        "fullName": "rebPerGame",
+        "description": "Total Rebounds / Game",
+        "abbreviation": "REB/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Offense",
+        "fullName": "ast",
+        "description": "Assists",
+        "abbreviation": "AST",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Offense",
+        "fullName": "astPerGame",
+        "description": "Assists / Game",
+        "abbreviation": "AST/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Offense",
+        "fullName": "pts",
+        "description": "Points",
+        "abbreviation": "PTS",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Offense",
+        "fullName": "ptsPerGame",
+        "description": "Points / Game",
+        "abbreviation": "PTS/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "tov",
+        "description": "Turnovers",
+        "abbreviation": "TOV",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "tovPerGame",
+        "description": "Turnovers / Game",
+        "abbreviation": "TOV/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "stl",
+        "description": "Steals",
+        "abbreviation": "STL",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "stlPerGame",
+        "description": "Steals / Game",
+        "abbreviation": "STL/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blk",
+        "description": "Blocks",
+        "abbreviation": "BS",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkPerGame",
+        "description": "Blocks / Game",
+        "abbreviation": "BS/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkAgainst",
+        "description": "Blocks Against",
+        "abbreviation": "BA",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Defense",
+        "fullName": "blkAgainstPerGame",
+        "description": "Blocks Against / Game",
+        "abbreviation": "BA/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPers",
+        "description": "Personal Fouls",
+        "abbreviation": "PF",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersPerGame",
+        "description": "Personal Fouls / Game",
+        "abbreviation": "PF/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "plusMinus",
+        "description": "Plus/Minus",
+        "abbreviation": "+/-",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "plusMinusPerGame",
+        "description": "Plus/Minus / Game",
+        "abbreviation": "+/-/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "minSeconds",
+        "description": "Minutes Played",
+        "abbreviation": "MIN",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "minSecondsPerGame",
+        "description": "Minutes Played / Game",
+        "abbreviation": "MIN/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "fouls",
+        "description": "Fouls",
+        "abbreviation": "F",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsPerGame",
+        "description": "Fouls / Game",
+        "abbreviation": "F/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsDrawn",
+        "description": "Fouls Drawn",
+        "abbreviation": "FD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulsDrawnPerGame",
+        "description": "Fouls Drawn / Game",
+        "abbreviation": "FD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersDrawn",
+        "description": "Personal Fouls Drawn",
+        "abbreviation": "PFD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulPersDrawnPerGame",
+        "description": "Personal Fouls Drawn / Game",
+        "abbreviation": "PFD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTech",
+        "description": "Technical Fouls",
+        "abbreviation": "TF",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechPerGame",
+        "description": "Technical Fouls / Game",
+        "abbreviation": "TF/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechDrawn",
+        "description": "Technical Fouls Drawn",
+        "abbreviation": "TFD",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulTechDrawnPerGame",
+        "description": "Technical Fouls Drawn / Game",
+        "abbreviation": "TFD/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1",
+        "description": "Flagrant 1 Fouls",
+        "abbreviation": "FF1",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1PerGame",
+        "description": "Flagrant 1 Fouls / Game",
+        "abbreviation": "FF1/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1Drawn",
+        "description": "Flagrant 1 Fouls Drawn",
+        "abbreviation": "FF1D",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag1DrawnPerGame",
+        "description": "Flagrant 1 Fouls Drawn / Game",
+        "abbreviation": "FF1D/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2",
+        "description": "Flagrant 2 Fouls",
+        "abbreviation": "FF2",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2PerGame",
+        "description": "Flagrant 2 Fouls / Game",
+        "abbreviation": "FF2/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2Drawn",
+        "description": "Flagrant 2 Fouls Drawn",
+        "abbreviation": "FF2D",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "foulFlag2DrawnPerGame",
+        "description": "Flagrant 2 Fouls Drawn / Game",
+        "abbreviation": "FF2D/G",
+        "type": "DECIMAL"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "ejections",
+        "description": "Ejections From Games",
+        "abbreviation": "EJE",
+        "type": "INTEGER"
+      },
+      {
+        "category": "Miscellaneous",
+        "fullName": "gamesStarted",
+        "description": "Games Started",
+        "abbreviation": "GS",
+        "type": "INTEGER"
+      }
+    ]
+  }
+}

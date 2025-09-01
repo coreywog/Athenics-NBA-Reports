@@ -1,0 +1,54 @@
+please update the matchup report generator with these fixes that claude implemented intot he code editor: Update(src/reports/matchup_report_generator.py)
+  ⎿  Updated src/reports/matchup_report_generator.py with 1 addition and 1 removal
+       286                        
+
+
+       287                            
+
+
+       288                                {{ data.away_team.abbreviation }}
+
+'">
+       289 +                                   
+           +  onerror="this.style.display='none'; 
+           +  this.parentElement.innerHTML='
+
+{{ data.away_team.abbreviation }}
+
+';">
+       290                            
+
+
+       291                            
+
+
+       292                                
+
+
+⏺ Update(src/reports/matchup_report_generator.py)
+  ⎿  Updated src/reports/matchup_report_generator.py with 1 addition and 1 removal
+       332                        
+
+
+       333                            
+
+
+       334                                {{ data.home_team.abbreviation }}
+
+'">
+       335 +                                   
+           +  onerror="this.style.display='none'; 
+           +  this.parentElement.innerHTML='
+
+{{ data.home_team.abbreviation }}
+
+';">
+       336                            
+
+
+       337                            
+
+
+       338                                
+
+ ----- I want to make some more fixeds. Things are looking better but not 100% perfect. I want to add the three letter team abbrevation next to the city (MIL,PHI,etc.) I also want the bucks and team info to be aligned with the team logo! This gives us space undernead of that to put the conference and divison records (next to the overall,conference and division) lets make these udpates

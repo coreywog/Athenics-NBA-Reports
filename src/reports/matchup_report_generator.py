@@ -60,7 +60,7 @@ class MatchupReportGenerator:
             output_filename = f"{away_abbr}_at_{home_abbr}_{datetime.now().strftime('%Y%m%d')}.html"
         
         output_path = self.output_dir / output_filename
-        with open(output_path, 'w') as f:
+        with open(output_path, 'w', encoding='utf-8') as f:
             f.write(html_content)
         
         print(f"Report generated: {output_path}")
@@ -117,26 +117,32 @@ class MatchupReportGenerator:
         .teams-container {
             display: flex;
             justify-content: space-between;
-            align-items: stretch;
-            gap: 30px;
+            align-items: flex-start;
+            gap: 20px;
         }
         
         .team-wrapper {
             flex: 1;
             display: flex;
-            align-items: center;
-            gap: 20px;
+            flex-direction: column;
         }
         
-        .team-wrapper.away {
+        .team-top-section {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+        
+        .team-wrapper.away .team-top-section {
             flex-direction: row;
         }
         
-        .team-wrapper.home {
+        .team-wrapper.home .team-top-section {
             flex-direction: row-reverse;
         }
         
         .team-info-side {
+            flex: 1;
             text-align: left;
         }
         
@@ -162,14 +168,17 @@ class MatchupReportGenerator:
         }
         
         .team-logo-section {
+            width: 120px;
+            height: 120px;
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
         }
         
         .team-logo {
-            width: 120px;
-            height: 120px;
+            width: 100%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -181,14 +190,97 @@ class MatchupReportGenerator:
             object-fit: contain;
         }
         
-        .records-below-logo {
-            margin-top: 15px;
-            text-align: center;
-            font-size: 13px;
+        .team-extra-records {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 12px;
         }
         
-        .record-item {
-            padding: 3px 0;
+        .team-wrapper.away .team-extra-records {
+            justify-content: flex-start;
+            padding-left: 10px;
+        }
+        
+        .team-wrapper.home .team-extra-records {
+            justify-content: flex-end;
+            padding-right: 10px;
+        }
+        
+        .extra-record {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .extra-label {
+            color: #888;
+            font-size: 11px;
+        }
+        
+        .extra-value {
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .center-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        
+        .h2h-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .vs-text {
+            font-size: 11px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 3px;
+        }
+        
+        .h2h-label {
+            font-size: 10px;
+            color: #999;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        
+        .h2h-record {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .records-comparison {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        
+        .away-records, .home-records {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        
+        .away-records {
+            text-align: right;
+        }
+        
+        .home-records {
+            text-align: left;
+        }
+        
+        .record-labels {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-align: center;
         }
         
         .record-label {
@@ -200,36 +292,6 @@ class MatchupReportGenerator:
         .record-value {
             font-weight: bold;
             font-size: 14px;
-        }
-        
-        .other-records {
-            margin-top: 10px;
-            padding-top: 10px;
-            border-top: 1px solid #444;
-            font-size: 12px;
-            color: #888;
-        }
-        
-        .vs-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-width: 150px;
-        }
-        
-        .vs-text {
-            font-size: 12px;
-            color: #666;
-            margin-bottom: 5px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .h2h-record {
-            font-size: 18px;
-            font-weight: bold;
-            color: #fff;
         }
         
         /* Rankings Section */
@@ -257,6 +319,19 @@ class MatchupReportGenerator:
             padding: 40px;
             color: #666;
         }
+        
+        /* Additional standings that will be added */
+        .extended-records {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #333;
+            font-size: 11px;
+            color: #888;
+        }
+        
+        .extended-record-item {
+            padding: 3px 0;
+        }
     </style>
 </head>
 <body>
@@ -273,86 +348,105 @@ class MatchupReportGenerator:
             <div class="teams-container">
                 <!-- Away Team -->
                 <div class="team-wrapper away">
-                    <div class="team-info-side">
-                        <div class="team-name" style="color: {{ data.away_team.colors.primary }}">
-                            {{ data.away_team.name }}
+                    <div class="team-top-section">
+                        <div class="team-info-side">
+                            <div class="team-name" style="color: {{ data.away_team.colors.primary }}">
+                                {{ data.away_team.name }}
+                            </div>
+                            <div class="team-location">
+                                {{ data.away_team.city_state }} - {{ data.away_team.abbreviation }}
+                            </div>
+                            <div class="team-conference">
+                                {{ data.away_team.conference }} Conference | {{ data.away_team.division }} Division
+                            </div>
                         </div>
-                        <div class="team-location">{{ data.away_team.city_state }}</div>
-                        <div class="team-conference">
-                            {{ data.away_team.conference }} Conference • {{ data.away_team.division }} Division
+                        
+                        <div class="team-logo-section">
+                            <div class="team-logo">
+                                <img src="{{ data.away_team.logo_path }}" alt="{{ data.away_team.abbreviation }}">
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="team-logo-section">
-                        <div class="team-logo">
-                            <img src="{{ data.away_team.logo_path }}" alt="{{ data.away_team.abbreviation }}" 
-                                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;font-size:48px;font-weight:bold;color:{{ data.away_team.colors.primary }}&quot;>{{ data.away_team.abbreviation }}</div>';">
+                    <div class="team-extra-records">
+                        <div class="extra-record">
+                            <span class="extra-label">Division:</span>
+                            <span class="extra-value">{{ data.away_team.records.division }}</span>
                         </div>
-                        <div class="records-below-logo">
-                            <div class="record-item">
-                                <div class="record-label">Overall</div>
-                                <div class="record-value">{{ data.away_team.records.overall }}</div>
-                            </div>
-                            <div class="record-item">
-                                <div class="record-label">Conference</div>
-                                <div class="record-value">{{ data.away_team.records.conference }}</div>
-                            </div>
-                            <div class="record-item">
-                                <div class="record-label">Division</div>
-                                <div class="record-value">{{ data.away_team.records.division }}</div>
-                            </div>
-                            {% if data.away_team.records.inter_conf %}
-                            <div class="other-records">
-                                <div class="record-label">vs West</div>
-                                <div>{{ data.away_team.records.inter_conf }}</div>
-                            </div>
-                            {% endif %}
+                        <div class="extra-record">
+                            <span class="extra-label">Home:</span>
+                            <span class="extra-value">TBD</span>
+                        </div>
+                        <div class="extra-record">
+                            <span class="extra-label">Away:</span>
+                            <span class="extra-value">TBD</span>
                         </div>
                     </div>
                 </div>
                 
-                <!-- VS Section -->
-                <div class="vs-section">
-                    <div class="vs-text">Season H2H</div>
-                    <div class="h2h-record">{{ data.h2h_season_record }}</div>
+                <!-- Center Section with H2H and Records -->
+                <div class="center-section">
+                    <div class="h2h-section">
+                        <div class="vs-text">vs</div>
+                        <div class="h2h-label">Season H2H</div>
+                        <div class="h2h-record">{{ data.h2h_season_record }}</div>
+                    </div>
+                    
+                    <div class="records-comparison">
+                        <div class="away-records">
+                            <div class="record-value">{{ data.away_team.records.overall }}</div>
+                            <div class="record-value">{{ data.away_team.records.conference }}</div>
+                            <div class="record-value">TBD</div>
+                        </div>
+                        
+                        <div class="record-labels">
+                            <div class="record-label">Overall</div>
+                            <div class="record-label">Eastern</div>
+                            <div class="record-label">Western</div>
+                        </div>
+                        
+                        <div class="home-records">
+                            <div class="record-value">{{ data.home_team.records.overall }}</div>
+                            <div class="record-value">{{ data.home_team.records.conference }}</div>
+                            <div class="record-value">TBD</div>
+                        </div>
+                    </div>
                 </div>
                 
                 <!-- Home Team -->
                 <div class="team-wrapper home">
-                    <div class="team-info-side">
-                        <div class="team-name" style="color: {{ data.home_team.colors.primary }}">
-                            {{ data.home_team.name }}
+                    <div class="team-top-section">
+                        <div class="team-info-side">
+                            <div class="team-name" style="color: {{ data.home_team.colors.primary }}">
+                                {{ data.home_team.name }}
+                            </div>
+                            <div class="team-location">
+                                {{ data.home_team.city_state }} - {{ data.home_team.abbreviation }}
+                            </div>
+                            <div class="team-conference">
+                                {{ data.home_team.conference }} Conference | {{ data.home_team.division }} Division
+                            </div>
                         </div>
-                        <div class="team-location">{{ data.home_team.city_state }}</div>
-                        <div class="team-conference">
-                            {{ data.home_team.conference }} Conference • {{ data.home_team.division }} Division
+                        
+                        <div class="team-logo-section">
+                            <div class="team-logo">
+                                <img src="{{ data.home_team.logo_path }}" alt="{{ data.home_team.abbreviation }}">
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="team-logo-section">
-                        <div class="team-logo">
-                            <img src="{{ data.home_team.logo_path }}" alt="{{ data.home_team.abbreviation }}"
-                                 onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=&quot;font-size:48px;font-weight:bold;color:{{ data.home_team.colors.primary }}&quot;>{{ data.home_team.abbreviation }}</div>';">
+                    <div class="team-extra-records">
+                        <div class="extra-record">
+                            <span class="extra-label">Division:</span>
+                            <span class="extra-value">{{ data.home_team.records.division }}</span>
                         </div>
-                        <div class="records-below-logo">
-                            <div class="record-item">
-                                <div class="record-label">Overall</div>
-                                <div class="record-value">{{ data.home_team.records.overall }}</div>
-                            </div>
-                            <div class="record-item">
-                                <div class="record-label">Conference</div>
-                                <div class="record-value">{{ data.home_team.records.conference }}</div>
-                            </div>
-                            <div class="record-item">
-                                <div class="record-label">Division</div>
-                                <div class="record-value">{{ data.home_team.records.division }}</div>
-                            </div>
-                            {% if data.home_team.records.inter_conf %}
-                            <div class="other-records">
-                                <div class="record-label">vs West</div>
-                                <div>{{ data.home_team.records.inter_conf }}</div>
-                            </div>
-                            {% endif %}
+                        <div class="extra-record">
+                            <span class="extra-label">Home:</span>
+                            <span class="extra-value">TBD</span>
+                        </div>
+                        <div class="extra-record">
+                            <span class="extra-label">Away:</span>
+                            <span class="extra-value">TBD</span>
                         </div>
                     </div>
                 </div>
@@ -364,6 +458,7 @@ class MatchupReportGenerator:
             <div class="section-title">Teams Current Rankings</div>
             <div class="placeholder">
                 Rankings data will be displayed here<br>
+                Including standings vs all conferences and divisions<br>
                 (To be implemented with next collector)
             </div>
         </div>

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Matchup Report Generator
-Creates HTML reports from collected matchup data
+Enhanced Matchup Report Generator
+Creates HTML reports with comprehensive home/away statistics
 """
 
 import json
@@ -10,7 +10,7 @@ from datetime import datetime
 from jinja2 import Template
 
 class MatchupReportGenerator:
-    """Generate HTML matchup reports"""
+    """Generate enhanced HTML matchup reports with home/away stats"""
     
     def __init__(self):
         self.output_dir = Path('output/html')
@@ -33,7 +33,22 @@ class MatchupReportGenerator:
             'MIA': {'primary': '#98002E', 'secondary': '#F9A01B'},
             'ORL': {'primary': '#0077C0', 'secondary': '#C4CED4'},
             'WAS': {'primary': '#002B5C', 'secondary': '#E31837'},
-            # Add more teams as needed
+            'DEN': {'primary': '#0E2240', 'secondary': '#FEC524'},
+            'MIN': {'primary': '#0C2340', 'secondary': '#236192'},
+            'OKL': {'primary': '#007AC1', 'secondary': '#EF3B24'},
+            'OKC': {'primary': '#007AC1', 'secondary': '#EF3B24'},
+            'POR': {'primary': '#E03A3E', 'secondary': '#000000'},
+            'UTA': {'primary': '#002B5C', 'secondary': '#00471B'},
+            'GSW': {'primary': '#006BB6', 'secondary': '#FDB927'},
+            'LAC': {'primary': '#C8102E', 'secondary': '#1D428A'},
+            'LAL': {'primary': '#552583', 'secondary': '#FDB927'},
+            'PHX': {'primary': '#1D1160', 'secondary': '#E56020'},
+            'SAC': {'primary': '#5A2D81', 'secondary': '#63727A'},
+            'DAL': {'primary': '#00538C', 'secondary': '#002B5E'},
+            'HOU': {'primary': '#CE1141', 'secondary': '#000000'},
+            'MEM': {'primary': '#5D76A9', 'secondary': '#12173F'},
+            'NOP': {'primary': '#0C2340', 'secondary': '#C8102E'},
+            'SAS': {'primary': '#C4CED4', 'secondary': '#000000'}
         }
     
     def generate_report(self, data: dict, output_filename: str = None):
@@ -67,7 +82,7 @@ class MatchupReportGenerator:
         return output_path
     
     def get_template(self):
-        """Return the HTML template"""
+        """Return the enhanced HTML template with home/away statistics"""
         return '''
 <!DOCTYPE html>
 <html lang="en">
@@ -192,9 +207,10 @@ class MatchupReportGenerator:
         
         .team-extra-records {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             margin-top: 10px;
-            font-size: 12px;
+            font-size: 11px;
+            flex-wrap: wrap;
         }
         
         .team-wrapper.away .team-extra-records {
@@ -209,12 +225,15 @@ class MatchupReportGenerator:
         
         .extra-record {
             display: flex;
-            gap: 5px;
+            gap: 4px;
+            padding: 3px 6px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
         }
         
         .extra-label {
             color: #888;
-            font-size: 11px;
+            font-size: 10px;
         }
         
         .extra-value {
@@ -265,7 +284,7 @@ class MatchupReportGenerator:
         .away-records, .home-records {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 8px;
         }
         
         .away-records {
@@ -279,7 +298,7 @@ class MatchupReportGenerator:
         .record-labels {
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 8px;
             text-align: center;
         }
         
@@ -287,11 +306,29 @@ class MatchupReportGenerator:
             color: #999;
             font-size: 11px;
             text-transform: uppercase;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .record-value {
             font-weight: bold;
             font-size: 14px;
+            padding: 5px 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 4px;
+            min-width: 60px;
+            text-align: center;
+        }
+        
+        /* Streak styling */
+        .extra-record .extra-value.streak-win {
+            color: #4CAF50;
+        }
+        
+        .extra-record .extra-value.streak-loss {
+            color: #f44336;
         }
         
         /* Rankings Section */
@@ -375,11 +412,32 @@ class MatchupReportGenerator:
                         </div>
                         <div class="extra-record">
                             <span class="extra-label">Home:</span>
-                            <span class="extra-value">TBD</span>
+                            <span class="extra-value">{{ data.away_team.records.home }}</span>
                         </div>
                         <div class="extra-record">
                             <span class="extra-label">Away:</span>
-                            <span class="extra-value">TBD</span>
+                            <span class="extra-value">{{ data.away_team.records.away }}</span>
+                        </div>
+                        <div class="extra-record">
+                            <span class="extra-label">Streak:</span>
+                            <span class="extra-value {% if 'W' in data.away_team.records.streak %}class="streak-win"{% elif 'L' in data.away_team.records.streak %}class="streak-loss"{% endif %}">
+                                {{ data.away_team.records.streak }}
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="team-extra-records">
+                        <div class="extra-record">
+                            <span class="extra-label">Last 12:</span>
+                            <span class="extra-value">{{ data.away_team.records.last_12 }}</span>
+                        </div>
+                        <div class="extra-record">
+                            <span class="extra-label">Last 7:</span>
+                            <span class="extra-value">{{ data.away_team.records.last_7 }}</span>
+                        </div>
+                        <div class="extra-record">
+                            <span class="extra-label">Last 3:</span>
+                            <span class="extra-value">{{ data.away_team.records.last_3 }}</span>
                         </div>
                     </div>
                 </div>
@@ -395,20 +453,20 @@ class MatchupReportGenerator:
                     <div class="records-comparison">
                         <div class="away-records">
                             <div class="record-value">{{ data.away_team.records.overall }}</div>
-                            <div class="record-value">{{ data.away_team.records.conference }}</div>
-                            <div class="record-value">TBD</div>
+                            <div class="record-value">{{ data.away_team.records.vs_eastern }}</div>
+                            <div class="record-value">{{ data.away_team.records.vs_western }}</div>
                         </div>
                         
                         <div class="record-labels">
                             <div class="record-label">Overall</div>
-                            <div class="record-label">Eastern</div>
-                            <div class="record-label">Western</div>
+                            <div class="record-label">vs Eastern</div>
+                            <div class="record-label">vs Western</div>
                         </div>
                         
                         <div class="home-records">
                             <div class="record-value">{{ data.home_team.records.overall }}</div>
-                            <div class="record-value">{{ data.home_team.records.conference }}</div>
-                            <div class="record-value">TBD</div>
+                            <div class="record-value">{{ data.home_team.records.vs_eastern }}</div>
+                            <div class="record-value">{{ data.home_team.records.vs_western }}</div>
                         </div>
                     </div>
                 </div>
@@ -436,17 +494,38 @@ class MatchupReportGenerator:
                     </div>
                     
                     <div class="team-extra-records">
-                        <div class="extra-record">
-                            <span class="extra-label">Division:</span>
+                        <div class="extra-record reversed">
+                            <span class="extra-value {% if 'W' in data.home_team.records.streak %}class="streak-win"{% elif 'L' in data.home_team.records.streak %}class="streak-loss"{% endif %}">
+                                {{ data.home_team.records.streak }}
+                            </span>
+                            <span class="extra-label">:Streak</span>
+                        </div>
+                        <div class="extra-record reversed">
+                            <span class="extra-value">{{ data.home_team.records.away }}</span>
+                            <span class="extra-label">:Away</span>
+                        </div>
+                        <div class="extra-record reversed">
+                            <span class="extra-value">{{ data.home_team.records.home }}</span>
+                            <span class="extra-label">:Home</span>
+                        </div>
+                        <div class="extra-record reversed">
                             <span class="extra-value">{{ data.home_team.records.division }}</span>
+                            <span class="extra-label">:Division</span>
                         </div>
-                        <div class="extra-record">
-                            <span class="extra-label">Home:</span>
-                            <span class="extra-value">TBD</span>
+                    </div>
+                    
+                    <div class="team-extra-records">
+                        <div class="extra-record reversed">
+                            <span class="extra-value">{{ data.home_team.records.last_3 }}</span>
+                            <span class="extra-label">:Last 3</span>
                         </div>
-                        <div class="extra-record">
-                            <span class="extra-label">Away:</span>
-                            <span class="extra-value">TBD</span>
+                        <div class="extra-record reversed">
+                            <span class="extra-value">{{ data.home_team.records.last_7 }}</span>
+                            <span class="extra-label">:Last 7</span>
+                        </div>
+                        <div class="extra-record reversed">
+                            <span class="extra-value">{{ data.home_team.records.last_12 }}</span>
+                            <span class="extra-label">:Last 12</span>
                         </div>
                     </div>
                 </div>
@@ -458,7 +537,7 @@ class MatchupReportGenerator:
             <div class="section-title">Teams Current Rankings</div>
             <div class="placeholder">
                 Rankings data will be displayed here<br>
-                Including standings vs all conferences and divisions<br>
+                Including standings, offensive/defensive rankings<br>
                 (To be implemented with next collector)
             </div>
         </div>
@@ -468,16 +547,28 @@ class MatchupReportGenerator:
             <div class="section-title">Team Stats</div>
             <div class="placeholder">
                 Team statistics comparison will be displayed here<br>
+                PPG, APG, RPG, FG%, 3P%, etc.<br>
                 (To be implemented with stats collector)
             </div>
         </div>
         
         <!-- Placeholder for H2H Stats Section -->
         <div class="section">
-            <div class="section-title">H2H Stats</div>
+            <div class="section-title">H2H Historical Stats</div>
             <div class="placeholder">
                 Head-to-head statistics will be displayed here<br>
-                (Last Season vs Current Season comparison)
+                Last 5 meetings, average scores, trends<br>
+                (To be implemented with H2H collector)
+            </div>
+        </div>
+        
+        <!-- Placeholder for Player Matchups Section -->
+        <div class="section">
+            <div class="section-title">Key Player Matchups</div>
+            <div class="placeholder">
+                Player vs Player statistics<br>
+                Star player performances, injury report<br>
+                (To be implemented with player collector)
             </div>
         </div>
     </div>

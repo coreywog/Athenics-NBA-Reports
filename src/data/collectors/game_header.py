@@ -126,7 +126,7 @@ class GameHeaderCollector:
                     if start_time:
                         try:
                             time_obj = datetime.fromisoformat(start_time.replace('Z', '+00:00'))
-                            formatted_time = time_obj.strftime('%-I:%M %p EST')
+                            formatted_time = time_obj.strftime('%I:%M %p EST').lstrip('0')
                         except:
                             formatted_time = 'TBD'
                     else:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-MySportsFeeds API Explorer
-Main test runner for all API endpoints
+MySportsFeeds API Explorer - Simple Single Game Tester
+Just test API endpoints and save example outputs for a single game
 """
 
 import os
@@ -9,247 +9,144 @@ import sys
 import json
 import time
 from pathlib import Path
-from datetime import datetime, timedelta
 import requests
 from requests.auth import HTTPBasicAuth
 from dotenv import load_dotenv
-from rich.console import Console
-from rich.table import Table
-from rich.panel import Panel
-from rich import print as rprint
-import backoff
-
-# Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent))
 
 # Load environment variables
 load_dotenv()
 
-console = Console()
-
-class APIExplorer:
-    """Test all MySportsFeeds API endpoints"""
+class SimpleGameAPIExplorer:
+    """Test all MySportsFeeds API endpoints for a single game"""
     
-    def __init__(self):
+    def __init__(self, game_id='20241023-MIL-PHI'):
         self.api_key = os.getenv('MSF_API_KEY')
         self.password = os.getenv('MSF_PASSWORD', 'MYSPORTSFEEDS')
         self.base_url = 'https://api.mysportsfeeds.com/v2.1/pull/nba'
         self.auth = HTTPBasicAuth(self.api_key, self.password)
-        self.session = requests.Session()
-        self.session.auth = self.auth
         
-        # Create output directory for responses
-        self.output_dir = Path('api_responses')
-        self.output_dir.mkdir(exist_ok=True)
+        # Parse game info
+        self.game_id = game_id
+        parts = game_id.split('-')
+        self.date = parts[0]
+        self.away_team = parts[1]
+        self.home_team = parts[2]
         
-        # Test parameters
-        self.season = '2024-2025-regular'
-        self.date = '20241023'  # Oct 23, 2024
-        self.game = '20241023-MIL-PHI'
-        self.team = 'MIL'
-        self.player = 'giannis-antetokounmpo'
+        # Determine season
+        year = int(self.date[:4])
+        month = int(self.date[4:6])
+        if month >= 10:
+            self.season = f"{year}-{year+1}-regular"
+        else:
+            self.season = f"{year-1}-{year}-regular"
         
-    @backoff.on_exception(
-        backoff.expo,
-        requests.exceptions.RequestException,
-        max_tries=3,
-        max_time=30
-    )
+        # Output directory
+        self.output_dir = Path(f'api_responses/{self.game_id}')
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+    
     def make_request(self, url, params=None):
-        """Make API request with retry logic"""
-        response = self.session.get(url, params=params)
-        
-        if response.status_code == 429:
-            retry_after = int(response.headers.get('Retry-After', 60))
-            console.print(f"[yellow]Rate limited. Waiting {retry_after} seconds...[/yellow]")
-            time.sleep(retry_after)
-            return self.make_request(url, params)
-        
-        response.raise_for_status()
-        return response
-    
-    def save_response(self, endpoint_name, response_data):
-        """Save API response to file"""
-        filepath = self.output_dir / f"{endpoint_name}.json"
-        with open(filepath, 'w') as f:
-            json.dump(response_data, f, indent=2)
-        return filepath
-    
-    def test_endpoint(self, name, url, params=None, description=""):
-        """Test a single endpoint"""
-        console.print(f"\n[bold cyan]Testing: {name}[/bold cyan]")
-        if description:
-            console.print(f"[dim]{description}[/dim]")
-        console.print(f"URL: {url}")
-        
+        """Make API request with simple retry"""
         try:
-            response = self.make_request(url, params)
-            data = response.json()
+            response = requests.get(url, auth=self.auth, params=params)
             
-            # Save response
-            filepath = self.save_response(name, data)
+            if response.status_code == 429:
+                print(f"Rate limited. Waiting 20 seconds...")
+                time.sleep(20)
+                return self.make_request(url, params)
             
-            # Display summary
-            self.display_response_summary(name, data, filepath)
-            
-            return True, data
-            
+            response.raise_for_status()
+            return response.json()
         except Exception as e:
-            console.print(f"[red]Error: {str(e)}[/red]")
-            return False, None
+            print(f"Error: {e}")
+            return None
     
-    def display_response_summary(self, name, data, filepath):
-        """Display summary of API response"""
-        # Basic stats
-        stats = {
-            "Status": "✅ Success",
-            "File saved": str(filepath),
-            "Response size": f"{len(json.dumps(data))} bytes"
-        }
+    def test_endpoint(self, name, url, params=None):
+        """Test a single endpoint and save response"""
+        print(f"\nTesting: {name}")
+        print(f"URL: {url}")
+        if params:
+            print(f"Params: {params}")
         
-        # Analyze structure
-        if isinstance(data, dict):
-            stats["Top-level keys"] = ", ".join(list(data.keys())[:5])
-            if 'references' in data:
-                refs = data['references']
-                for key in ['teamReferences', 'playerReferences', 'gameReferences']:
-                    if key in refs:
-                        stats[key] = f"{len(refs[key])} items"
+        data = self.make_request(url, params)
         
-        # Create table
-        table = Table(title=f"Response Summary: {name}")
-        table.add_column("Property", style="cyan")
-        table.add_column("Value", style="green")
+        if data:
+            # Save response
+            filepath = self.output_dir / f"{name}.json"
+            with open(filepath, 'w') as f:
+                json.dump(data, f, indent=2)
+            
+            print(f"✅ Success - saved to {filepath}")
+            
+            # Show basic info about response
+            if isinstance(data, dict):
+                print(f"   Keys: {', '.join(list(data.keys())[:5])}")
+        else:
+            print(f"❌ Failed")
         
-        for key, value in stats.items():
-            table.add_row(key, str(value))
-        
-        console.print(table)
-    
-    def run_core_endpoints(self):
-        """Test CORE endpoints (no addon required)"""
-        console.print(Panel("[bold green]Testing CORE Endpoints[/bold green]"))
-        
-        endpoints = [
-            ("current_season", f"{self.base_url}/current_season.json", None, 
-             "Returns current season info"),
-            ("latest_updates", f"{self.base_url}/{self.season}/latest_updates.json", None,
-             "Lists update timestamps for each feed"),
-            ("seasonal_venues", f"{self.base_url}/{self.season}/venues.json", None,
-             "Lists all venues for the season"),
-            ("daily_games", f"{self.base_url}/{self.season}/date/{self.date}/games.json", None,
-             "All games on a given date"),
-            ("seasonal_games", f"{self.base_url}/{self.season}/games.json", 
-             {"team": self.team, "limit": 5},
-             "All games for a season (limited to 5 for testing)"),
-        ]
-        
-        for endpoint in endpoints:
-            self.test_endpoint(*endpoint)
-            time.sleep(1)  # Be nice to the API
-    
-    def run_stats_endpoints(self):
-        """Test STATS addon endpoints"""
-        console.print(Panel("[bold green]Testing STATS Endpoints[/bold green]"))
-        
-        endpoints = [
-            ("seasonal_team_stats", f"{self.base_url}/{self.season}/team_stats_totals.json",
-             {"team": self.team},
-             "Seasonal team statistics"),
-            ("seasonal_player_stats", f"{self.base_url}/{self.season}/player_stats_totals.json",
-             {"team": self.team, "limit": 10},
-             "Seasonal player statistics"),
-            ("daily_team_gamelogs", f"{self.base_url}/{self.season}/date/{self.date}/team_gamelogs.json",
-             {"team": self.team},
-             "Team game logs for a date"),
-            ("daily_player_gamelogs", f"{self.base_url}/{self.season}/date/{self.date}/player_gamelogs.json",
-             {"team": self.team, "limit": 5},
-             "Player game logs for a date"),
-            ("seasonal_standings", f"{self.base_url}/{self.season}/standings.json", None,
-             "Current standings with stats"),
-        ]
-        
-        for endpoint in endpoints:
-            self.test_endpoint(*endpoint)
-            time.sleep(1)
-    
-    def run_detailed_endpoints(self):
-        """Test DETAILED addon endpoints"""
-        console.print(Panel("[bold green]Testing DETAILED Endpoints[/bold green]"))
-        
-        endpoints = [
-            ("game_boxscore", f"{self.base_url}/{self.season}/games/{self.game}/boxscore.json", None,
-             "Complete boxscore for a game"),
-            ("game_lineup", f"{self.base_url}/{self.season}/games/{self.game}/lineup.json", None,
-             "Game lineups"),
-            ("game_playbyplay", f"{self.base_url}/{self.season}/games/{self.game}/playbyplay.json",
-             {"limit": 20},
-             "Play-by-play data (limited for testing)"),
-            ("players", f"{self.base_url}/players.json",
-             {"team": self.team, "limit": 10},
-             "Player bios and details"),
-            ("injuries", f"{self.base_url}/injuries.json", None,
-             "Current injury report"),
-            ("injury_history", f"{self.base_url}/injury_history.json",
-             {"team": self.team},
-             "Injury history for team"),
-        ]
-        
-        for endpoint in endpoints:
-            self.test_endpoint(*endpoint)
-            time.sleep(1)
+        return data
     
     def run_all_tests(self):
-        """Run all endpoint tests"""
-        console.print(Panel.fit(
-            "[bold magenta]MySportsFeeds API Explorer[/bold magenta]\n"
-            f"Season: {self.season}\n"
-            f"Test Date: {self.date}\n"
-            f"Test Team: {self.team}",
-            title="Configuration"
-        ))
+        """Test all available endpoints for this game"""
+        print(f"\n{'='*50}")
+        print(f"Testing API Endpoints for Game: {self.game_id}")
+        print(f"Season: {self.season}")
+        print(f"Output: {self.output_dir}")
+        print(f"{'='*50}")
         
-        # Test connectivity
-        console.print("\n[yellow]Testing API connectivity...[/yellow]")
-        success, _ = self.test_endpoint(
-            "connectivity_test",
-            f"{self.base_url}/current_season.json",
-            description="Verifying API credentials"
-        )
+        # All available endpoints for a single game
+        endpoints = [
+            # Core endpoints (no addon required)
+            ('current_season', f"{self.base_url}/current_season.json", None),
+            ('game_info', f"{self.base_url}/{self.season}/games/{self.game_id}.json", None),
+            ('daily_games', f"{self.base_url}/{self.season}/date/{self.date}/games.json", None),
+            
+            # Stats addon endpoints
+            ('boxscore', f"{self.base_url}/{self.season}/games/{self.game_id}/boxscore.json", None),
+            ('lineup', f"{self.base_url}/{self.season}/games/{self.game_id}/lineup.json", None),
+            ('playbyplay', f"{self.base_url}/{self.season}/games/{self.game_id}/playbyplay.json", {'limit': 50}),
+            
+            ('away_team_gamelog', f"{self.base_url}/{self.season}/date/{self.date}/team_gamelogs.json", {'team': self.away_team}),
+            ('home_team_gamelog', f"{self.base_url}/{self.season}/date/{self.date}/team_gamelogs.json", {'team': self.home_team}),
+            
+            ('away_player_gamelogs', f"{self.base_url}/{self.season}/date/{self.date}/player_gamelogs.json", {'team': self.away_team}),
+            ('home_player_gamelogs', f"{self.base_url}/{self.season}/date/{self.date}/player_gamelogs.json", {'team': self.home_team}),
+            
+            ('away_season_stats', f"{self.base_url}/{self.season}/team_stats_totals.json", {'team': self.away_team}),
+            ('home_season_stats', f"{self.base_url}/{self.season}/team_stats_totals.json", {'team': self.home_team}),
+            
+            ('away_player_season_stats', f"{self.base_url}/{self.season}/player_stats_totals.json", {'team': self.away_team}),
+            ('home_player_season_stats', f"{self.base_url}/{self.season}/player_stats_totals.json", {'team': self.home_team}),
+            
+            ('standings', f"{self.base_url}/{self.season}/standings.json", {'date': self.date}),
+            
+            # Other useful endpoints
+            ('injuries', f"{self.base_url}/injuries.json", {'team': f"{self.away_team},{self.home_team}"}),
+            ('away_roster', f"{self.base_url}/players.json", {'team': self.away_team, 'rosterstatus': 'assigned-to-roster'}),
+            ('home_roster', f"{self.base_url}/players.json", {'team': self.home_team, 'rosterstatus': 'assigned-to-roster'}),
+        ]
         
-        if not success:
-            console.print("[red]Failed to connect to API. Check your credentials.[/red]")
-            return
+        # Test each endpoint
+        for name, url, params in endpoints:
+            self.test_endpoint(name, url, params)
+            time.sleep(0.5)  # Be nice to the API
         
-        # Run test suites
-        self.run_core_endpoints()
-        self.run_stats_endpoints()
-        self.run_detailed_endpoints()
-        
-        # Summary
-        console.print(Panel(
-            f"[green]✅ Testing complete![/green]\n"
-            f"Response files saved to: {self.output_dir.absolute()}",
-            title="Summary"
-        ))
-    
-    def explore_single_endpoint(self, endpoint_name):
-        """Explore a single endpoint in detail"""
-        # This method can be expanded to test specific endpoints
-        pass
+        print(f"\n{'='*50}")
+        print(f"✅ Testing complete!")
+        print(f"All responses saved to: {self.output_dir.absolute()}")
+        print(f"{'='*50}\n")
 
 def main():
     """Main entry point"""
-    explorer = APIExplorer()
+    import argparse
     
-    if len(sys.argv) > 1:
-        # Test specific endpoint
-        endpoint = sys.argv[1]
-        console.print(f"Testing specific endpoint: {endpoint}")
-        # Add logic for specific endpoint testing
-    else:
-        # Test all endpoints
-        explorer.run_all_tests()
+    parser = argparse.ArgumentParser(description='Test MySportsFeeds API for a single game')
+    parser.add_argument('--game-id', type=str, default='20241023-MIL-PHI',
+                       help='Game ID format: YYYYMMDD-AWAY-HOME (default: 20241023-MIL-PHI)')
+    
+    args = parser.parse_args()
+    
+    explorer = SimpleGameAPIExplorer(args.game_id)
+    explorer.run_all_tests()
 
 if __name__ == "__main__":
     main()

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Daily Report Runner
-Automatically generates reports for all NBA games on a given date
+Daily Report Runner - Updated with Team Stats
+Includes team statistics collection and better rate limiting to avoid 429 errors
 """
 
 import os
@@ -19,6 +19,7 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from src.data.collectors.game_header import GameHeaderCollector
+from src.data.collectors.team_stats import TeamStatsCollector  # Added team stats
 from src.reports.matchup_report_generator import MatchupReportGenerator
 
 load_dotenv()
@@ -32,6 +33,11 @@ class DailyReportRunner:
         self.base_url = 'https://api.mysportsfeeds.com/v2.1/pull/nba'
         self.auth = HTTPBasicAuth(self.api_key, self.password)
         
+        # Rate limiting settings
+        self.request_delay = 2.0  # Delay before API calls
+        self.retry_delay = 20  # 20 seconds on rate limit
+        self.games_delay = 3  # Delay between processing games
+        
         # API to common abbreviation mapping
         self.api_to_common = {
             'BRO': 'BKN',  # Brooklyn Nets
@@ -40,6 +46,7 @@ class DailyReportRunner:
         
         # Initialize collectors and generators
         self.header_collector = GameHeaderCollector()
+        self.stats_collector = TeamStatsCollector()  # Added team stats collector
         self.report_generator = MatchupReportGenerator()
         
         # Create output directories
@@ -64,23 +71,22 @@ class DailyReportRunner:
             return f"{year-1}-{year}-regular"
     
     def get_games_for_date(self, date: str) -> List[Dict]:
-        """
-        Fetch all games scheduled for a specific date
-        
-        Args:
-            date: Date in YYYYMMDD format
-            
-        Returns:
-            List of game dictionaries with team information
-        """
-        season = self._get_season(date)
-        endpoint = f"{self.base_url}/{season}/date/{date}/games.json"
-        
-        print(f"Fetching games for {date}...")
-        
+        """Fetch all games for a specific date with rate limiting"""
         try:
-            time.sleep(0.5)  # Rate limiting
-            response = requests.get(endpoint, auth=self.auth)
+            season = self._get_season(date)
+            endpoint = f"{season}/date/{date}/games.json"
+            url = f"{self.base_url}/{endpoint}"
+            
+            print(f"\n📅 Fetching games for {date}...")
+            time.sleep(self.request_delay)  # Rate limiting
+            
+            response = requests.get(url, auth=self.auth)
+            
+            if response.status_code == 429:
+                print(f"  ⚠️  Rate limited. Waiting {self.retry_delay} seconds...")
+                time.sleep(self.retry_delay)
+                response = requests.get(url, auth=self.auth)
+            
             response.raise_for_status()
             data = response.json()
             
@@ -88,56 +94,56 @@ class DailyReportRunner:
             if data and 'games' in data:
                 for game in data['games']:
                     schedule = game.get('schedule', {})
+                    score = game.get('score', {})
                     
-                    # Get API abbreviations
-                    away_api = schedule.get('awayTeam', {}).get('abbreviation')
-                    home_api = schedule.get('homeTeam', {}).get('abbreviation')
+                    away_team = schedule.get('awayTeam', {}).get('abbreviation')
+                    home_team = schedule.get('homeTeam', {}).get('abbreviation')
                     
-                    # Convert to common abbreviations for display
-                    away_common = self._convert_to_common_abbr(away_api)
-                    home_common = self._convert_to_common_abbr(home_api)
-                    
-                    # Extract game information
-                    game_info = {
-                        'id': schedule.get('id'),
-                        'away_team': away_common,  # Use common abbreviation
-                        'home_team': home_common,  # Use common abbreviation
-                        'away_team_api': away_api,  # Keep API abbreviation for API calls
-                        'home_team_api': home_api,  # Keep API abbreviation for API calls
-                        'start_time': schedule.get('startTime'),
-                        'venue': schedule.get('venue', {}).get('name'),
-                        'status': schedule.get('playedStatus', 'UNPLAYED')
-                    }
-                    
-                    # Only include games with valid team data
-                    if game_info['away_team'] and game_info['home_team']:
+                    if away_team and home_team:
+                        # Convert to common abbreviations
+                        away_common = self._convert_to_common_abbr(away_team)
+                        home_common = self._convert_to_common_abbr(home_team)
+                        
+                        # Determine game status
+                        played_status = schedule.get('playedStatus', 'UNPLAYED')
+                        
+                        game_info = {
+                            'away_team': away_common,
+                            'home_team': home_common,
+                            'status': played_status,
+                            'game_id': schedule.get('id'),
+                            'start_time': schedule.get('startTime')
+                        }
                         games.append(game_info)
             
-            print(f"Found {len(games)} games on {date}")
+            print(f"  Found {len(games)} games")
             return games
             
         except Exception as e:
-            print(f"Error fetching games for {date}: {e}")
+            print(f"  ❌ Error fetching games: {e}")
             return []
     
     def generate_report_for_game(self, away_team: str, home_team: str, date: str, 
                                 output_dir: Path) -> bool:
         """
-        Generate a report for a single game
+        Generate a report for a single game with all collectors
         
         Returns:
             True if successful, False otherwise
         """
         try:
-            print(f"\nGenerating report for {away_team} @ {home_team}...")
+            print(f"\n🏀 Generating report for {away_team} @ {home_team}...")
             
-            # Collect data using the header collector
-            # (In the future, you'll add other collectors here)
+            # Collect header data
+            print("  📋 Collecting game header data...")
             header_data = self.header_collector.collect(away_team, home_team, date)
             
-            # For now, we'll use just the header data
-            # In the future, you'll combine data from multiple collectors
-            combined_data = header_data
+            # Collect team statistics
+            print("  📊 Collecting team statistics...")
+            stats_data = self.stats_collector.collect(away_team, home_team, date)
+            
+            # Combine all collected data
+            combined_data = {**header_data, **stats_data}
             
             # Generate the report
             output_filename = f"{away_team}_at_{home_team}_{date}.html"
@@ -145,11 +151,6 @@ class DailyReportRunner:
             
             # Save report to the date-specific directory
             self.report_generator.output_dir = output_dir
-            
-            # Temporarily override the logo paths in the data
-            # The report generator will override them to ../../assets/teams/
-            # but we need ../../../assets/teams/ for daily reports
-            # So we'll fix them after generation by modifying the HTML directly
             self.report_generator.generate_report(combined_data, output_filename)
             
             # Fix the logo paths in the generated HTML file
@@ -160,11 +161,11 @@ class DailyReportRunner:
                 'file': str(output_path)
             })
             
-            print(f"✓ Report generated: {output_path.name}")
+            print(f"  ✅ Report generated: {output_path.name}")
             return True
             
         except Exception as e:
-            print(f"✗ Failed to generate report for {away_team} @ {home_team}: {e}")
+            print(f"  ❌ Failed to generate report: {e}")
             self.failed_games.append({
                 'matchup': f"{away_team} @ {home_team}",
                 'error': str(e)
@@ -183,11 +184,11 @@ class DailyReportRunner:
             with open(html_path, 'w', encoding='utf-8') as f:
                 f.write(content)
         except Exception as e:
-            print(f"Warning: Could not fix logo paths: {e}")
+            print(f"    ⚠️  Could not fix logo paths: {e}")
     
     def run_daily_reports(self, date: str = None, include_unplayed: bool = True) -> Dict:
         """
-        Generate reports for all games on a specific date
+        Generate reports for all games on a specific date with rate limiting
         
         Args:
             date: Date in YYYYMMDD format (defaults to today)
@@ -205,8 +206,9 @@ class DailyReportRunner:
         formatted_date = date_obj.strftime('%B %d, %Y')
         
         print(f"\n{'='*60}")
-        print(f"NBA Daily Report Generator")
-        print(f"Date: {formatted_date}")
+        print(f"🏀 NBA Daily Report Generator")
+        print(f"📅 Date: {formatted_date}")
+        print(f"⏱️  Rate limiting: {self.request_delay}s between API calls")
         print(f"{'='*60}")
         
         # Create date-specific output directory
@@ -221,35 +223,36 @@ class DailyReportRunner:
         games = self.get_games_for_date(date)
         
         if not games:
-            print("\nNo games found for this date.")
+            print("\n❌ No games found for this date.")
             return {
                 'date': formatted_date,
+                'date_code': date,
                 'total_games': 0,
                 'processed': 0,
                 'failed': 0
             }
         
-        # Process each game
+        # Process each game with rate limiting
         for i, game in enumerate(games, 1):
             # Skip unplayed games if requested
-            if not include_unplayed and game['status'] == 'UNPLAYED':
-                print(f"\nSkipping unplayed game: {game['away_team']} @ {game['home_team']}")
+            if not include_unplayed and game['status'] != 'COMPLETED':
+                print(f"\n⏭️  Skipping unplayed game: {game['away_team']} @ {game['home_team']}")
                 continue
             
-            print(f"\n[{i}/{len(games)}] Processing {game['away_team']} @ {game['home_team']}...")
+            print(f"\n[{i}/{len(games)}] Processing game...")
             
-            # Generate the report using common abbreviations
-            # The collector will handle the conversion to API format internally
+            # Generate the report
             self.generate_report_for_game(
-                game['away_team'],  # Common abbreviation
-                game['home_team'],  # Common abbreviation
+                game['away_team'],
+                game['home_team'],
                 date,
                 date_output_dir
             )
             
             # Rate limiting between games
             if i < len(games):
-                time.sleep(1)
+                print(f"\n⏳ Waiting {self.games_delay} seconds before next game...")
+                time.sleep(self.games_delay)
         
         # Generate summary
         summary = self.generate_summary(date, formatted_date, date_output_dir)
@@ -273,15 +276,15 @@ class DailyReportRunner:
         
         # Print summary to console
         print(f"\n{'='*60}")
-        print(f"SUMMARY - {formatted_date}")
+        print(f"📊 SUMMARY - {formatted_date}")
         print(f"{'='*60}")
         print(f"Total Games: {summary['total_games']}")
-        print(f"Successfully Processed: {summary['processed']}")
-        print(f"Failed: {summary['failed']}")
-        print(f"Output Directory: {output_dir}")
+        print(f"✅ Successfully Processed: {summary['processed']}")
+        print(f"❌ Failed: {summary['failed']}")
+        print(f"📂 Output Directory: {output_dir}")
         
         if self.failed_games:
-            print(f"\nFailed Games:")
+            print(f"\n⚠️  Failed Games:")
             for game in self.failed_games:
                 print(f"  - {game['matchup']}: {game['error']}")
         
@@ -352,42 +355,34 @@ class DailyReportRunner:
             justify-content: space-between;
             align-items: center;
             padding: 15px;
-            background: rgba(255,255,255,0.05);
+            background: #333;
             border-radius: 5px;
             margin-bottom: 10px;
-            transition: background 0.2s;
         }}
         .game-item:hover {{
-            background: rgba(255,255,255,0.1);
+            background: #444;
         }}
         .game-matchup {{
             font-size: 16px;
-            font-weight: bold;
+            font-weight: 500;
         }}
         .game-link {{
             color: #4CAF50;
             text-decoration: none;
-            padding: 8px 16px;
-            background: rgba(76, 175, 80, 0.2);
-            border-radius: 5px;
-            transition: background 0.2s;
+            font-weight: 500;
         }}
         .game-link:hover {{
-            background: rgba(76, 175, 80, 0.3);
-        }}
-        .failed {{
-            color: #f44336;
+            text-decoration: underline;
         }}
         .no-games {{
             text-align: center;
-            color: #666;
             padding: 40px;
+            color: #666;
         }}
     </style>
 </head>
 <body>
-    <h1>NBA Daily Reports</h1>
-    <h2 style="text-align: center; color: #999;">{summary['date']}</h2>
+    <h1>NBA Daily Reports - {summary['date']}</h1>
     
     <div class="summary">
         <div class="summary-stats">
@@ -397,21 +392,21 @@ class DailyReportRunner:
             </div>
             <div class="stat">
                 <div class="stat-value">{summary['processed']}</div>
-                <div class="stat-label">Reports Generated</div>
+                <div class="stat-label">Generated</div>
             </div>
             <div class="stat">
-                <div class="stat-value failed">{summary['failed']}</div>
+                <div class="stat-value">{summary['failed']}</div>
                 <div class="stat-label">Failed</div>
             </div>
         </div>
     </div>
     
     <div class="games-list">
-        <h3>Game Reports</h3>
+        <h2>Game Reports</h2>
 '''
         
-        if summary['processed_games']:
-            for game in summary['processed_games']:
+        if self.processed_games:
+            for game in self.processed_games:
                 filename = Path(game['file']).name
                 index_html += f'''
         <div class="game-item">
@@ -435,7 +430,7 @@ class DailyReportRunner:
         with open(index_path, 'w') as f:
             f.write(index_html)
         
-        print(f"\n✓ Index page created: {index_path}")
+        print(f"\n📄 Index page created: {index_path}")
     
     def run_for_yesterday(self) -> Dict:
         """Convenience method to run reports for yesterday's games"""
@@ -470,4 +465,4 @@ if __name__ == "__main__":
         summary = runner.run_for_today()
     
     print(f"\n✅ Daily report generation complete!")
-    print(f"View all reports at: output/daily_reports/{summary['date_code']}/index.html")
+    print(f"📂 View all reports at: output/daily_reports/{summary['date_code']}/index.html")

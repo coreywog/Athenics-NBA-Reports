@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(grep:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "mcp__ide__getDiagnostics",
+      "Read(/C:\\Athenics-NBA-Reports\\src\\data\\collectors/**)"
     ],
     "deny": [],
     "ask": []

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Enhanced Matchup Report Generator
-Creates HTML reports with comprehensive home/away statistics
+Creates HTML reports with comprehensive home/away statistics and team stats
 """
 
 import json
@@ -21,6 +21,7 @@ class MatchupReportGenerator:
             'MIL': {'primary': '#00471B', 'secondary': '#EEE1C6'},
             'PHI': {'primary': '#006BB6', 'secondary': '#ED174C'},
             'BOS': {'primary': '#007A33', 'secondary': '#BA9653'},
+            'BKN': {'primary': '#000000', 'secondary': '#FFFFFF'},
             'BRO': {'primary': '#000000', 'secondary': '#FFFFFF'},
             'NYK': {'primary': '#006BB6', 'secondary': '#F58426'},
             'TOR': {'primary': '#CE1141', 'secondary': '#000000'},
@@ -350,6 +351,102 @@ class MatchupReportGenerator:
             letter-spacing: 1px;
         }
         
+        /* Team Stats Section Styles */
+        .stats-table-container {
+            background: #1a1a1a;
+            border-radius: 8px;
+            padding: 15px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+        
+        .team-stats-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #333;
+        }
+        
+        .stats-team-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        
+        .stats-team-name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .stats-table-wrapper {
+            overflow-x: auto;
+        }
+        
+        .detailed-stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+        }
+        
+        .detailed-stats-table thead {
+            background: #333;
+        }
+        
+        .detailed-stats-table th {
+            padding: 8px 6px;
+            text-align: center;
+            font-weight: 600;
+            color: #ccc;
+            border: 1px solid #444;
+            white-space: nowrap;
+        }
+        
+        .detailed-stats-table tbody tr {
+            border-bottom: 1px solid #333;
+        }
+        
+        .detailed-stats-table td {
+            padding: 6px 4px;
+            text-align: center;
+            color: #fff;
+            border: 1px solid #444;
+        }
+        
+        .row-label {
+            font-weight: 600;
+            text-align: left !important;
+            padding-left: 10px !important;
+            background: #2a2a2a;
+            color: #ccc;
+            white-space: nowrap;
+        }
+        
+        /* Different row colors based on time period */
+        .stat-row-3game {
+            background: rgba(255, 87, 87, 0.1);
+        }
+        
+        .stat-row-7game {
+            background: rgba(255, 171, 64, 0.1);
+        }
+        
+        .stat-row-12game {
+            background: rgba(64, 169, 255, 0.1);
+        }
+        
+        .stat-row-season {
+            background: rgba(76, 175, 80, 0.1);
+            font-weight: 600;
+        }
+        
+        /* Hover effects */
+        .detailed-stats-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+        
         /* Placeholder styling */
         .placeholder {
             text-align: center;
@@ -532,7 +629,322 @@ class MatchupReportGenerator:
             </div>
         </div>
         
-        <!-- Placeholder for Rankings Section -->
+        <!-- Teams Current Statistics Section -->
+        <div class="section">
+            <div class="section-title">Teams Current Statistics</div>
+            
+            <!-- Away Team Stats Table -->
+            <div class="stats-table-container">
+                <div class="team-stats-header">
+                    <img src="{{ data.away_team.logo_path }}" alt="{{ data.away_team.abbreviation }}" class="stats-team-logo">
+                    <span class="stats-team-name">{{ data.away_team.name }}</span>
+                </div>
+                <div class="stats-table-wrapper">
+                    <table class="detailed-stats-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>PS</th>
+                                <th>PA</th>
+                                <th>FG</th>
+                                <th>FGA</th>
+                                <th>FG%</th>
+                                <th>3P</th>
+                                <th>3PA</th>
+                                <th>3P%</th>
+                                <th>2P</th>
+                                <th>2PA</th>
+                                <th>2P%</th>
+                                <th>FT</th>
+                                <th>FTA</th>
+                                <th>FT%</th>
+                                <th>ORB</th>
+                                <th>DRB</th>
+                                <th>TRB</th>
+                                <th>AST</th>
+                                <th>STL</th>
+                                <th>BLK</th>
+                                <th>TOV</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if 'away_rolling_stats' in data %}
+                            <tr class="stat-row-3game">
+                                <td class="row-label">Last 3</td>
+                                <td>{{ data.away_rolling_stats.last_3.ps }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.fg }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.fga }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.fg_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.three_p }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.three_pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.three_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.two_p }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.two_pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.two_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.ft }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.fta }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.ft_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.orb }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.drb }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.trb }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.ast }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.stl }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.blk }}</td>
+                                <td>{{ data.away_rolling_stats.last_3.tov }}</td>
+                            </tr>
+                            <tr class="stat-row-7game">
+                                <td class="row-label">Last 7</td>
+                                <td>{{ data.away_rolling_stats.last_7.ps }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.fg }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.fga }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.fg_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.three_p }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.three_pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.three_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.two_p }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.two_pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.two_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.ft }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.fta }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.ft_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.orb }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.drb }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.trb }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.ast }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.stl }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.blk }}</td>
+                                <td>{{ data.away_rolling_stats.last_7.tov }}</td>
+                            </tr>
+                            <tr class="stat-row-12game">
+                                <td class="row-label">Last 12</td>
+                                <td>{{ data.away_rolling_stats.last_12.ps }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.fg }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.fga }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.fg_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.three_p }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.three_pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.three_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.two_p }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.two_pa }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.two_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.ft }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.fta }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.ft_pct }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.orb }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.drb }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.trb }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.ast }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.stl }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.blk }}</td>
+                                <td>{{ data.away_rolling_stats.last_12.tov }}</td>
+                            </tr>
+                            {% else %}
+                            <tr class="stat-row-3game">
+                                <td class="row-label">Last 3</td>
+                                <td colspan="21">Data not available - add RollingStatsCollector</td>
+                            </tr>
+                            <tr class="stat-row-7game">
+                                <td class="row-label">Last 7</td>
+                                <td colspan="21">Data not available - add RollingStatsCollector</td>
+                            </tr>
+                            <tr class="stat-row-12game">
+                                <td class="row-label">Last 12</td>
+                                <td colspan="21">Data not available - add RollingStatsCollector</td>
+                            </tr>
+                            {% endif %}
+                            <tr class="stat-row-season">
+                                <td class="row-label">Season</td>
+                                {% if 'away_team_stats' in data and data.away_team_stats.offensive %}
+                                <td>{{ data.away_team_stats.offensive.ppg }}</td>
+                                <td>{{ data.away_team_stats.defensive.opp_ppg }}</td>
+                                <td>{{ data.away_team_stats.offensive.fg_made }}</td>
+                                <td>{{ data.away_team_stats.offensive.fg_att }}</td>
+                                <td>{{ data.away_team_stats.offensive.fg_pct }}</td>
+                                <td>{{ data.away_team_stats.offensive.three_made }}</td>
+                                <td>{{ data.away_team_stats.offensive.three_att }}</td>
+                                <td>{{ data.away_team_stats.offensive.three_pct }}</td>
+                                <td>{{ (data.away_team_stats.offensive.fg_made - data.away_team_stats.offensive.three_made)|round(1) }}</td>
+                                <td>{{ (data.away_team_stats.offensive.fg_att - data.away_team_stats.offensive.three_att)|round(1) }}</td>
+                                <td>{{ (((data.away_team_stats.offensive.fg_made - data.away_team_stats.offensive.three_made) / (data.away_team_stats.offensive.fg_att - data.away_team_stats.offensive.three_att) * 100) if (data.away_team_stats.offensive.fg_att - data.away_team_stats.offensive.three_att) > 0 else 0)|round(1) }}</td>
+                                <td>{{ data.away_team_stats.offensive.ft_made }}</td>
+                                <td>{{ data.away_team_stats.offensive.ft_att }}</td>
+                                <td>{{ data.away_team_stats.offensive.ft_pct }}</td>
+                                <td>{{ data.away_team_stats.defensive.off_reb }}</td>
+                                <td>{{ data.away_team_stats.defensive.def_reb }}</td>
+                                <td>{{ data.away_team_stats.defensive.reb }}</td>
+                                <td>{{ data.away_team_stats.offensive.ast }}</td>
+                                <td>{{ data.away_team_stats.defensive.stl }}</td>
+                                <td>{{ data.away_team_stats.defensive.blk }}</td>
+                                <td>{{ data.away_team_stats.offensive.turnovers }}</td>
+                                {% else %}
+                                <td colspan="21">Data not available</td>
+                                {% endif %}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Home Team Stats Table -->
+            <div class="stats-table-container">
+                <div class="team-stats-header">
+                    <img src="{{ data.home_team.logo_path }}" alt="{{ data.home_team.abbreviation }}" class="stats-team-logo">
+                    <span class="stats-team-name">{{ data.home_team.name }}</span>
+                </div>
+                <div class="stats-table-wrapper">
+                    <table class="detailed-stats-table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>PS</th>
+                                <th>PA</th>
+                                <th>FG</th>
+                                <th>FGA</th>
+                                <th>FG%</th>
+                                <th>3P</th>
+                                <th>3PA</th>
+                                <th>3P%</th>
+                                <th>2P</th>
+                                <th>2PA</th>
+                                <th>2P%</th>
+                                <th>FT</th>
+                                <th>FTA</th>
+                                <th>FT%</th>
+                                <th>ORB</th>
+                                <th>DRB</th>
+                                <th>TRB</th>
+                                <th>AST</th>
+                                <th>STL</th>
+                                <th>BLK</th>
+                                <th>TOV</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% if data.home_rolling_stats %}
+                            <tr class="stat-row-3game">
+                                <td class="row-label">Last 3</td>
+                                <td>{{ data.home_rolling_stats.last_3.ps }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.fg }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.fga }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.fg_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.three_p }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.three_pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.three_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.two_p }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.two_pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.two_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.ft }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.fta }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.ft_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.orb }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.drb }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.trb }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.ast }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.stl }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.blk }}</td>
+                                <td>{{ data.home_rolling_stats.last_3.tov }}</td>
+                            </tr>
+                            <tr class="stat-row-7game">
+                                <td class="row-label">Last 7</td>
+                                <td>{{ data.home_rolling_stats.last_7.ps }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.fg }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.fga }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.fg_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.three_p }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.three_pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.three_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.two_p }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.two_pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.two_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.ft }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.fta }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.ft_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.orb }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.drb }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.trb }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.ast }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.stl }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.blk }}</td>
+                                <td>{{ data.home_rolling_stats.last_7.tov }}</td>
+                            </tr>
+                            <tr class="stat-row-12game">
+                                <td class="row-label">Last 12</td>
+                                <td>{{ data.home_rolling_stats.last_12.ps }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.fg }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.fga }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.fg_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.three_p }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.three_pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.three_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.two_p }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.two_pa }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.two_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.ft }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.fta }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.ft_pct }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.orb }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.drb }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.trb }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.ast }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.stl }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.blk }}</td>
+                                <td>{{ data.home_rolling_stats.last_12.tov }}</td>
+                            </tr>
+                            {% else %}
+                            <tr class="stat-row-3game">
+                                <td class="row-label">Last 3</td>
+                                <td colspan="21">Data not available - add RollingStatsCollector</td>
+                            </tr>
+                            <tr class="stat-row-7game">
+                                <td class="row-label">Last 7</td>
+                                <td colspan="21">Data not available - add RollingStatsCollector</td>
+                            </tr>
+                            <tr class="stat-row-12game">
+                                <td class="row-label">Last 12</td>
+                                <td colspan="21">Data not available - add RollingStatsCollector</td>
+                            </tr>
+                            {% endif %}
+                            <tr class="stat-row-season">
+                                <td class="row-label">Season</td>
+                                {% if 'home_team_stats' in data and data.home_team_stats.offensive %}
+                                <td>{{ data.home_team_stats.offensive.ppg }}</td>
+                                <td>{{ data.home_team_stats.defensive.opp_ppg }}</td>
+                                <td>{{ data.home_team_stats.offensive.fg_made }}</td>
+                                <td>{{ data.home_team_stats.offensive.fg_att }}</td>
+                                <td>{{ data.home_team_stats.offensive.fg_pct }}</td>
+                                <td>{{ data.home_team_stats.offensive.three_made }}</td>
+                                <td>{{ data.home_team_stats.offensive.three_att }}</td>
+                                <td>{{ data.home_team_stats.offensive.three_pct }}</td>
+                                <td>{{ (data.home_team_stats.offensive.fg_made - data.home_team_stats.offensive.three_made)|round(1) }}</td>
+                                <td>{{ (data.home_team_stats.offensive.fg_att - data.home_team_stats.offensive.three_att)|round(1) }}</td>
+                                <td>{{ (((data.home_team_stats.offensive.fg_made - data.home_team_stats.offensive.three_made) / (data.home_team_stats.offensive.fg_att - data.home_team_stats.offensive.three_att) * 100) if (data.home_team_stats.offensive.fg_att - data.home_team_stats.offensive.three_att) > 0 else 0)|round(1) }}</td>
+                                <td>{{ data.home_team_stats.offensive.ft_made }}</td>
+                                <td>{{ data.home_team_stats.offensive.ft_att }}</td>
+                                <td>{{ data.home_team_stats.offensive.ft_pct }}</td>
+                                <td>{{ data.home_team_stats.defensive.off_reb }}</td>
+                                <td>{{ data.home_team_stats.defensive.def_reb }}</td>
+                                <td>{{ data.home_team_stats.defensive.reb }}</td>
+                                <td>{{ data.home_team_stats.offensive.ast }}</td>
+                                <td>{{ data.home_team_stats.defensive.stl }}</td>
+                                <td>{{ data.home_team_stats.defensive.blk }}</td>
+                                <td>{{ data.home_team_stats.offensive.turnovers }}</td>
+                                {% else %}
+                                <td colspan="21">Data not available</td>
+                                {% endif %}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Teams Current Rankings Section - Placeholder -->
         <div class="section">
             <div class="section-title">Teams Current Rankings</div>
             <div class="placeholder">
@@ -541,17 +953,7 @@ class MatchupReportGenerator:
                 (To be implemented with next collector)
             </div>
         </div>
-        
-        <!-- Placeholder for Team Stats Section -->
-        <div class="section">
-            <div class="section-title">Team Stats</div>
-            <div class="placeholder">
-                Team statistics comparison will be displayed here<br>
-                PPG, APG, RPG, FG%, 3P%, etc.<br>
-                (To be implemented with stats collector)
-            </div>
-        </div>
-        
+
         <!-- Placeholder for H2H Stats Section -->
         <div class="section">
             <div class="section-title">H2H Historical Stats</div>
@@ -586,14 +988,37 @@ if __name__ == "__main__":
     sys.path.insert(0, str(project_root))
     
     from src.data.collectors.game_header import GameHeaderCollector
+    from src.data.collectors.team_stats import TeamStatsCollector
+    from src.data.collectors.rolling_stats import RollingStatsCollector
     
-    # Collect data
-    collector = GameHeaderCollector()
-    data = collector.collect('MIL', 'PHI', '20250119')
+    # Initialize collectors
+    header_collector = GameHeaderCollector()
+    stats_collector = TeamStatsCollector()
+    rolling_collector = RollingStatsCollector()
+    
+    # Set game parameters
+    away_team = 'MIL'
+    home_team = 'PHI'
+    game_date = '20250119'
+    
+    print(f"\n🏀 Generating matchup report for {away_team} @ {home_team}")
+    print(f"   Game Date: {game_date}")
+    print("-" * 50)
+    
+    # Collect all data
+    print("\n📊 Collecting data...")
+    header_data = header_collector.collect(away_team, home_team, game_date)
+    stats_data = stats_collector.collect(away_team, home_team, game_date)
+    rolling_data = rolling_collector.collect(away_team, home_team, game_date)
+    
+    # Combine all data
+    combined_data = {**header_data, **stats_data, **rolling_data}
     
     # Generate report
+    print("\n📝 Generating HTML report...")
     generator = MatchupReportGenerator()
-    report_path = generator.generate_report(data)
+    report_path = generator.generate_report(combined_data)
     
     print(f"\n✅ Report generated successfully!")
-    print(f"Open in browser: file://{report_path.absolute()}")
+    print(f"📂 Location: {report_path}")
+    print(f"🌐 Open in browser: file://{report_path.absolute()}")

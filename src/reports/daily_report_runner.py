@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Daily Report Runner - Updated with Team Stats
-Includes team statistics collection and better rate limiting to avoid 429 errors
+Daily Report Runner - Updated with Team Stats and Rolling Stats
+Includes team statistics collection, rolling stats, and better rate limiting to avoid 429 errors
 """
 
 import os
@@ -19,7 +19,8 @@ project_root = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(project_root))
 
 from src.data.collectors.game_header import GameHeaderCollector
-from src.data.collectors.team_stats import TeamStatsCollector  # Added team stats
+from src.data.collectors.team_stats import TeamStatsCollector
+from src.data.collectors.rolling_stats import RollingStatsCollector  # Added rolling stats
 from src.reports.matchup_report_generator import MatchupReportGenerator
 
 load_dotenv()
@@ -33,10 +34,10 @@ class DailyReportRunner:
         self.base_url = 'https://api.mysportsfeeds.com/v2.1/pull/nba'
         self.auth = HTTPBasicAuth(self.api_key, self.password)
         
-        # Rate limiting settings
-        self.request_delay = 2.0  # Delay before API calls
-        self.retry_delay = 20  # 20 seconds on rate limit
-        self.games_delay = 3  # Delay between processing games
+        # Rate limiting settings - increased for rolling stats
+        self.request_delay = 3.0  # Increased delay before API calls
+        self.retry_delay = 30  # 30 seconds on rate limit
+        self.games_delay = 5  # Increased delay between processing games
         
         # API to common abbreviation mapping
         self.api_to_common = {
@@ -46,7 +47,8 @@ class DailyReportRunner:
         
         # Initialize collectors and generators
         self.header_collector = GameHeaderCollector()
-        self.stats_collector = TeamStatsCollector()  # Added team stats collector
+        self.stats_collector = TeamStatsCollector()
+        self.rolling_collector = RollingStatsCollector()  # Added rolling stats collector
         self.report_generator = MatchupReportGenerator()
         
         # Create output directories
@@ -126,7 +128,7 @@ class DailyReportRunner:
     def generate_report_for_game(self, away_team: str, home_team: str, date: str, 
                                 output_dir: Path) -> bool:
         """
-        Generate a report for a single game with all collectors
+        Generate a report for a single game with all collectors including rolling stats
         
         Returns:
             True if successful, False otherwise
@@ -142,8 +144,13 @@ class DailyReportRunner:
             print("  📊 Collecting team statistics...")
             stats_data = self.stats_collector.collect(away_team, home_team, date)
             
+            # Collect rolling statistics (last 3, 7, 12 games)
+            print("  📈 Collecting rolling statistics...")
+            print("     ⏳ This may take a moment due to rate limiting...")
+            rolling_data = self.rolling_collector.collect(away_team, home_team, date)
+            
             # Combine all collected data
-            combined_data = {**header_data, **stats_data}
+            combined_data = {**header_data, **stats_data, **rolling_data}
             
             # Generate the report
             output_filename = f"{away_team}_at_{home_team}_{date}.html"
@@ -209,6 +216,7 @@ class DailyReportRunner:
         print(f"🏀 NBA Daily Report Generator")
         print(f"📅 Date: {formatted_date}")
         print(f"⏱️  Rate limiting: {self.request_delay}s between API calls")
+        print(f"📊 Including: Header, Team Stats, and Rolling Stats")
         print(f"{'='*60}")
         
         # Create date-specific output directory
@@ -231,6 +239,12 @@ class DailyReportRunner:
                 'processed': 0,
                 'failed': 0
             }
+        
+        # Estimate total time
+        est_time_per_game = 30  # seconds (conservative estimate with rolling stats)
+        total_est_time = len(games) * est_time_per_game / 60
+        print(f"\n⏰ Estimated time: ~{total_est_time:.1f} minutes for {len(games)} games")
+        print(f"   (Rolling stats require multiple API calls per team)")
         
         # Process each game with rate limiting
         for i, game in enumerate(games, 1):
@@ -379,6 +393,14 @@ class DailyReportRunner:
             padding: 40px;
             color: #666;
         }}
+        .info-note {{
+            background: #333;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }}
     </style>
 </head>
 <body>
@@ -420,6 +442,9 @@ class DailyReportRunner:
 '''
         
         index_html += '''
+        <div class="info-note">
+            📊 Reports include: Game header info, season team statistics, and rolling stats (last 3, 7, and 12 games)
+        </div>
     </div>
 </body>
 </html>
@@ -427,7 +452,7 @@ class DailyReportRunner:
         
         # Save index file
         index_path = output_dir / 'index.html'
-        with open(index_path, 'w') as f:
+        with open(index_path, 'w', encoding='utf-8') as f:
             f.write(index_html)
         
         print(f"\n📄 Index page created: {index_path}")

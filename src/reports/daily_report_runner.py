@@ -22,6 +22,7 @@ from src.data.collectors.game_header import GameHeaderCollector
 from src.data.collectors.team_stats import TeamStatsCollector
 from src.data.collectors.rolling_stats import RollingStatsCollector  # Added rolling stats
 from src.reports.matchup_report_generator import MatchupReportGenerator
+from src.data.collectors.team_rankings import TeamRankingsCollector
 
 load_dotenv()
 
@@ -50,7 +51,8 @@ class DailyReportRunner:
         self.stats_collector = TeamStatsCollector()
         self.rolling_collector = RollingStatsCollector()  # Added rolling stats collector
         self.report_generator = MatchupReportGenerator()
-        
+        self.rankings_collector = TeamRankingsCollector()
+
         # Create output directories
         self.base_output_dir = Path('output/daily_reports')
         self.base_output_dir.mkdir(parents=True, exist_ok=True)
@@ -149,8 +151,12 @@ class DailyReportRunner:
             print("     ⏳ This may take a moment due to rate limiting...")
             rolling_data = self.rolling_collector.collect(away_team, home_team, date)
             
+            # Collect ranking statistics
+            print("  📈 Collecting team rankings...")
+            rankings_data = self.rankings_collector.collect(away_team, home_team, date)
+
             # Combine all collected data
-            combined_data = {**header_data, **stats_data, **rolling_data}
+            combined_data = {**header_data, **stats_data, **rolling_data, **rankings_data}
             
             # Generate the report
             output_filename = f"{away_team}_at_{home_team}_{date}.html"

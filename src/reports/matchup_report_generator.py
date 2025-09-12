@@ -106,7 +106,7 @@ class MatchupReportGenerator:
         }
         
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -363,6 +363,7 @@ class MatchupReportGenerator:
         .team-stats-header {
             display: flex;
             align-items: center;
+            justify-content: center;
             gap: 15px;
             margin-bottom: 15px;
             padding-bottom: 10px;
@@ -465,6 +466,199 @@ class MatchupReportGenerator:
         
         .extended-record-item {
             padding: 3px 0;
+        }
+        
+        /* Updated Rankings Section Styles */
+        .rankings-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Main layout with graphs on sides */
+        .rankings-layout {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        /* Left graph container */
+        .graph-container-left {
+            flex: 0 0 420px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid #3a3a3a;
+        }
+
+        /* Center rankings table */
+        .rankings-table-center {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Right graph container */
+        .graph-container-right {
+            flex: 0 0 420px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 15px;
+            border: 1px solid #3a3a3a;
+        }
+
+        /* Rankings Table Wrapper - matching stats table style */
+        .rankings-table-wrapper {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            padding: 15px;
+            overflow-x: auto;
+            border: 1px solid #3a3a3a;
+        }
+
+        .rankings-comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .rankings-comparison-table thead {
+            background: #333;
+        }
+
+        .rankings-comparison-table thead th {
+            padding: 10px 8px;
+            text-align: center;
+            font-weight: 600;
+            color: #ccc;
+            border: 1px solid #444;
+            text-transform: uppercase;
+            font-size: 11px;
+            letter-spacing: 0.5px;
+        }
+
+        .rankings-comparison-table thead th.team-column {
+            width: 30%;
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            font-size: 13px;
+        }
+
+        .rankings-comparison-table thead th.stat-name-column {
+            width: 40%;
+            background: #2a2a2a;
+            color: #999;
+        }
+
+        .rankings-comparison-table tbody tr {
+            border-bottom: 1px solid #333;
+        }
+
+        .rankings-comparison-table tbody tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .rankings-comparison-table tbody td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+
+        .rank-value {
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .rank-label {
+            font-size: 11px;
+            font-weight: 600;
+            color: #999;
+            background: #2a2a2a;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Color coding for top rankings */
+        .rank-top5 {
+            color: #4CAF50 !important;
+        }
+
+        .rank-top10 {
+            color: #8BC34A !important;
+        }
+
+        .rank-top15 {
+            color: #FFC107 !important;
+        }
+
+        /* Graph styling updates */
+        .graph-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #3a3a3a;
+        }
+
+        .graph-team-logo {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+        }
+
+        .graph-title {
+            font-size: 12px;
+            font-weight: 600;
+            color: #ccc;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        #awayRankingsChart,
+        #homeRankingsChart {
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 1600px) {
+            .rankings-layout {
+                flex-direction: column;
+            }
+            
+            .graph-container-left,
+            .graph-container-right {
+                flex: 1;
+                width: 100%;
+                max-width: none;
+            }
+            
+            .rankings-graphs-bottom {
+                display: flex;
+                gap: 20px;
+                margin-top: 20px;
+            }
+            
+            .rankings-graphs-bottom .graph-container {
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .rankings-graphs-bottom {
+                flex-direction: column;
+            }
+            
+            .rank-value {
+                font-size: 14px;
+            }
+            
+            .rank-label {
+                font-size: 10px;
+            }
         }
     </style>
 </head>
@@ -787,7 +981,7 @@ class MatchupReportGenerator:
                     </table>
                 </div>
             </div>
-
+            
             <!-- Home Team Stats Table -->
             <div class="stats-table-container">
                 <div class="team-stats-header">
@@ -944,13 +1138,91 @@ class MatchupReportGenerator:
             </div>
         </div>
         
-        <!-- Teams Current Rankings Section - Placeholder -->
+        <!-- Teams Current Rankings Section - UPDATED -->
         <div class="section">
             <div class="section-title">Teams Current Rankings</div>
-            <div class="placeholder">
-                Rankings data will be displayed here<br>
-                Including standings, offensive/defensive rankings<br>
-                (To be implemented with next collector)
+            
+            <!-- Main layout with graphs on sides -->
+            <div class="rankings-layout">
+                <!-- Left Graph -->
+                <div class="graph-container-left">
+                    <div class="graph-header">
+                        <img src="{{ data.away_team.logo_path }}" alt="{{ data.away_team.abbreviation }}" class="graph-team-logo">
+                        <span class="graph-title">{{ data.away_team.abbreviation }} - Last 12 Games</span>
+                    </div>
+                    <canvas id="awayRankingsChart" width="380" height="280"></canvas>
+                </div>
+                
+                <!-- Center Rankings Table -->
+                <div class="rankings-table-center">
+                    <div class="rankings-table-wrapper">
+                        <table class="rankings-comparison-table">
+                            <thead>
+                                <tr>
+                                    <th class="team-column">{{ data.away_team.abbreviation }}</th>
+                                    <th class="stat-name-column">Ranking Category</th>
+                                    <th class="team-column">{{ data.home_team.abbreviation }}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="rank-value away-value" id="away-overall">{{ data.away_rankings.overall if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Overall Rank</td>
+                                    <td class="rank-value home-value" id="home-overall">{{ data.home_rankings.overall if data.home_rankings else '-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="rank-value away-value" id="away-offensive">{{ data.away_rankings.offensive if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Overall Off. Rank</td>
+                                    <td class="rank-value home-value" id="home-offensive">{{ data.home_rankings.offensive if data.home_rankings else '-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="rank-value away-value" id="away-defensive">{{ data.away_rankings.defensive if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Overall Def. Rank</td>
+                                    <td class="rank-value home-value" id="home-defensive">{{ data.home_rankings.defensive if data.home_rankings else '-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="rank-value away-value" id="away-conference">{{ data.away_rankings.conference if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Conf. Rank</td>
+                                    <td class="rank-value home-value" id="home-conference">{{ data.home_rankings.conference if data.home_rankings else '-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="rank-value away-value">{{ data.away_rankings.conference_offensive if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Conf. Off. Rank</td>
+                                    <td class="rank-value home-value">{{ data.home_rankings.conference_offensive if data.home_rankings else '-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="rank-value away-value">{{ data.away_rankings.conference_defensive if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Conf. Def. Rank</td>
+                                    <td class="rank-value home-value">{{ data.home_rankings.conference_defensive if data.home_rankings else '-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="rank-value away-value" id="away-division">{{ data.away_rankings.division if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Div. Rank</td>
+                                    <td class="rank-value home-value" id="home-division">{{ data.home_rankings.division if data.home_rankings else '-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="rank-value away-value">{{ data.away_rankings.division_offensive if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Div. Off. Rank</td>
+                                    <td class="rank-value home-value">{{ data.home_rankings.division_offensive if data.home_rankings else '-' }}</td>
+                                </tr>
+                                <tr>
+                                    <td class="rank-value away-value">{{ data.away_rankings.division_defensive if data.away_rankings else '-' }}</td>
+                                    <td class="rank-label">Div. Def. Rank</td>
+                                    <td class="rank-value home-value">{{ data.home_rankings.division_defensive if data.home_rankings else '-' }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Right Graph -->
+                <div class="graph-container-right">
+                    <div class="graph-header">
+                        <img src="{{ data.home_team.logo_path }}" alt="{{ data.home_team.abbreviation }}" class="graph-team-logo">
+                        <span class="graph-title">{{ data.home_team.abbreviation }} - Last 12 Games</span>
+                    </div>
+                    <canvas id="homeRankingsChart" width="380" height="280"></canvas>
+                </div>
             </div>
         </div>
 
@@ -974,6 +1246,222 @@ class MatchupReportGenerator:
             </div>
         </div>
     </div>
+
+<script>
+// Updated function to draw line chart with better styling
+function drawRankingsChart(canvasId, teamAbbr, teamColor) {
+    const canvas = document.getElementById(canvasId);
+    if (!canvas) return;
+    
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    
+    // Sample data for demonstration (replace with actual historical data)
+    const games = Array.from({length: 12}, (_, i) => `G${i + 1}`);
+    const overallRanks = [8, 9, 8, 7, 7, 6, 6, 5, 5, 4, 4, 3];
+    const offRanks = [10, 11, 10, 9, 8, 7, 7, 6, 5, 5, 4, 4];
+    const defRanks = [5, 5, 6, 5, 4, 4, 3, 3, 3, 2, 2, 2];
+    
+    // Clear canvas
+    ctx.clearRect(0, 0, width, height);
+    
+    // Set up chart dimensions
+    const padding = { top: 35, right: 45, bottom: 35, left: 45 };
+    const chartWidth = width - padding.left - padding.right;
+    const chartHeight = height - padding.top - padding.bottom;
+    
+    // Background with subtle gradient
+    const bgGradient = ctx.createLinearGradient(0, 0, 0, height);
+    bgGradient.addColorStop(0, '#2a2a2a');
+    bgGradient.addColorStop(1, '#252525');
+    ctx.fillStyle = bgGradient;
+    ctx.fillRect(0, 0, width, height);
+    
+    // Draw grid
+    ctx.strokeStyle = '#3a3a3a';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([2, 2]);
+    
+    // Horizontal grid lines
+    for (let i = 0; i <= 5; i++) {
+        const y = padding.top + (chartHeight / 5) * i;
+        ctx.beginPath();
+        ctx.moveTo(padding.left, y);
+        ctx.lineTo(width - padding.right, y);
+        ctx.stroke();
+    }
+    
+    // Vertical grid lines
+    for (let i = 0; i < games.length; i++) {
+        const x = padding.left + (chartWidth / (games.length - 1)) * i;
+        ctx.beginPath();
+        ctx.moveTo(x, padding.top);
+        ctx.lineTo(x, height - padding.bottom);
+        ctx.stroke();
+    }
+    
+    ctx.setLineDash([]);
+    
+    // Draw axes
+    ctx.strokeStyle = '#4a4a4a';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(padding.left, padding.top);
+    ctx.lineTo(padding.left, height - padding.bottom);
+    ctx.lineTo(width - padding.right, height - padding.bottom);
+    ctx.stroke();
+    
+    // Function to scale values
+    const scaleX = (index) => padding.left + (index * chartWidth / (games.length - 1));
+    const scaleY = (rank) => padding.top + ((rank - 1) / 29) * chartHeight; // Rankings 1-30
+    
+    // Draw lines with smooth curves
+    const drawSmoothLine = (data, color, lineWidth = 2) => {
+        // Add glow effect
+        ctx.shadowColor = color;
+        ctx.shadowBlur = 4;
+        
+        ctx.strokeStyle = color;
+        ctx.lineWidth = lineWidth;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        
+        // Draw line
+        ctx.beginPath();
+        for (let i = 0; i < data.length; i++) {
+            const x = scaleX(i);
+            const y = scaleY(data[i]);
+            
+            if (i === 0) {
+                ctx.moveTo(x, y);
+            } else {
+                // Create smooth curve
+                const xPrev = scaleX(i - 1);
+                const yPrev = scaleY(data[i - 1]);
+                const xMid = (xPrev + x) / 2;
+                const yMid = (yPrev + y) / 2;
+                ctx.quadraticCurveTo(xPrev, yPrev, xMid, yMid);
+            }
+        }
+        ctx.stroke();
+        
+        // Reset shadow
+        ctx.shadowColor = 'transparent';
+        ctx.shadowBlur = 0;
+        
+        // Draw points
+        for (let i = 0; i < data.length; i++) {
+            const x = scaleX(i);
+            const y = scaleY(data[i]);
+            
+            // Outer circle
+            ctx.fillStyle = '#2a2a2a';
+            ctx.beginPath();
+            ctx.arc(x, y, 4, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Inner circle
+            ctx.fillStyle = color;
+            ctx.beginPath();
+            ctx.arc(x, y, 2.5, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+    };
+    
+    // Draw the three lines
+    drawSmoothLine(defRanks, '#40A9FF', 2);      // Blue for defensive
+    drawSmoothLine(offRanks, '#FF6B6B', 2);      // Red for offensive  
+    drawSmoothLine(overallRanks, '#4CAF50', 2.5); // Green for overall (thicker)
+    
+    // Draw labels
+    ctx.fillStyle = '#888';
+    ctx.font = '10px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    ctx.textAlign = 'center';
+    
+    // X-axis labels (games) - show every other
+    for (let i = 0; i < games.length; i += 2) {
+        const x = scaleX(i);
+        ctx.fillText(games[i], x, height - padding.bottom + 18);
+    }
+    
+    // Y-axis labels (rankings)
+    ctx.textAlign = 'right';
+    for (let i = 0; i <= 5; i++) {
+        const rank = 1 + i * 6;
+        const y = padding.top + (chartHeight / 5) * i;
+        ctx.fillText(rank.toString(), padding.left - 8, y + 3);
+    }
+    
+    // Y-axis title
+    ctx.save();
+    ctx.translate(12, height / 2);
+    ctx.rotate(-Math.PI / 2);
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#666';
+    ctx.font = '9px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    ctx.fillText('RANK', 0, 0);
+    ctx.restore();
+    
+    // Legend
+    const legendY = 12;
+    const legendX = padding.left + 5;
+    ctx.font = '10px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    
+    // Draw legend items
+    const legendItems = [
+        { color: '#4CAF50', label: 'Overall' },
+        { color: '#FF6B6B', label: 'Offensive' },
+        { color: '#40A9FF', label: 'Defensive' }
+    ];
+    
+    let currentX = legendX;
+    legendItems.forEach(item => {
+        // Draw line
+        ctx.strokeStyle = item.color;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(currentX, legendY);
+        ctx.lineTo(currentX + 12, legendY);
+        ctx.stroke();
+        
+        // Draw label
+        ctx.fillStyle = '#888';
+        ctx.textAlign = 'left';
+        ctx.fillText(item.label, currentX + 15, legendY + 3);
+        
+        currentX += 65;
+    });
+}
+
+// Function to apply color coding to rank values
+function applyRankColors() {
+    const rankCells = document.querySelectorAll('.rank-value');
+    rankCells.forEach(cell => {
+        const value = parseInt(cell.textContent);
+        if (!isNaN(value)) {
+            if (value <= 5) {
+                cell.classList.add('rank-top5');
+            } else if (value <= 10) {
+                cell.classList.add('rank-top10');
+            } else if (value <= 15) {
+                cell.classList.add('rank-top15');
+            }
+        }
+    });
+}
+
+// Draw charts when page loads
+window.addEventListener('load', function() {
+    // Apply color coding to ranks
+    applyRankColors();
+    
+    // Draw charts
+    drawRankingsChart('awayRankingsChart', '{{ data.away_team.abbreviation }}', '{{ data.away_team.colors.primary }}');
+    drawRankingsChart('homeRankingsChart', '{{ data.home_team.abbreviation }}', '{{ data.home_team.colors.primary }}');
+});
+</script>
+
 </body>
 </html>
         '''

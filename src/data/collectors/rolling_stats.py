@@ -129,22 +129,15 @@ class RollingStatsCollector:
         
         # Sum up all stats
         for log in games_to_avg:
-            stats = log.get('stats', {})
-            
+            stats = log.get('stats', {})  # This line MUST be here first
+
             # Points scored
             offense = stats.get('offense', {})
             totals['pts'] += offense.get('pts', 0)
             
-            # Points allowed (need to get opponent's score)
-            game = log.get('game', {})
-            score = game.get('score', {})
-            team_abbr = log.get('team', {}).get('abbreviation', '')
-            away_team = game.get('awayTeam', {}).get('abbreviation', '')
-            
-            if team_abbr == away_team:
-                totals['pts_against'] += score.get('homeScoreTotal', 0)
-            else:
-                totals['pts_against'] += score.get('awayScoreTotal', 0)
+            # Points allowed - get from defense stats
+            defense = stats.get('defense', {})
+            totals['pts_against'] += defense.get('ptsAgainst', 0)
             
             # Field goals (total)
             fg = stats.get('fieldGoals', {})

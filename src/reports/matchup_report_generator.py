@@ -471,38 +471,64 @@ class MatchupReportGenerator:
         /* Updated Rankings Section Styles */
         .rankings-container {
             display: flex;
-            gap: 20px;
+            justify-content: center;
+            padding-bottom: 10px;
+            overflow-x: auto;
+        }
+        .rankings-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .rankings-container::-webkit-scrollbar-track {
+            background: #1a1a1a;
+            border-radius: 4px;
+        }
+
+        .rankings-container::-webkit-scrollbar-thumb {
+            background: #444;
+            border-radius: 4px;
+        }
+
+        .rankings-container::-webkit-scrollbar-thumb:hover {
+            background: #555;
         }
 
         /* Main layout with graphs on sides */
         .rankings-layout {
             display: flex;
             gap: 20px;
-            align-items: flex-start;
+            align-items: stretch;
+            width: fit-content;
+            margin: 0 auto;
+            justify-content: center;
         }
 
-        /* Left graph container */
         .graph-container-left {
-            flex: 0 0 420px;
+            flex: 0 0 450px;
+            width: 450px;
             background: rgba(255, 255, 255, 0.03);
             border-radius: 8px;
-            padding: 15px;
+            padding: 12px;
             border: 1px solid #3a3a3a;
+            display: flex;
+            flex-direction: column;
         }
 
-        /* Center rankings table */
         .rankings-table-center {
-            flex: 1;
-            min-width: 300px;
+            flex: 0 0 auto;
+            display: flex;
+            align-items: stretch;
         }
 
-        /* Right graph container */
         .graph-container-right {
-            flex: 0 0 420px;
+            flex: 0 0 450px;
+            width: 450px;
             background: rgba(255, 255, 255, 0.03);
             border-radius: 8px;
-            padding: 15px;
+            padding: 12px;
             border: 1px solid #3a3a3a;
+            display: flex;
+            flex-direction: column;
         }
 
         /* Rankings Table Wrapper - matching stats table style */
@@ -621,30 +647,6 @@ class MatchupReportGenerator:
             display: block;
             margin: 0 auto;
             border-radius: 4px;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 1600px) {
-            .rankings-layout {
-                flex-direction: column;
-            }
-            
-            .graph-container-left,
-            .graph-container-right {
-                flex: 1;
-                width: 100%;
-                max-width: none;
-            }
-            
-            .rankings-graphs-bottom {
-                display: flex;
-                gap: 20px;
-                margin-top: 20px;
-            }
-            
-            .rankings-graphs-bottom .graph-container {
-                flex: 1;
-            }
         }
 
         @media (max-width: 768px) {
@@ -1142,86 +1144,88 @@ class MatchupReportGenerator:
         <div class="section">
             <div class="section-title">Teams Current Rankings</div>
             
-            <!-- Main layout with graphs on sides -->
-            <div class="rankings-layout">
-                <!-- Left Graph -->
-                <div class="graph-container-left">
-                    <div class="graph-header">
-                        <img src="{{ data.away_team.logo_path }}" alt="{{ data.away_team.abbreviation }}" class="graph-team-logo">
-                        <span class="graph-title">{{ data.away_team.abbreviation }} - Last 12 Games</span>
+            <div class="rankings-container">
+                <!-- Main layout with graphs on sides -->
+                <div class="rankings-layout">
+                    <!-- Left Graph -->
+                    <div class="graph-container-left">
+                        <div class="graph-header">
+                            <img src="{{ data.away_team.logo_path }}" alt="{{ data.away_team.abbreviation }}" class="graph-team-logo">
+                            <span class="graph-title">{{ data.away_team.abbreviation }} - Last 12 Games</span>
+                        </div>
+                        <canvas id="awayRankingsChart" width="440" height="470"></canvas>
                     </div>
-                    <canvas id="awayRankingsChart" width="380" height="280"></canvas>
-                </div>
-                
-                <!-- Center Rankings Table -->
-                <div class="rankings-table-center">
-                    <div class="rankings-table-wrapper">
-                        <table class="rankings-comparison-table">
-                            <thead>
-                                <tr>
-                                    <th class="team-column">{{ data.away_team.abbreviation }}</th>
-                                    <th class="stat-name-column">Ranking Category</th>
-                                    <th class="team-column">{{ data.home_team.abbreviation }}</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="rank-value away-value" id="away-overall">{{ data.away_rankings.overall if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Overall Rank</td>
-                                    <td class="rank-value home-value" id="home-overall">{{ data.home_rankings.overall if data.home_rankings else '-' }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="rank-value away-value" id="away-offensive">{{ data.away_rankings.offensive if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Overall Off. Rank</td>
-                                    <td class="rank-value home-value" id="home-offensive">{{ data.home_rankings.offensive if data.home_rankings else '-' }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="rank-value away-value" id="away-defensive">{{ data.away_rankings.defensive if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Overall Def. Rank</td>
-                                    <td class="rank-value home-value" id="home-defensive">{{ data.home_rankings.defensive if data.home_rankings else '-' }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="rank-value away-value" id="away-conference">{{ data.away_rankings.conference if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Conf. Rank</td>
-                                    <td class="rank-value home-value" id="home-conference">{{ data.home_rankings.conference if data.home_rankings else '-' }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="rank-value away-value">{{ data.away_rankings.conference_offensive if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Conf. Off. Rank</td>
-                                    <td class="rank-value home-value">{{ data.home_rankings.conference_offensive if data.home_rankings else '-' }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="rank-value away-value">{{ data.away_rankings.conference_defensive if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Conf. Def. Rank</td>
-                                    <td class="rank-value home-value">{{ data.home_rankings.conference_defensive if data.home_rankings else '-' }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="rank-value away-value" id="away-division">{{ data.away_rankings.division if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Div. Rank</td>
-                                    <td class="rank-value home-value" id="home-division">{{ data.home_rankings.division if data.home_rankings else '-' }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="rank-value away-value">{{ data.away_rankings.division_offensive if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Div. Off. Rank</td>
-                                    <td class="rank-value home-value">{{ data.home_rankings.division_offensive if data.home_rankings else '-' }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="rank-value away-value">{{ data.away_rankings.division_defensive if data.away_rankings else '-' }}</td>
-                                    <td class="rank-label">Div. Def. Rank</td>
-                                    <td class="rank-value home-value">{{ data.home_rankings.division_defensive if data.home_rankings else '-' }}</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    
+                    <!-- Center Rankings Table -->
+                    <div class="rankings-table-center">
+                        <div class="rankings-table-wrapper">
+                            <table class="rankings-comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th class="team-column">{{ data.away_team.abbreviation }}</th>
+                                        <th class="stat-name-column">Ranking Category</th>
+                                        <th class="team-column">{{ data.home_team.abbreviation }}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="rank-value away-value" id="away-overall">{{ data.away_rankings.overall if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Overall Rank</td>
+                                        <td class="rank-value home-value" id="home-overall">{{ data.home_rankings.overall if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rank-value away-value" id="away-offensive">{{ data.away_rankings.offensive if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Overall Off. Rank</td>
+                                        <td class="rank-value home-value" id="home-offensive">{{ data.home_rankings.offensive if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rank-value away-value" id="away-defensive">{{ data.away_rankings.defensive if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Overall Def. Rank</td>
+                                        <td class="rank-value home-value" id="home-defensive">{{ data.home_rankings.defensive if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rank-value away-value" id="away-conference">{{ data.away_rankings.conference if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Conf. Rank</td>
+                                        <td class="rank-value home-value" id="home-conference">{{ data.home_rankings.conference if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rank-value away-value">{{ data.away_rankings.conference_offensive if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Conf. Off. Rank</td>
+                                        <td class="rank-value home-value">{{ data.home_rankings.conference_offensive if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rank-value away-value">{{ data.away_rankings.conference_defensive if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Conf. Def. Rank</td>
+                                        <td class="rank-value home-value">{{ data.home_rankings.conference_defensive if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rank-value away-value" id="away-division">{{ data.away_rankings.division if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Div. Rank</td>
+                                        <td class="rank-value home-value" id="home-division">{{ data.home_rankings.division if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rank-value away-value">{{ data.away_rankings.division_offensive if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Div. Off. Rank</td>
+                                        <td class="rank-value home-value">{{ data.home_rankings.division_offensive if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rank-value away-value">{{ data.away_rankings.division_defensive if data.away_rankings else '-' }}</td>
+                                        <td class="rank-label">Div. Def. Rank</td>
+                                        <td class="rank-value home-value">{{ data.home_rankings.division_defensive if data.home_rankings else '-' }}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Right Graph -->
-                <div class="graph-container-right">
-                    <div class="graph-header">
-                        <img src="{{ data.home_team.logo_path }}" alt="{{ data.home_team.abbreviation }}" class="graph-team-logo">
-                        <span class="graph-title">{{ data.home_team.abbreviation }} - Last 12 Games</span>
+                    
+                    <!-- Right Graph -->
+                    <div class="graph-container-right">
+                        <div class="graph-header">
+                            <img src="{{ data.home_team.logo_path }}" alt="{{ data.home_team.abbreviation }}" class="graph-team-logo">
+                            <span class="graph-title">{{ data.home_team.abbreviation }} - Last 12 Games</span>
+                        </div>
+                        <canvas id="homeRankingsChart" width="440" height="470"></canvas>
                     </div>
-                    <canvas id="homeRankingsChart" width="380" height="280"></canvas>
                 </div>
             </div>
         </div>

@@ -505,7 +505,7 @@ class MatchupReportGenerator:
 
         .graph-container-left {
             flex: 0 0 450px;
-            width: 450px;
+            width: 470px;
             background: rgba(255, 255, 255, 0.03);
             border-radius: 8px;
             padding: 12px;
@@ -522,7 +522,7 @@ class MatchupReportGenerator:
 
         .graph-container-right {
             flex: 0 0 450px;
-            width: 450px;
+            width: 470px;
             background: rgba(255, 255, 255, 0.03);
             border-radius: 8px;
             padding: 12px;
@@ -1252,7 +1252,7 @@ class MatchupReportGenerator:
     </div>
 
 <script>
-// Updated function to draw line chart with better styling
+// Updated function to draw line chart with real data
 function drawRankingsChart(canvasId, teamAbbr, teamColor) {
     const canvas = document.getElementById(canvasId);
     if (!canvas) return;
@@ -1261,11 +1261,19 @@ function drawRankingsChart(canvasId, teamAbbr, teamColor) {
     const width = canvas.width;
     const height = canvas.height;
     
-    // Sample data for demonstration (replace with actual historical data)
-    const games = Array.from({length: 12}, (_, i) => `G${i + 1}`);
-    const overallRanks = [8, 9, 8, 7, 7, 6, 6, 5, 5, 4, 4, 3];
-    const offRanks = [10, 11, 10, 9, 8, 7, 7, 6, 5, 5, 4, 4];
-    const defRanks = [5, 5, 6, 5, 4, 4, 3, 3, 3, 2, 2, 2];
+    // Get real data from Python backend
+    let historicalData;
+    if (canvasId === 'awayRankingsChart') {
+        historicalData = {{ data.away_rankings.historical | tojson }};
+    } else {
+        historicalData = {{ data.home_rankings.historical | tojson }};
+    }
+    
+    // Extract data from historical records
+    const games = historicalData.map((d, i) => `G${i + 1}`);
+    const overallRanks = historicalData.map(d => d.overall_rank || 15);
+    const offRanks = historicalData.map(d => d.offensive_rank || 15);
+    const defRanks = historicalData.map(d => d.defensive_rank || 15);
     
     // Clear canvas
     ctx.clearRect(0, 0, width, height);
@@ -1318,7 +1326,7 @@ function drawRankingsChart(canvasId, teamAbbr, teamColor) {
     
     // Function to scale values
     const scaleX = (index) => padding.left + (index * chartWidth / (games.length - 1));
-    const scaleY = (rank) => padding.top + ((rank - 1) / 29) * chartHeight; // Rankings 1-30
+    const scaleY = (rank) => padding.top + ((rank - 1) / 29) * chartHeight;
     
     // Draw lines with smooth curves
     const drawSmoothLine = (data, color, lineWidth = 2) => {
@@ -1340,12 +1348,7 @@ function drawRankingsChart(canvasId, teamAbbr, teamColor) {
             if (i === 0) {
                 ctx.moveTo(x, y);
             } else {
-                // Create smooth curve
-                const xPrev = scaleX(i - 1);
-                const yPrev = scaleY(data[i - 1]);
-                const xMid = (xPrev + x) / 2;
-                const yMid = (yPrev + y) / 2;
-                ctx.quadraticCurveTo(xPrev, yPrev, xMid, yMid);
+                ctx.lineTo(x, y);  // Simple straight line
             }
         }
         ctx.stroke();
@@ -1384,13 +1387,24 @@ function drawRankingsChart(canvasId, teamAbbr, teamColor) {
     ctx.textAlign = 'center';
     
     // X-axis labels (games) - show every other
+    ctx.fillStyle = '#bbb';  // Lighter color for better visibility
+    ctx.font = 'bold 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    ctx.textAlign = 'center';
+
     for (let i = 0; i < games.length; i += 2) {
         const x = scaleX(i);
         ctx.fillText(games[i], x, height - padding.bottom + 18);
     }
     
     // Y-axis labels (rankings)
-    ctx.textAlign = 'right';
+    ctx.save();
+    ctx.translate(15, height / 2);
+    ctx.rotate(-Math.PI / 2);
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#bbb';  // Lighter color
+    ctx.font = 'bold 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+    ctx.fillText('LEAGUE RANK', 0, 0);
+    ctx.restore();
     for (let i = 0; i <= 5; i++) {
         const rank = 1 + i * 6;
         const y = padding.top + (chartHeight / 5) * i;
@@ -1408,33 +1422,37 @@ function drawRankingsChart(canvasId, teamAbbr, teamColor) {
     ctx.restore();
     
     // Legend
-    const legendY = 12;
-    const legendX = padding.left + 5;
-    ctx.font = '10px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
-    
-    // Draw legend items
+    const legendY = 15;
     const legendItems = [
         { color: '#4CAF50', label: 'Overall' },
         { color: '#FF6B6B', label: 'Offensive' },
         { color: '#40A9FF', label: 'Defensive' }
     ];
-    
-    let currentX = legendX;
+
+    // Calculate total legend width
+    const itemWidth = 75;
+    const totalLegendWidth = legendItems.length * itemWidth;
+    const legendStartX = (width - totalLegendWidth) / 2;  // Center the legend
+
+    // Bigger, clearer legend
+    ctx.font = 'bold 11px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif';
+
+    let currentX = legendStartX;
     legendItems.forEach(item => {
-        // Draw line
+        // Draw thicker line
         ctx.strokeStyle = item.color;
-        ctx.lineWidth = 2;
+        ctx.lineWidth = 3;
         ctx.beginPath();
         ctx.moveTo(currentX, legendY);
-        ctx.lineTo(currentX + 12, legendY);
+        ctx.lineTo(currentX + 15, legendY);
         ctx.stroke();
         
-        // Draw label
-        ctx.fillStyle = '#888';
+        // Draw label with better contrast
+        ctx.fillStyle = '#fff';  // White text for better readability
         ctx.textAlign = 'left';
-        ctx.fillText(item.label, currentX + 15, legendY + 3);
+        ctx.fillText(item.label, currentX + 18, legendY + 3);
         
-        currentX += 65;
+        currentX += itemWidth;
     });
 }
 

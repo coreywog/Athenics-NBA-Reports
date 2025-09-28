@@ -101,53 +101,94 @@ class TeamRankingsCollector:
             url = f"{self.base_url}/{endpoint}"
             
             time.sleep(self.request_delay)
-            response = requests.get(url, auth=self.auth)
+            response = requests.get(url, auth=self.auth, timeout=10)
             
             if response.status_code == 429:
                 time.sleep(self.retry_delay)
-                response = requests.get(url, auth=self.auth)
+                response = requests.get(url, auth=self.auth, timeout=10)
             
             response.raise_for_status()
             data = response.json()
             
+            # Define conference and division mappings
+            eastern_teams = ['ATL', 'BOS', 'BKN', 'BRO', 'CHA', 'CHI', 'CLE', 'DET', 'IND', 'MIA', 'MIL', 'NYK', 'ORL', 'PHI', 'TOR', 'WAS']
+            western_teams = ['DAL', 'DEN', 'GSW', 'HOU', 'LAC', 'LAL', 'MEM', 'MIN', 'NOP', 'OKC', 'OKL', 'PHX', 'POR', 'SAC', 'SAS', 'UTA']
+            
+            divisions = {
+                'Atlantic': ['BOS', 'BKN', 'BRO', 'NYK', 'PHI', 'TOR'],
+                'Central': ['CHI', 'CLE', 'DET', 'IND', 'MIL'],
+                'Southeast': ['ATL', 'CHA', 'MIA', 'ORL', 'WAS'],
+                'Northwest': ['DEN', 'MIN', 'OKC', 'OKL', 'POR', 'UTA'],
+                'Pacific': ['GSW', 'LAC', 'LAL', 'PHX', 'SAC'],
+                'Southwest': ['DAL', 'HOU', 'MEM', 'NOP', 'SAS']
+            }
+            
             rankings = {}
             if data and 'teamStatsTotals' in data:
-                # Sort by points per game for offensive ranking
-                teams_off = sorted(data['teamStatsTotals'], 
-                                 key=lambda x: x['stats']['offense']['ptsPerGame'], 
-                                 reverse=True)
+                all_teams = data['teamStatsTotals']
                 
-                # Sort by opponent points per game for defensive ranking (lower is better)
-                # Note: The field might be 'oppPtsPerGame' or 'ptsAgainstPerGame'
-                teams_def = sorted(data['teamStatsTotals'], 
-                                 key=lambda x: x['stats']['defense'].get('oppPtsPerGame', 
-                                                x['stats']['defense'].get('ptsAgainstPerGame', 0)))
+                # Overall rankings
+                teams_off = sorted(all_teams, key=lambda x: x['stats']['offense']['ptsPerGame'], reverse=True)
+                teams_def = sorted(all_teams, key=lambda x: x['stats']['defense'].get('oppPtsPerGame', x['stats']['defense'].get('ptsAgainstPerGame', 0)))
                 
-                # Create offensive rankings
-                off_rankings = {}
-                for rank, team in enumerate(teams_off, 1):
+                # Conference rankings
+                eastern_off = sorted([t for t in all_teams if t['team']['abbreviation'] in eastern_teams or (t['team']['abbreviation'] == 'BRO' and 'BKN' in eastern_teams)], 
+                                key=lambda x: x['stats']['offense']['ptsPerGame'], reverse=True)
+                eastern_def = sorted([t for t in all_teams if t['team']['abbreviation'] in eastern_teams or (t['team']['abbreviation'] == 'BRO' and 'BKN' in eastern_teams)], 
+                                key=lambda x: x['stats']['defense'].get('oppPtsPerGame', 0))
+                
+                western_off = sorted([t for t in all_teams if t['team']['abbreviation'] in western_teams or (t['team']['abbreviation'] == 'OKL' and 'OKC' in western_teams)], 
+                                key=lambda x: x['stats']['offense']['ptsPerGame'], reverse=True)
+                western_def = sorted([t for t in all_teams if t['team']['abbreviation'] in western_teams or (t['team']['abbreviation'] == 'OKL' and 'OKC' in western_teams)], 
+                                key=lambda x: x['stats']['defense'].get('oppPtsPerGame', 0))
+                
+                # Process all rankings
+                for team in all_teams:
                     abbr = team['team']['abbreviation']
                     if abbr == 'BRO':
                         abbr = 'BKN'
                     elif abbr == 'OKL':
                         abbr = 'OKC'
-                    off_rankings[abbr] = rank
-                
-                # Create defensive rankings
-                def_rankings = {}
-                for rank, team in enumerate(teams_def, 1):
-                    abbr = team['team']['abbreviation']
-                    if abbr == 'BRO':
-                        abbr = 'BKN'
-                    elif abbr == 'OKL':
-                        abbr = 'OKC'
-                    def_rankings[abbr] = rank
-                
-                # Combine rankings
-                for abbr in off_rankings:
+                    
+                    # Find overall ranks
+                    overall_off_rank = next((i for i, t in enumerate(teams_off, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), None)
+                    overall_def_rank = next((i for i, t in enumerate(teams_def, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), None)
+                    
+                    # Find conference ranks
+                    if abbr in eastern_teams:
+                        conf_off_rank = next((i for i, t in enumerate(eastern_off, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), None)
+                        conf_def_rank = next((i for i, t in enumerate(eastern_def, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), None)
+                    else:
+                        conf_off_rank = next((i for i, t in enumerate(western_off, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), None)
+                        conf_def_rank = next((i for i, t in enumerate(western_def, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), None)
+                    
+                    # Find division
+                    team_division = None
+                    for div_name, teams in divisions.items():
+                        if abbr in teams:
+                            team_division = div_name
+                            break
+                    
+                    # Calculate division ranks
+                    div_off_rank = None
+                    div_def_rank = None
+                    if team_division:
+                        div_teams = divisions[team_division]
+                        division_off = sorted([t for t in all_teams if t['team']['abbreviation'] in div_teams or (t['team']['abbreviation'] == 'BRO' and 'BKN' in div_teams) or (t['team']['abbreviation'] == 'OKL' and 'OKC' in div_teams)], 
+                                            key=lambda x: x['stats']['offense']['ptsPerGame'], reverse=True)
+                        division_def = sorted([t for t in all_teams if t['team']['abbreviation'] in div_teams or (t['team']['abbreviation'] == 'BRO' and 'BKN' in div_teams) or (t['team']['abbreviation'] == 'OKL' and 'OKC' in div_teams)], 
+                                            key=lambda x: x['stats']['defense'].get('oppPtsPerGame', 0))
+                        
+                        div_off_rank = next((i for i, t in enumerate(division_off, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), None)
+                        div_def_rank = next((i for i, t in enumerate(division_def, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), None)
+                    
                     rankings[abbr] = {
-                        'offensive_rank': off_rankings[abbr],
-                        'defensive_rank': def_rankings.get(abbr)
+                        'offensive_rank': overall_off_rank,
+                        'defensive_rank': overall_def_rank,
+                        'conference_offensive': conf_off_rank,
+                        'conference_defensive': conf_def_rank,
+                        'division_offensive': div_off_rank,
+                        'division_defensive': div_def_rank
                     }
             
             return rankings
@@ -155,7 +196,7 @@ class TeamRankingsCollector:
         except Exception as e:
             print(f"Error fetching team stats rankings: {e}")
             return {}
-    
+
     def _get_conference_division_rankings(self, team_abbr: str, season: str) -> Dict:
         """Get conference and division specific rankings for a team"""
         try:
@@ -167,37 +208,125 @@ class TeamRankingsCollector:
             return {}
     
     def _get_historical_rankings(self, team_abbr: str, date: str, num_games: int = 12) -> List[Dict]:
-        """
-        Get historical ranking data for the last N games to show progression
-        This is for the line graph visualization
-        """
+        """Get historical ranking data by fetching standings after each game"""
         historical = []
         
         try:
-            # We'll fetch rankings at different points in time
-            # This is simplified - in production you might want to cache this data
-            current_date = datetime.strptime(date, '%Y%m%d')
+            from datetime import datetime, timedelta
             
-            for i in range(num_games):
-                # Go back i*3 days (assuming games every ~3 days)
-                check_date = current_date - timedelta(days=i*3)
-                check_date_str = check_date.strftime('%Y%m%d')
+            # Get team's game logs to find game dates
+            api_abbr = self._convert_to_api_abbr(team_abbr)
+            season = self._get_season(date)
+            endpoint = f"{season}/team_gamelogs.json"
+            params = {
+                'team': api_abbr,
+                'limit': num_games
+            }
+            url = f"{self.base_url}/{endpoint}"
+            
+            print(f"      Getting game dates for {team_abbr}...")
+            time.sleep(self.request_delay)
+            response = requests.get(url, auth=self.auth, params=params)
+            
+            if response.status_code == 429:
+                time.sleep(self.retry_delay)
+                response = requests.get(url, auth=self.auth, params=params)
+            
+            response.raise_for_status()
+            game_data = response.json()
+            
+            if game_data and 'gamelogs' in game_data:
+                games_chronological = list(reversed(game_data['gamelogs']))
                 
-                # For demonstration, we'll create sample data
-                # In production, you'd make actual API calls here
-                historical.append({
-                    'game_num': num_games - i,
-                    'date': check_date_str,
-                    'overall_rank': None,  # Would be filled with actual data
-                    'offensive_rank': None,
-                    'defensive_rank': None
-                })
+                # print(f"      Fetching historical rankings for {len(games_chronological)} games...")
+                
+                for i, game in enumerate(games_chronological):
+                    # Get standings after this game
+                    game_date_str = game.get('game', {}).get('startTime', '')[:10]  # YYYY-MM-DD
+                    
+                    if i == len(games_chronological) - 1:
+                        # Last game - use current standings
+                        overall_standings = self._get_overall_standings(season)
+                        stats_rankings = self._get_team_stats_rankings(season)
+                    else:
+                        # Fetch historical standings
+                        formatted_date = game_date_str.replace('-', '')
+                        
+                        # Get standings as of that date
+                        time.sleep(self.request_delay)
+                        standings_url = f"{self.base_url}/{season}/standings.json?date={formatted_date}"
+                        stats_url = f"{self.base_url}/{season}/team_stats_totals.json?date={formatted_date}"
+                        
+                        # Get overall standings for that date
+                        standings_response = requests.get(standings_url, auth=self.auth)
+                        if standings_response.status_code == 429:
+                            time.sleep(self.retry_delay)
+                            standings_response = requests.get(standings_url, auth=self.auth)
+                        
+                        overall_standings = {}
+                        if standings_response.status_code == 200:
+                            standings_data = standings_response.json()
+                            if standings_data and 'teams' in standings_data:
+                                teams_sorted = sorted(standings_data['teams'], 
+                                                    key=lambda x: x['stats']['standings']['winPct'], 
+                                                    reverse=True)
+                                for rank, team in enumerate(teams_sorted, 1):
+                                    abbr = team['team']['abbreviation']
+                                    if abbr == 'BRO':
+                                        abbr = 'BKN'
+                                    elif abbr == 'OKL':
+                                        abbr = 'OKC'
+                                    overall_standings[abbr] = {'overall_rank': rank}
+                        
+                        # Get team stats for that date
+                        time.sleep(self.request_delay)
+                        stats_response = requests.get(stats_url, auth=self.auth)
+                        if stats_response.status_code == 429:
+                            time.sleep(self.retry_delay)
+                            stats_response = requests.get(stats_url, auth=self.auth)
+                        
+                        stats_rankings = {}
+                        if stats_response.status_code == 200:
+                            stats_data = stats_response.json()
+                            if stats_data and 'teamStatsTotals' in stats_data:
+                                all_teams = stats_data['teamStatsTotals']
+                                teams_off = sorted(all_teams, key=lambda x: x['stats']['offense']['ptsPerGame'], reverse=True)
+                                teams_def = sorted(all_teams, key=lambda x: x['stats']['defense'].get('oppPtsPerGame', x['stats']['defense'].get('ptsAgainstPerGame', 0)))
+                                
+                                for team in all_teams:
+                                    abbr = team['team']['abbreviation']
+                                    if abbr == 'BRO':
+                                        abbr = 'BKN'
+                                    elif abbr == 'OKL':
+                                        abbr = 'OKC'
+                                    
+                                    off_rank = next((idx for idx, t in enumerate(teams_off, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), 15)
+                                    def_rank = next((idx for idx, t in enumerate(teams_def, 1) if t['team']['abbreviation'] == team['team']['abbreviation']), 15)
+                                    
+                                    stats_rankings[abbr] = {
+                                        'offensive_rank': off_rank,
+                                        'defensive_rank': def_rank
+                                    }
+                    
+                    # Extract rankings for this team
+                    overall_rank = overall_standings.get(team_abbr, {}).get('overall_rank', 15)
+                    offensive_rank = stats_rankings.get(team_abbr, {}).get('offensive_rank', 15)
+                    defensive_rank = stats_rankings.get(team_abbr, {}).get('defensive_rank', 15)
+                    
+                    historical.append({
+                        'game_num': i + 1,
+                        'overall_rank': overall_rank,
+                        'offensive_rank': offensive_rank,
+                        'defensive_rank': defensive_rank
+                    })
+                    
+                    print(f"        Game {i+1}/{len(games_chronological)}: Overall={overall_rank}, Off={offensive_rank}, Def={defensive_rank}")
             
-            return historical
+            return historical if historical else [{'game_num': i+1, 'overall_rank': 15, 'offensive_rank': 15, 'defensive_rank': 15} for i in range(num_games)]
             
         except Exception as e:
-            print(f"Error fetching historical rankings: {e}")
-            return []
+            print(f"      Error fetching historical rankings: {e}")
+            return [{'game_num': i+1, 'overall_rank': 15, 'offensive_rank': 15, 'defensive_rank': 15} for i in range(num_games)]
     
     def collect(self, away_team: str, home_team: str, game_date: str) -> Dict:
         """
@@ -216,9 +345,11 @@ class TeamRankingsCollector:
         season = self._get_season(game_date)
         
         # Get overall standings/rankings
+        print(f"    Getting overall standings...")
         overall_rankings = self._get_overall_standings(season)
         
         # Get offensive/defensive rankings
+        print(f"    Getting team stats rankings...")
         stats_rankings = self._get_team_stats_rankings(season)
         
         # Combine data for both teams
@@ -247,10 +378,10 @@ class TeamRankingsCollector:
                 'defensive': away_rankings.get('defensive_rank', '-'),
                 'conference': away_rankings.get('conference_rank', '-'),
                 'division': away_rankings.get('division_rank', '-'),
-                'conference_offensive': '-',  # Would need additional API calls
-                'conference_defensive': '-',
-                'division_offensive': '-',
-                'division_defensive': '-',
+                'conference_offensive': away_rankings.get('conference_offensive', '-'),
+                'conference_defensive': away_rankings.get('conference_defensive', '-'),
+                'division_offensive': away_rankings.get('division_offensive', '-'),
+                'division_defensive': away_rankings.get('division_defensive', '-'),
                 'historical': away_historical
             },
             'home_rankings': {
@@ -259,10 +390,10 @@ class TeamRankingsCollector:
                 'defensive': home_rankings.get('defensive_rank', '-'),
                 'conference': home_rankings.get('conference_rank', '-'),
                 'division': home_rankings.get('division_rank', '-'),
-                'conference_offensive': '-',
-                'conference_defensive': '-',
-                'division_offensive': '-',
-                'division_defensive': '-',
+                'conference_offensive': home_rankings.get('conference_offensive', '-'),
+                'conference_defensive': home_rankings.get('conference_defensive', '-'),
+                'division_offensive': home_rankings.get('division_offensive', '-'),
+                'division_defensive': home_rankings.get('division_defensive', '-'),
                 'historical': home_historical
             }
         }
